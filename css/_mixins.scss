@@ -1,0 +1,51 @@
+//**********
+// @media **
+//**********
+
+@mixin media-min($media) {
+    @media (min-width: $media) {
+        @content;
+    }
+}
+
+@mixin media-max($media) {
+    @media (max-width: $media) {
+        @content;
+    }
+}
+
+//map-get($linkColor, dark);
+@mixin media-Range($minMedia, $maxMedia) {
+    @media (min-width:$minMedia) and (max-width:$maxMedia) {
+        @content;
+    }
+}
+
+//*********
+// :root **
+//*********
+:root {
+
+    @each $name,
+    $media in $mediaSizeRange {
+        @include media-Range(nth($media, 1), nth($media, 2)) {
+            @if(nth($media, 2) > 1600px) {
+                --container-width: #{1600px - ($grid-gutters*2)};
+            }
+
+            @else if(nth($media, 2) < 577px) {
+                --container-width: 100%;
+            }
+
+            @else {
+                --container-width: #{nth($media, 2) - ($grid-gutters*2)};
+            }
+
+            --min-width: #{nth($media, 1)};
+            --max-width: #{nth($media, 2)};
+            --media: #{$name};
+        }
+    }
+
+
+}

@@ -1,0 +1,82 @@
+@mixin stretched-link {
+    position: relative;
+
+    a::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        pointer-events: auto;
+        content: "";
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+
+@mixin text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    span,a{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+
+@mixin overline ($fs,$line){
+    height: $fs * $line;
+    line-height: $fs * $line;
+    font-size: $fs;
+    overflow: hidden;
+}
+
+@mixin py ($spacing) {
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+}
+
+@mixin px ($spacing) {
+    padding-left: $spacing;
+    padding-right: $spacing;
+}
+
+@mixin my ($spacing) {
+    margin-top: $spacing;
+    margin-bottom: $spacing;
+}
+
+@mixin mx ($spacing) {
+    margin-left: $spacing;
+    margin-right: $spacing;
+}
+
+@mixin row {
+    margin-left: -($grid-gutters/2);
+    margin-right: -($grid-gutters/2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin col ($col) {
+    padding-left: ($grid-gutters/2);
+    padding-right: ($grid-gutters/2);
+    flex-basis: $col;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+@mixin container {
+    @each $media,$width in $container-width {
+        max-width: $width - ($grid-gutters*2);
+        width: 100%;
+        padding-right: $width;
+        padding-left: $width;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
