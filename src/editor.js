@@ -1,6 +1,11 @@
 import jQuery from 'jquery/src/jquery'
-import 'slick-carousel'
-import 'jquery.animate-number'
+import 'jquery-migrate/dist/jquery-migrate.min'
+import 'slick-carousel/slick/slick.min'
+import 'jquery.animate-number/jquery.animateNumber.min'
 import '@fancyapps/fancybox/dist/jquery.fancybox'
 $ = jQuery
 $('body').append('<div>jquery</div>')
+
+import '../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css'
+import '../node_modules/slick-carousel/slick/slick.css'
+import '../node_modules/slick-carousel/slick/slick-theme.css'

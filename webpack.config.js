@@ -40,6 +40,14 @@ module.exports = {
                         }
                     }
                 ]
+            },{
+                test: /\.(ttf|eot|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader',
+                options: {
+                  limit: 50000,
+                  mimetype: 'application/font-woff',
+                  name: './fonts/[name].[ext]',
+                },
             }, {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
