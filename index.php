@@ -6,7 +6,7 @@
     <link rel='stylesheet' type='text/css' media='all' href='./dist/css/main.css'/>
 </head>
 <body>
-<?php include 'header.php';?>
+<?php include 'header.html';?>
     <main>
 <?php
 $fileUrl = $_GET['page'];
@@ -27,7 +27,7 @@ default:
 include $fileIndex.'.html';
 ?>
     </main>
-<?php include 'footer.php'; ?>
+<?php include 'footer.html'; ?>
 <script type="text/javascript" src="./dist/js/dist.bundle.js"></script>
 </body>
 </html>
