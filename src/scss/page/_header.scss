@@ -1,0 +1,182 @@
+/*
+header
+.header-container
+.header-container-navbar
+.header_navbar-logo
+.header_navbar-btn
+.header_navbar-ul
+.header_navbar-ul-li 
+.header_navbar-ul-li-link
+.header_navbar-ul-dropdown
+.header_dropdown-ul
+.header_dropdown-ul-li
+.header_dropdown-ul-li-link
+*/
+
+header{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header {
+    &#{-container} {
+        @include container;
+        &#{-navbar} {
+            display: flex;
+            align-items: center;
+            @include media-max($xl) {
+                flex-direction: column;
+                align-items: start;
+            }
+        }
+        
+    }
+    &#{_navbar} {
+        &#{-logo} {
+            >a{
+                 >img {
+                     width: 150px;
+                     padding: 0.5rem $grid-gutters/2;
+                 }
+            }
+           
+        }
+
+        &#{-btn} {
+            margin-left: auto;
+            @include media-min($xl) {
+                display: none;
+            }
+            
+        }
+            
+        &#{-ul} {
+            display: flex;
+            align-items: center;
+            @include media-min($xl) {
+                margin-left: auto;
+            }
+            @include media-max($xl){
+                flex-direction: column;
+                align-items: start;
+                width: 100%;
+            }
+            &#{-li} {
+                @include px(0.75rem);
+                @include media-max($xl) {
+                    width: 100%;
+                }
+                &#{-link} {
+                    @include py(1.5rem);
+                    display: block;
+                    height: 100%;
+                    color: white;
+                    position: relative;
+                    font-weight: bolder;
+                    &:link {
+                        color: white;
+                    }
+
+                    &:visited {
+                        color: white;
+                    }
+
+                    &:active {
+                        color: white;
+                    }
+
+                    &:hover {
+                        color: white;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        background-color: #e80028;
+                        height: 0.25rem;
+                        transition: width 0.3s ease-in-out;
+                    }
+                }
+                
+                &:hover{
+                    >a::before {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &#{-dropdown} {
+                position: relative;
+                margin-left: 0.75rem;
+                margin-right: 1.25rem;
+                @include media-max($xl) {
+                    width: 100%;
+                }
+                >a::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: -1rem;
+                    display: inline-block;
+                    pointer-events: none;
+                    border: {
+                        color: #fff transparent transparent transparent;
+                        width: 0.35rem;
+                        style: solid;
+                    } 
+                    @include media-max($xl) {
+                        right: 1rem;
+                    }
+                }
+                &:hover {
+                    >a::before {
+                        width: 100%;
+                    }
+                }
+                &.active {
+                    ul{
+
+                    }
+                }
+            }
+            
+        }
+    }
+
+    &#{_dropdown-ul} {
+        display: none;
+        @include py(1rem);
+        @include media-min($xl) {
+            background-color: #4c4c4c;
+            position: absolute;
+            
+        }
+        
+        &#{-li} {
+            
+            &#{-link} {
+                display: block;
+                padding: 0.35rem 1.5rem;
+                color: white;
+                font-weight: bolder;
+                &:link {
+                    color: white;
+                }
+                &:visited {
+                    color: white;
+                }
+                &:active {
+                    color: white;
+                }
+                &:hover {
+                    color: #b78a69;
+                }
+            }
+        }
+    }
+}
+

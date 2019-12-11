@@ -46,6 +46,7 @@
     "webpack-modules": "^1.0.0"
   },
   "dependencies": {
+    "mithril": "^2.0.4",
     "@fancyapps/fancybox": "^3.5.7",
     "classnames": "^2.2.6",
     "jquery": "^3.4.1",

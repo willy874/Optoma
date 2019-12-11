@@ -1,13 +1,23 @@
 <header>
-    <div class="header-container">
+    <div class="header-container" id="navbar-main">
         <nav class="header-container-navbar">
             <div class="header_navbar-logo"></div>
             <button class="header_navbar-btn"></button>
-            <ul class="header_navbar-ul">
-                <li class="header_navbar-ul-li">
-                    <a class="header_navbar-ul-li-link"></a>
+        <!-- <ul class="header_navbar-ul">
+                dropdown 結構
+                <li class="header_navbar-ul-dropdown">
+                    <a class="header_navbar-ul-li-link">${node.nodeName}</a>
+                    <ul class="header_dropdown-ul" id="node-${node.nodeId}">
+                        <li class="header_dropdown-ul-li">
+                            <a class="header_dropdown-ul-li-link" title="${childrenNode.title}" href="${childrenNode.href}">${childrenNode.nodeName}</a>
+                        </li>
+                    </ul>
                 </li>
-            </ul>
+                list 結構
+                <li class="header_navbar-ul-li">
+                    <a class="header_navbar-ul-li-link" title="${node.title}" href="${node.href}">${node.nodeName}</a>
+                </li>
+            </ul> -->
         </nav>
     </div>
 </header>

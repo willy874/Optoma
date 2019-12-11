@@ -1,73 +1,52 @@
 {
     "article":[{
-        "nodeId": "node",
-        "nodeLevel": "1",
-        "article": "a-1",
+        "nodeId": "a-1",
         "nodeName": "OUR BRAND",
         "href": "",
-        "title": ""
+        "title": "OUR BRAND"
     },{
-        "nodeId": "node",
-        "nodeLevel": "1",
-        "article": "a-2",
+        "nodeId": "a-2",
         "nodeName": "ABOUT OPTOMA",
         "href": "",
-        "title": ""
+        "title": "ABOUT OPTOMA"
     },{
-        "nodeId": "node",
-        "nodeLevel": "1",
-        "article": "a-3",
+        "nodeId": "a-3",
         "nodeName": "APPLCATIONS",
-        "childrenNode": "node3"
+        "childrenNode": [{
+            "nodeId": "a-3.1",
+            "nodeName": "Home",
+            "href": "",
+            "title": "Home"
+        }, {
+            "nodeId": "a-3.2",
+            "nodeName": "Education",
+            "href": "",
+            "title": "Education"
+        }, {
+            "nodeId": "a-3.3",
+            "nodeName": "Corporate",
+            "href": "",
+            "title": "Corporate"
+        }, {
+            "nodeId": "a-3.4",
+            "nodeName": "Performance",
+            "href": "",
+            "title": "Performance"
+        }]
     },{
-        "nodeId": "node",
-        "nodeLevel": "1",
-        "article": "a-4",
+        "nodeId": "a-4",
         "nodeName": "INNOVATION",
         "href": "",
-        "title": ""
+        "title": "INNOVATION"
     },{
-        "nodeId": "node",
-        "nodeLevel": "1",
-        "article": "a-5",
+        "nodeId": "a-5",
         "nodeName": "DESIQN",
-        "childrenNode": "0",
         "href": "",
-        "title": ""
+        "title": "DESIQN"
     },{
-        "nodeId": "node",
-        "nodeLevel": "1",
-        "article": "a-6",
+        "nodeId": "a-6",
         "nodeName": "KNOWLEGE CENTER",
         "href": "",
-        "title": ""
-    },{
-        "nodeId": "node3",
-        "nodeLevel": "2",
-        "article": "a-3.1",
-        "nodeName": "Home",
-        "href": "",
-        "title": ""
-    },{
-        "nodeId": "node3",
-        "nodeLevel": "2",
-        "article": "a-3.2",
-        "nodeName": "Education",
-        "href": "",
-        "title": ""
-    },{
-        "nodeId": "node3",
-        "nodeLevel": "2",
-        "article": "a-3.3",
-        "nodeName": "Corporate",
-        "href": "",
-        "title": ""
-    },{
-        "nodeId": "node3",
-        "nodeLevel": "2",
-        "article": "a-3.4",
-        "nodeName": "Performance",
-        "href": "",
-        "title": ""
+        "title": "KNOWLEGE CENTER"
     }]
 }

@@ -146,6 +146,18 @@ a {
         text-decoration: none;
         color: #000;
     }
+    &:active {
+        text-decoration: none;
+        color: #000;
+    }
+    &:link {
+        text-decoration: none;
+        color: #000;
+    }
+    &:visited {
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 i {

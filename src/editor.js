@@ -10,5 +10,6 @@ import '../node_modules/slick-carousel/slick/slick.css'
 import '../node_modules/slick-carousel/slick/slick-theme.css'
 
 import './js/component/navbar'
+import './js/event/click'
 
-$('body').append('<div>jqueryText</div>')
+ 
