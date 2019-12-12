@@ -38,23 +38,88 @@ header{
             >a{
                  >img {
                      width: 150px;
-                     padding: 0.5rem $grid-gutters/2;
+                     padding: 0.75rem 0;
+                     @include media-min($xl) {
+                        padding: 0.5rem $grid-gutters/2;
+                    }
                  }
             }
            
         }
 
         &#{-btn} {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
             margin-left: auto;
+            border: 0.0625rem white solid;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.65rem 0.65rem;
+            cursor: pointer;
+            
             @include media-min($xl) {
                 display: none;
             }
-            
+            &#{-icon}{
+                position: relative;
+                border-top:solid white 0.125rem;
+                border-bottom:solid white 0.125rem;
+                width: 1.5rem;
+                height: 1.25rem;
+                pointer-events: none;
+                transition: all 0.3s;
+                &::before{
+                    content: '';
+                    transition: all 0.3s;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 24px;
+                    background-color: white;
+                    height: 0.0625rem;
+                    transform: rotate(0deg) translate(-50%,0);
+                }
+                &::after{
+                    content: '';
+                    transition: all 0.3s;
+                    position: absolute;
+                    right: 50%;
+                    bottom: 50%;
+                    width: 24px;
+                    background-color: white;
+                    height: 0.0625rem;
+                    transform: rotate(0deg) translate(50%,0);
+                }
+            }
+            &.active{
+                span{
+                    border-top:solid transparent 0.125rem;
+                    border-bottom:solid transparent 0.125rem;
+                    &::before{
+                        left: 0%;
+                        top: 48%;
+                        height: 0.125rem;
+                        transform: rotate(-45deg) translate(0,0);
+                    }
+                    &::after{
+                        left: 0%;
+                        bottom: 42%;
+                        height: 0.125rem;
+                        transform: rotate(45deg) translate(0,0);
+                    }
+                }
+            }
         }
             
         &#{-ul} {
             display: flex;
             align-items: center;
+            background-color: black;
+            transition: all 0.4s;
+            
             @include media-min($xl) {
                 margin-left: auto;
             }
@@ -62,7 +127,19 @@ header{
                 flex-direction: column;
                 align-items: start;
                 width: 100%;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                pointer-events: none;
             }
+            &.active{
+                height: auto;
+                opacity: 1;
+                pointer-events: auto;
+            }
+            
             &#{-li} {
                 @include px(0.75rem);
                 @include media-max($xl) {
@@ -70,6 +147,9 @@ header{
                 }
                 &#{-link} {
                     @include py(1.5rem);
+                    @include media-max($xl) {
+                        @include py(1rem);
+                    }
                     display: block;
                     height: 100%;
                     color: white;
@@ -86,9 +166,11 @@ header{
                     &:active {
                         color: white;
                     }
-
                     &:hover {
                         color: white;
+                        @include media-max($xl) {
+                            color: #b78a69;
+                        }
                     }
                     &::before {
                         content: '';
@@ -103,8 +185,10 @@ header{
                 }
                 
                 &:hover{
-                    >a::before {
-                        width: 100%;
+                    @include media-min($xl) {
+                        >a::before {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -129,17 +213,15 @@ header{
                         style: solid;
                     } 
                     @include media-max($xl) {
-                        right: 1rem;
+                        right: 2rem;
                     }
                 }
+                
                 &:hover {
-                    >a::before {
-                        width: 100%;
-                    }
-                }
-                &.active {
-                    ul{
-
+                    @include media-min($xl) {
+                        >a::before {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -149,11 +231,10 @@ header{
 
     &#{_dropdown-ul} {
         display: none;
-        @include py(1rem);
         @include media-min($xl) {
+            @include py(1rem);
             background-color: #4c4c4c;
             position: absolute;
-            
         }
         
         &#{-li} {
@@ -161,6 +242,9 @@ header{
             &#{-link} {
                 display: block;
                 padding: 0.35rem 1.5rem;
+                @include media-max($xl) {
+                    @include py(0.5rem);
+                }
                 color: white;
                 font-weight: bolder;
                 &:link {

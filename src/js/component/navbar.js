@@ -6,10 +6,9 @@ const ajaxUrl = './data/article.json'
 const ajaxType = 'json'
 const ajaxMethod = 'GET'
 //ajax載入的處理
-const beforeSendFu = function() {}
 const successFu = function(data) {
     if( data.msg =="false" ) return
-    //const $navbar = $('.header_navbar-ul')
+    
     m.render(document.querySelector('#navbar-main'), [
         m('nav',{
             class: 'header-container-navbar'
@@ -19,17 +18,23 @@ const successFu = function(data) {
             },[
                 m('a', {
                     title: 'back home',
-                    href: './index.php?page=home'
+                    href: './index.php'
                 }, [
                     m('img', {
                         src: './images/optoma-logo.png'
                     })
                 ])
             ]),
-            m('button', {
-                class: 'header_navbar-btn'
-            }),
+            m('button[type="button"]', {
+                class: 'header_navbar-btn',
+                'data-toggle':"navbar-collapse",
+                'data-target':"#navbar-menu",
+                'data-switch':"false",
+            },[
+                m('span',{class: 'header_navbar-btn-icon'})
+            ]),
             m('ul', {
+                id: 'navbar-menu',
                 class: 'header_navbar-ul'
             }, data.article.map(node => {
                 return (node.hasOwnProperty('childrenNode'))? m('li',{
@@ -71,9 +76,10 @@ const successFu = function(data) {
 
 
     // jquery 方法
-    //
+    // const $navbar = $('.header_navbar-ul')
     // data.article.forEach(node => {
     //     if (node.hasOwnProperty('childrenNode')) {
+    //         $navbar.html('')
     //         $navbar.append(`
     //         <li class="header_navbar-ul-dropdown">
     //             <a class="header_navbar-ul-li-link">${node.nodeName}</a>
@@ -87,6 +93,7 @@ const successFu = function(data) {
     //             </li>`)
     //         })
     //     } else {
+    //         $navbar.html('')
     //         $navbar.append(`
     //         <li class="header_navbar-ul-li">
     //             <a class="header_navbar-ul-li-link" title="${node.title}" href="${node.href}">${node.nodeName}</a>
@@ -94,11 +101,8 @@ const successFu = function(data) {
     //     }
     //  });
 }
-const completeFu = function(data) {
-    if( data.msg =="false" ) return
-}    
 const errorFu = function() {
-    console.log('ajax:',ajaxUrl,'，載入失敗')
+    console.log('ajax:',ajaxUrl,'，navbar載入失敗')
 }
 
 $.ajax({
@@ -106,9 +110,7 @@ $.ajax({
     dataType: ajaxType, 
     async: true,
     type: ajaxMethod,
-    beforeSend: beforeSendFu,
     success: successFu,
-    complete: completeFu,
     error: errorFu
 });
 

@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php include 'header.html';?>
+
     <main>
 <?php
 $fileUrl = $_GET['page'];
@@ -26,6 +27,7 @@ default:
 }
 include $fileIndex.'.html';
 ?>
+
     </main>
 <?php include 'footer.html'; ?>
 <script type="text/javascript" src="./dist/js/dist.bundle.js"></script>

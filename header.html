@@ -1,23 +1,27 @@
 <header>
     <div class="header-container" id="navbar-main">
         <nav class="header-container-navbar">
-            <div class="header_navbar-logo"></div>
-            <button class="header_navbar-btn"></button>
-        <!-- <ul class="header_navbar-ul">
-                dropdown 結構
+            <div class="header_navbar-logo">
+                <a  href="./index.php">
+                    <img src="./images/optoma-logo.png" alt="">
+                </a>
+            </div>
+            <button class="header_navbar-btn" data-toggle="navbar-collapse" data-target="#navbar-menu" data-switch="false">
+                <span class="header_navbar-btn-icon"></span>
+            </button>
+            <ul class="header_navbar-ul">
                 <li class="header_navbar-ul-dropdown">
                     <a class="header_navbar-ul-li-link">${node.nodeName}</a>
-                    <ul class="header_dropdown-ul" id="node-${node.nodeId}">
+                    <ul class="header_dropdown-ul" id="node-${node.nodeId}" data-toggle="dropdown" data-switch="false">
                         <li class="header_dropdown-ul-li">
                             <a class="header_dropdown-ul-li-link" title="${childrenNode.title}" href="${childrenNode.href}">${childrenNode.nodeName}</a>
                         </li>
                     </ul>
                 </li>
-                list 結構
                 <li class="header_navbar-ul-li">
                     <a class="header_navbar-ul-li-link" title="${node.title}" href="${node.href}">${node.nodeName}</a>
                 </li>
-            </ul> -->
+            </ul>
         </nav>
     </div>
 </header>
