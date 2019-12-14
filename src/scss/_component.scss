@@ -66,6 +66,7 @@
     padding-left: ($grid-gutters/2);
     padding-right: ($grid-gutters/2);
     flex-basis: $col;
+    max-width: $col;
     flex-grow: 0;
     flex-shrink: 0;
 }

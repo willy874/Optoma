@@ -26,7 +26,12 @@ module.exports = {
     },
     plugins: [
             new CleanWebpackPlugin(),
-            new WebpackModules()
+            new WebpackModules(),
+            new webpack.ProvidePlugin({ 
+                $: "jquery",
+                jQuery: "jquery",
+                "window.jQuery": "jquery"
+            }),
         ],
         module: {
             rules: [{
@@ -63,6 +68,17 @@ module.exports = {
                         // plugins: ['@babel/plugin-transform-runtime']
                     }
                 }
-            }]
+            }],
+            loaders: [
+                {
+                  test: require.resolve("jquery"),
+                  use: [
+                    {
+                      loader: "expose-loader",
+                      options: "$"
+                    }
+                  ]
+                }        
+            ],
         }
 };

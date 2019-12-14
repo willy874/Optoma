@@ -121,7 +121,7 @@ header{
             transition: all 0.4s;
             
             @include media-min($xl) {
-                margin-left: auto;
+                @include mx(auto)
             }
             @include media-max($xl){
                 flex-direction: column;

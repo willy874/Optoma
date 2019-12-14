@@ -1,4 +1,5 @@
-import * as $ from 'jquery/src/jquery'
+import $ from 'jquery/src/jquery'
+import m from 'mithril'
 
 console.log('ajax')
 //ajax載入url

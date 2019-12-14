@@ -1,5 +1,6 @@
-import * as $ from 'jquery/src/jquery'
+import $ from 'jquery/src/jquery'
 import m from 'mithril'
+
 //ajax載入setting
 
 const ajaxUrl = './data/article.json'

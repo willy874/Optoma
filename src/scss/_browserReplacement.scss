@@ -4,7 +4,12 @@
 
 // Target IE 10/11
 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none) {
-    
+    .header_navbar-ul-dropdown .header_navbar-ul-li-link{
+        padding-left: 1rem;
+    }
+    .header_navbar-logo{
+        align-self: flex-start;
+    }
 }
 
 // Target IE Edge
