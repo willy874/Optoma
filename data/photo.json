@@ -1,0 +1,18 @@
+{
+    "design":[{
+        "src": "./images/Manuscript/main-page_v3_18.jpg",
+        "alt": "Gaming",
+        "href": "",
+        "title": "Gaming"
+    },{
+        "src": "./images/Manuscript/main-page_v3_19.jpg",
+        "alt": "Entertainment",
+        "href": "",
+        "title": "Entertainment"
+    },{
+        "src": "./images/Manuscript/main-page_v3_20.jpg",
+        "alt": "Portable",
+        "href": "",
+        "title": "Portable"
+    }]
+}

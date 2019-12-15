@@ -1,0 +1,39 @@
+{
+    "applications":[{
+        "src": "./images/Manuscript/main-page_v3_21.jpg",
+        "alt": "Gaming",
+        "heading": "Gaming",
+        "href": "",
+        "title": "Gaming"
+    },{
+        "src": "./images/Manuscript/main-page_v3_22.jpg",
+        "alt": "Entertainment",
+        "heading": "Entertainment",
+        "href": "",
+        "title": "Gaming"
+    },{
+        "src": "./images/Manuscript/main-page_v3_23.jpg",
+        "alt": "Portable",
+        "heading": "Portable",
+        "href": "",
+        "title": "Portable"
+    },{
+        "src": "./images/Manuscript/main-page_v3_18.jpg",
+        "alt": "Gaming",
+        "heading": "Gaming",
+        "href": "",
+        "title": "Gaming"
+    },{
+        "src": "./images/Manuscript/main-page_v3_19.jpg",
+        "alt": "Entertainment",
+        "heading": "Entertainment",
+        "href": "",
+        "title": "Entertainment"
+    },{
+        "src": "./images/Manuscript/main-page_v3_20.jpg",
+        "alt": "Portable",
+        "heading": "Portable",
+        "href": "",
+        "title": "Portable"
+    }]
+}
