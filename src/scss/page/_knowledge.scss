@@ -1,0 +1,68 @@
+.knowledge{
+    &#{-sec1}{
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+
+        &#{-container}{
+            @include container;
+                display: flex;
+                align-items: center;
+                height: 100%;
+            &#{-display}{
+                padding-left: 6.5rem;
+
+                h2{
+                    font-size: 3.5rem;
+                    font-weight: bolder;
+                    color: white;
+                    margin-bottom: 0.75rem;
+                    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
+                }
+            }
+        }
+    }
+    &#{-sec2}{
+        &#{-container}{
+            h2{
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+            }
+
+            &#{-video}{
+            }
+        }
+        &#{_video}{
+            &#{-formGroup}{
+                form{
+                    input{
+                        &[type="text"]{
+    
+                        }
+                        &[type="submit"]{
+    
+                        }
+                    }
+                }
+            }
+            &#{-row}{
+                img{}
+                h4{}
+                p{}
+
+                &#{-col-1}{
+                    img{}
+                    h4{}
+                    p{}
+                }
+                &#{-col-2}{
+                    img{}
+                    h4{}
+                    p{}
+                }
+            }
+        }
+    }
+}

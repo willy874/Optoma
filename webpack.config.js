@@ -27,11 +27,11 @@ module.exports = {
     plugins: [
             new CleanWebpackPlugin(),
             new WebpackModules(),
-            new webpack.ProvidePlugin({ 
-                $: "jquery",
-                jQuery: "jquery",
-                "window.jQuery": "jquery"
-            }),
+            // new webpack.ProvidePlugin({ 
+            //     $: "jquery",
+            //     jQuery: "jquery",
+            //     "window.jQuery": "jquery"
+            // }),
         ],
         module: {
             rules: [{
@@ -69,16 +69,16 @@ module.exports = {
                     }
                 }
             }],
-            loaders: [
-                {
-                  test: require.resolve("jquery"),
-                  use: [
-                    {
-                      loader: "expose-loader",
-                      options: "$"
-                    }
-                  ]
-                }        
-            ],
+            // loaders: [
+            //     {
+            //       test: require.resolve("jquery"),
+            //       use: [
+            //         {
+            //           loader: "expose-loader",
+            //           options: "$"
+            //         }
+            //       ]
+            //     }        
+            // ],
         }
 };

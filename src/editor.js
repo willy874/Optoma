@@ -12,5 +12,5 @@ import './js/component/navbar'
 import './js/component/slick'
 import './js/component/design'
 import './js/event/click'
-
+//
  

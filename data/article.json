@@ -46,7 +46,7 @@
     },{
         "nodeId": "a-6",
         "nodeName": "KNOWLEGE CENTER",
-        "href": "",
+        "href": "./index.php?page=1",
         "title": "KNOWLEGE CENTER"
     }]
 }

@@ -2,7 +2,7 @@
     &#{-sec1}{
         background-size: cover;
         height: 100vh;
-
+        background-position: center;
         &#{-container}{
             @include container;
                 display: flex;
@@ -82,6 +82,7 @@
     }
     &#{-sec3}{
         background-size: 100% auto;
+        background-position: center;
         height: 80vh;
         @include py(3.5rem);
         &#{-container}{
@@ -156,6 +157,7 @@
     }
     &#{-sec5}{
         background-size: 100% auto;
+        background-position: center;
         @include py(5rem);
         &#{-container}{
             text-align: center;
@@ -194,6 +196,7 @@
     }
     &#{-sec6}{
         background-size: cover;
+        background-position: center;
         height: 100vh;
 
         &#{-container}{
