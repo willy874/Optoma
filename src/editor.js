@@ -8,9 +8,12 @@ import 'jquery-migrate/dist/jquery-migrate.min'
 import '../node_modules/slick-carousel/slick/slick.css'
 import '../node_modules/slick-carousel/slick/slick-theme.css'
 
+//import './js/component/AjaxModel'
 import './js/component/navbar'
 import './js/component/slick'
 import './js/component/design'
+import './js/component/knowledge'
+
 import './js/event/click'
-//
+
  

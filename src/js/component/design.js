@@ -4,12 +4,14 @@ import m from 'mithril'
 const ajaxUrl = './data/photo.json'
 const ajaxType = 'json'
 const ajaxMethod = 'GET'
+const ajaxElement = document.querySelector('.home-sec5-container-row')
 
 //ajax載入成功的處理
 const successFu = function(data) {
     let eachIndex = 0
     if( data.msg =="false" ) return
-    m.render(document.querySelector('.home-sec5-container-row'),[
+    if( ajaxElement == undefined) return
+    m.render(ajaxElement,[
         data.design.reverse().map(item=>{
             
             if(eachIndex<3) return m('div',{

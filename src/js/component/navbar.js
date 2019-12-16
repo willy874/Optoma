@@ -6,11 +6,12 @@ import m from 'mithril'
 const ajaxUrl = './data/article.json'
 const ajaxType = 'json'
 const ajaxMethod = 'GET'
+const ajaxElement = document.querySelector('#navbar-main')
 //ajax載入的處理
 const successFu = function(data) {
     if( data.msg =="false" ) return
-    
-    m.render(document.querySelector('#navbar-main'), [
+    if( ajaxElement == undefined) return
+    m.render(ajaxElement, [
         m('nav',{
             class: 'header-container-navbar'
         },[

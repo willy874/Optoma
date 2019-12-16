@@ -6,10 +6,11 @@ import 'slick-carousel'
 const ajaxUrl = './data/slick.json'
 const ajaxType = 'json'
 const ajaxMethod = 'GET'
-
+const ajaxElement = document.querySelector('#silck-applications')
 const successFu = function(data) {
     if( data.msg =="false" ) return
-    m.render(document.querySelector('#silck-applications'),[
+    if( ajaxElement == undefined) return
+    m.render(ajaxElement,[
         data.applications.map(item=>{
             return m('div',{
                 class: 'silck-item'
