@@ -1,10 +1,11 @@
 import m from 'mithril'
+import AjaxModel from '../model/ajaxModel'
 
 export default {
-    url: './data/photo.json', 
-    dataType: 'json', 
+    url: AjaxModel.photo.url, 
+    dataType: AjaxModel.photo.fileType, 
     async: true,
-    type: 'GET',
+    type: AjaxModel.photo.method,
     success: function(data) {
         const ajaxElement = document.querySelector('.home-sec5-container-row')
         let eachIndex = 0

@@ -1,12 +1,13 @@
-import $ from 'jquery/src/jquery'
 import m from 'mithril'
+import AjaxModel from '../model/ajaxModel'
+import $ from 'jquery/src/jquery'
 import 'slick-carousel'
 
 export default {
-    url: './data/slick.json', 
-    dataType: 'json', 
+    url: AjaxModel.slick.url, 
+    dataType: AjaxModel.slick.fileType, 
     async: true,
-    type: 'GET',
+    type: AjaxModel.slick.method,
     success: function(data) {
         const ajaxElement = document.querySelector('#silck-applications')
         if( data.msg =="false" ) return

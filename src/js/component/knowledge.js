@@ -1,12 +1,13 @@
 import m from 'mithril'
+import AjaxModel from '../model/ajaxModel'
 import $ from 'jquery/src/jquery'
 require('@fancyapps/fancybox/dist/jquery.fancybox')
 
 export default {
-    url: './data/video.json', 
-    dataType: 'json', 
+    url: AjaxModel.video.url, 
+    dataType: AjaxModel.video.fileType, 
     async: true,
-    type: 'GET',
+    type: AjaxModel.video.method,
     success: function(data) {
         const ajaxElement = document.querySelector('#video-area')
         if(data.msg =="false" ) return; 

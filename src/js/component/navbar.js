@@ -1,10 +1,11 @@
 import m from 'mithril'
+import AjaxModel from '../model/ajaxModel'
 
 export default {
-    url: './data/article.json', 
-    dataType: 'json', 
+    url: AjaxModel.article.url, 
+    dataType: AjaxModel.article.fileType, 
     async: true,
-    type: 'GET',
+    type: AjaxModel.article.method,
     success: function(data) {
         const ajaxElement = document.querySelector('#navbar-main')
         if( data.msg =="false" ) return

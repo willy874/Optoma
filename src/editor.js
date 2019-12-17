@@ -1,5 +1,5 @@
 import $ from 'jquery/src/jquery'
-import 'jquery-migrate/dist/jquery-migrate.min'
+//import 'jquery-migrate/dist/jquery-migrate.min'
 import '../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css'
 import '../node_modules/slick-carousel/slick/slick.css'
 import '../node_modules/slick-carousel/slick/slick-theme.css'
