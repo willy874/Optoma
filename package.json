@@ -47,12 +47,13 @@
     "webpack-modules": "^1.0.0"
   },
   "dependencies": {
-    "mithril": "^2.0.4",
     "@fancyapps/fancybox": "^3.5.7",
     "classnames": "^2.2.6",
+    "iframe-lightbox": "^0.2.8",
     "jquery": "^3.4.1",
     "jquery-migrate": "^3.1.0",
     "jquery.animate-number": "0.0.14",
+    "mithril": "^2.0.4",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^1.1.3"
   }

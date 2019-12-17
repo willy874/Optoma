@@ -10,7 +10,6 @@
                 align-items: center;
                 height: 100%;
             &#{-display}{
-                padding-left: 6.5rem;
 
                 h2{
                     font-size: 5rem;
@@ -43,29 +42,28 @@
         &#{_video}{
             &#{-formGroup}{
                 form{
-                    border: 0.125rem solid #a0a1a5;
+                    display: flex;
                     position: relative;
+                    align-items: center;
                     width: 200px;
                     @include my(1.5rem);
-
                     input{
-                        height: 1.5rem;
                         outline: 0;
-                        width: 100%;
+                        margin: 0;
+                        line-height: 1.65rem;
+                        height: 1.65rem;
+                        border: 0.125rem solid #a0a1a5;
                     }
+                    
                     button {
-                        position: absolute;
                         background-color: #a0a1a5;
                         background-image: url(../../images/icon/search.svg);
                         background-size: 60%;
                         background-position: center;
                         background-repeat: no-repeat;
                         border: 0;
-                        width: 2.0625rem;
-                        height: 2.0625rem;
-                        right: -6px;
-                        bottom: -1px;
-                        top: -2px;
+                        width: 2rem;
+                        height: 2rem;
                     }
                 }
             }
