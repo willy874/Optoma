@@ -3,7 +3,7 @@
 <head>
     <?php include 'meta.php';?>
     <title>奧圖碼</title>   
-    <link rel='stylesheet' type='text/css' media='all' href='./dist/css/main.css'/>
+    <link rel='stylesheet' type='text/css' media='all' href='./dist/css/main.min.css'/>
 </head>
 <body>
 <?php include 'header.html';?>
@@ -17,7 +17,7 @@ case '1':
     $fileIndex = 'knowledge';
     break;     
 case '2':
-    $fileIndex = 'page2';
+    $fileIndex = 'applications';
     break;  
 case '3':
     $fileIndex = 'page3';

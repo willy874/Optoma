@@ -242,6 +242,7 @@ header{
         &#{-li} {
             
             &#{-link} {
+                white-space: nowrap;
                 display: block;
                 padding: 0.35rem 1.5rem;
                 @include media-max($xl) {

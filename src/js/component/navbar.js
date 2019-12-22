@@ -2,10 +2,10 @@ import m from 'mithril'
 import AjaxModel from '../model/ajaxModel'
 
 export default {
-    url: AjaxModel.article.url, 
-    dataType: AjaxModel.article.fileType, 
+    url: AjaxModel.node.url, 
+    dataType: AjaxModel.node.fileType, 
     async: true,
-    type: AjaxModel.article.method,
+    type: AjaxModel.node.method,
     success: function(data) {
         const ajaxElement = document.querySelector('#navbar-main')
         if( data.msg =="false" ) return
@@ -37,7 +37,7 @@ export default {
                 m('ul', {
                     id: 'navbar-menu',
                     class: 'header_navbar-ul'
-                }, data.article.map(node => {
+                }, data.node.map(node => {
                     return (node.hasOwnProperty('childrenNode'))? m('li',{
                             class: 'header_navbar-ul-dropdown'
                         },[

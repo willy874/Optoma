@@ -1,3 +1,6 @@
+import * as Models from '../model'
+
+
 $(document.body).on('click', function (e) {
 
     const $this = $(e.target)

@@ -4,13 +4,8 @@ export default {
         method: 'GET',
         fileType: 'json',
     },
-    video: {
-        url:'./data/video.json',
-        method: 'GET',
-        fileType: 'json',
-    },
-    article: {
-        url:'./data/article.json',
+    node: {
+        url:'./data/node.json',
         method: 'GET',
         fileType: 'json',
     },
@@ -18,5 +13,10 @@ export default {
         url:'./data/slick.json',
         method: 'GET',
         fileType: 'json',
+    },
+    article: {
+        url:'./data/article.json',
+        method: 'GET',
+        fileType: 'json'
     },
 }
