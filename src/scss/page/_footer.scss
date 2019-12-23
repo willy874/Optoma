@@ -11,6 +11,7 @@ footer{
             &#{-community}{
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
                 @include media-min($md) {
                     @include col(auto);
                 }

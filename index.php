@@ -17,7 +17,7 @@ case '1':
     $fileIndex = 'knowledge';
     break;     
 case '2':
-    $fileIndex = 'page2';
+    $fileIndex = 'applications';
     break;  
 case '3':
     $fileIndex = 'page3';

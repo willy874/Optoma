@@ -4,6 +4,8 @@ import '../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css'
 import '../node_modules/slick-carousel/slick/slick.css'
 import '../node_modules/slick-carousel/slick/slick-theme.css'
 //import 'jquery.animate-number/jquery.animateNumber.min'
+import * as Models from './js/model'
+Models.Status.knowledge.ajaxCondition = 'Wireless'
 
 import Navbar from './js/component/navbar'
 $.ajax(Navbar)

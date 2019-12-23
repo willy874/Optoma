@@ -1,52 +1,131 @@
 {
-    "article":[{
-        "nodeId": "a-1",
-        "nodeName": "OUR BRAND",
-        "href": "",
-        "title": "OUR BRAND"
-    },{
-        "nodeId": "a-2",
-        "nodeName": "ABOUT OPTOMA",
-        "href": "",
-        "title": "ABOUT OPTOMA"
-    },{
-        "nodeId": "a-3",
-        "nodeName": "APPLCATIONS",
-        "childrenNode": [{
-            "nodeId": "a-3.1",
-            "nodeName": "Home",
-            "href": "",
-            "title": "Home"
-        }, {
-            "nodeId": "a-3.2",
-            "nodeName": "Education",
-            "href": "",
-            "title": "Education"
-        }, {
-            "nodeId": "a-3.3",
-            "nodeName": "Corporate",
-            "href": "",
-            "title": "Corporate"
-        }, {
-            "nodeId": "a-3.4",
-            "nodeName": "Performance",
-            "href": "",
-            "title": "Performance"
+    "knowledge":[{
+        "keyword": ["UHD","Panel","Displays"],
+        "article": [{
+            "type": "post",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "4K UHD",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_02.jpg"
         }]
     },{
-        "nodeId": "a-4",
-        "nodeName": "INNOVATION",
-        "href": "",
-        "title": "INNOVATION"
+        "keyword": ["HDR","Panel","Displays"],
+        "article": [{
+            "type": "post",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "HDR",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "paragraph": "Optoma’s multi-touch interactive flat panels boast 4K UHD resolution and a 20-point touch-enabled display, bringing lessons and idea sharing to life in education and corporate settings. Available in 65’’, 75’’ and 86’’ sizes and featuring anti-glare glass, a blue light filter and a wide viewing angle, they reduce eye strain while providing crisp and vivid visuals to every seat in the room.",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_03.jpg"
+        },{
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "DuraCore Laser",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_05.jpg"
+        }]
     },{
-        "nodeId": "a-5",
-        "nodeName": "DESIQN",
-        "href": "",
-        "title": "DESIQN"
+        "keyword": ["MCL","Laser","3D","Viewing"],
+        "article": [{
+            "type": "post",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "MCL Laser",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "paragraph": "Optoma’s multi-touch interactive flat panels boast 4K UHD resolution and a 20-point touch-enabled display, bringing lessons and idea sharing to life in education and corporate settings. Available in 65’’, 75’’ and 86’’ sizes and featuring anti-glare glass, a blue light filter and a wide viewing angle, they reduce eye strain while providing crisp and vivid visuals to every seat in the room.",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_07jpg"
+        },{
+            "type": "post",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "3D Viewing",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "paragraph": "Optoma’s multi-touch interactive flat panels boast 4K UHD resolution and a 20-point touch-enabled display, bringing lessons and idea sharing to life in education and corporate settings. Available in 65’’, 75’’ and 86’’ sizes and featuring anti-glare glass, a blue light filter and a wide viewing angle, they reduce eye strain while providing crisp and vivid visuals to every seat in the room.",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_09.jpg"
+        }]
     },{
-        "nodeId": "a-6",
-        "nodeName": "KNOWLEGE CENTER",
-        "href": "./index.php?page=1",
-        "title": "KNOWLEGE CENTER"
+        "keyword": ["Gaming","Game","Competition"],
+        "article": [{
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "Gaming",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_14.jpg"
+        }]
+    },{
+        "keyword": ["Cinematic","Blue Light","FOV"],
+        "article": [{
+            "type": "post",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "Low Blue Light",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "paragraph": "Optoma’s multi-touch interactive flat panels boast 4K UHD resolution and a 20-point touch-enabled display, bringing lessons and idea sharing to life in education and corporate settings. Available in 65’’, 75’’ and 86’’ sizes and featuring anti-glare glass, a blue light filter and a wide viewing angle, they reduce eye strain while providing crisp and vivid visuals to every seat in the room.",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_18.jpg"
+        },{
+            "type": "post",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "Cinematic FOV",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "paragraph": "Optoma’s multi-touch interactive flat panels boast 4K UHD resolution and a 20-point touch-enabled display, bringing lessons and idea sharing to life in education and corporate settings. Available in 65’’, 75’’ and 86’’ sizes and featuring anti-glare glass, a blue light filter and a wide viewing angle, they reduce eye strain while providing crisp and vivid visuals to every seat in the room.",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_19.jpg"
+        }]
+    },{
+        "keyword": ["Wireless","Interactivity","VR"],
+        "article": [{
+            "type": "post",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "Interactivity",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "paragraph": "Optoma’s multi-touch interactive flat panels boast 4K UHD resolution and a 20-point touch-enabled display, bringing lessons and idea sharing to life in education and corporate settings. Available in 65’’, 75’’ and 86’’ sizes and featuring anti-glare glass, a blue light filter and a wide viewing angle, they reduce eye strain while providing crisp and vivid visuals to every seat in the room.",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_20.jpg"
+        },{
+            "type": "post",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "True Wireless",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "paragraph": "Optoma’s multi-touch interactive flat panels boast 4K UHD resolution and a 20-point touch-enabled display, bringing lessons and idea sharing to life in education and corporate settings. Available in 65’’, 75’’ and 86’’ sizes and featuring anti-glare glass, a blue light filter and a wide viewing angle, they reduce eye strain while providing crisp and vivid visuals to every seat in the room.",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_22.jpg"
+        }]
+    },{
+        "keyword": ["NPP LED","Panel","Displays"],
+        "article": [{
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "NPP LED",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_27.jpg"
+        }]
+    },{
+        "keyword": ["Wireless","Hi-Res","Headset"],
+        "article": [{
+            "type": "post",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "BT Wireless (Hi-Res)",
+            "figcaption": "Optoma’s multi-touch interactive flat panels boast 4K UHD",
+            "paragraph": "Optoma’s multi-touch interactive flat panels boast 4K UHD resolution and a 20-point touch-enabled display, bringing lessons and idea sharing to life in education and corporate settings. Available in 65’’, 75’’ and 86’’ sizes and featuring anti-glare glass, a blue light filter and a wide viewing angle, they reduce eye strain while providing crisp and vivid visuals to every seat in the room.",
+            "title": "Optoma 4K UHD interactive flat panel displays",
+            "alt": "Optoma 4K UHD interactive flat panel displays",
+            "src": "./images/Manuscript/Knowledge_28.jpg"
+        }]
     }]
 }
