@@ -116,3 +116,10 @@
     }
 }
 
+@mixin display-5 {
+    @each $media,$width in $mediaSize-MP {
+        @include media-min($width) {
+            font-size: map-get($FontSize-display-5,$media)
+        }
+    }
+}

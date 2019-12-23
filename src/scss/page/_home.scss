@@ -1,34 +1,73 @@
 .home{
     &#{-sec1}{
-        background-size: cover;
-        height: 100vh;
-        background-position: center;
+        padding-top: 7.5rem;
+        height: 1200px;
+        position: relative;
+        background-color: #000;
+        @include media-max($sm) {
+            height: 800px;
+        }
+        &#{-bgUpper}{
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-position: 47% center;
+            background-size: cover;
+            z-index: 4;
+            animation: star-sky-1 5s linear infinite;
+        }
+        &#{-bgLower}{
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-position: 47% center;
+            background-size: cover;
+            z-index: 4;
+            animation: star-sky-2 5s linear infinite;
+        }
         &#{-container}{
             @include container;
-                display: flex;
-                align-items: center;
-                height: 100%;
+            position: relative;
+            top: -8rem;
+            @include media-max($sm) {
+                top: -6rem;
+            }
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+
             &#{-display}{
-                padding-left: 6.5rem;
+                max-width: 1140px;
+                margin: 0 auto;
+                width: 100%;
+                @include media-max($lg) {
+                    text-align: center;
+                }
 
                 h2{
                     @include display-1;
                     font-weight: bolder;
-                    color: white;
+                    color: #fdfcfc;
                     margin-left: -0.5rem;
                     margin-bottom: 1rem;
                     text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
                 }
                 h3{
-                    font-size: 2.25rem;
+                    @include display-3;
                     font-weight: bolder;
-                    color: white;
+                    color: #fdfcfc;
                     margin-top: 0.5rem;
                     margin-bottom: 1rem;
                     text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
                 }
                 button{
-                    background-color: white;
+                    background-color: #fdfcfc;
                     font-size: 1.125rem;
                     font-weight: bolder;
                     padding: 0.625rem 1.5rem;
@@ -44,70 +83,114 @@
         background-size: cover;
         background-position: center;
         height: 100vh;
-
+        position: relative;
+        @include media-max($sm) {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+        }
+        &#{-bg}{
+            @include media-max($sm) {
+                background-size: cover;
+                background-position: 85% center;
+                flex-grow: 1;
+            }
+        }
         &#{-container}{
             @include container;
-                display: flex;
-                align-items: center;
-                height: 100%;
+            @include media-min($sm) {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+            @include media-max($sm) {
+                background-color: #000;
+                @include py(4rem);
+            }
+
             &#{-display}{
-                padding-left: 6.5rem;
+                max-width: 1140px;
+                margin: 0 auto;
+                width: 100%;
+                @include media-max($lg) {
+                    text-align: center;
+                }
+
                 h2{
                     @include display-3;
                     font-weight: bolder;
                     color: #b68b69;
                     margin-left: -0.5rem;
+                    padding-top: 0.5rem;
                     margin-bottom: 1rem;
+                    @include media-max($md) {
+                        margin-bottom: 0.5rem;
+                    }
                 }
                 h3{
-                    font-size: 2rem;
+                    @include display-5;
                     font-weight: bolder;
                     color: #b68b69;
-                    margin-top: 0.5rem;
-                    margin-bottom: 1rem;
                     line-height: 1.2;
+                    margin-bottom: 1rem;
+                    @include media-max($md) {
+                        margin-bottom: 0.5rem;
+                    }
+                    
                 }
                 button{
                     background-color: #b68b69;
+                    border: #b68b69 solid 1px;
+                    border-radius: 0.125rem;
                     font-size: 1.125rem;
                     font-weight: bolder;
                     padding: 0.625rem 2.75rem;
                     margin-top: 0.5rem;
-                    margin-bottom: 2.5rem;
-                    border: 0;
-                    border-radius: 0.125rem;
+                    margin-bottom: 1.5rem;
+                    @include media-max($md) {
+                        margin-bottom: 0.5rem;
+                    }
+                    @include media-max($lg) {
+                        background-color: transparent;
+                        color: #b68b69;
+                    }
+                    
                 }
             }
         }
     }
     &#{-sec3}{
-        background-size: 100% auto;
-        background-position: center;
+        background-color: #333a44;
         @include py(3.5rem);
         &#{-container}{
             @include container;
-            @include px(5rem);
+            @include media-min($lg) {
+                @include px(5rem);
+            }
             text-align: center;
             h2{
-                color: white;
+                color: #fdfcfc;
                 @include display-3;
                 font-weight: bolder;
                 margin-bottom: 1rem;
                 padding-top: 1.125rem;
             }
             button{
-                background-color: white;
+                background-color: #fdfcfc;
+                color: #333a44;
                 font-size: 1.125rem;
                 font-weight: bolder;
                 padding: 0.625rem 2.5rem;
-                margin-top: 0.25rem;
-                margin-bottom: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
                 border: 0;
                 border-radius: 0.125rem;
             }
             h3{
+                @include py(1.5rem);
                 a{
-                    color: white;
+                    color: #fdfcfc;
                     font-size: 1.5rem;
                     font-weight: bolder;
                 }
@@ -123,59 +206,77 @@
             @include container;
                 display: flex;
                 align-items: center;
+                @include media-max($lg) {
+                    align-items: flex-start;
+                }
                 height: 100%;
             &#{-display}{
-                padding-left: 6.5rem;
-                margin-top: -23rem;
+                max-width: 1140px;
+                margin: 0 auto;
+                width: 100%;
+                margin-top: 5rem;
+                @include media-min($lg) {
+                    margin-top: -23rem;
+                }
+                @include media-max($lg) {
+                    text-align: center;
+                }
                 h2{
-                    font-size: 3.75rem;
+                    @include display-3;
                     font-weight: bolder;
-                    color: white;
+                    color: #fdfcfc;
                     margin-left: -0.5rem;
                     margin-bottom: 1rem;
                 }
                 h3{
-                    font-size: 2rem;
+                    @include display-5;
                     font-weight: bolder;
-                    color: white;
+                    color: #fdfcfc;
                     margin-top: 0.5rem;
                     margin-bottom: 1rem;
                     line-height: 1.2;
                 }
                 button{
-                    background-color: white;
+                    background-color: #fdfcfc;
+                    color: #101010;
+                    border: #fdfcfc solid 1px;
                     font-size: 1.125rem;
                     font-weight: bolder;
                     padding: 0.625rem 2.75rem;
                     margin-top: 0.5rem;
                     margin-bottom: 2.5rem;
-                    border: 0;
                     border-radius: 0.125rem;
+                    @include media-max($lg) {
+                        background-color: transparent;
+                        color: #fdfcfc;
+                    }
                 }
             }
         }
     }
     &#{-sec5}{
-        background-size: 100% auto;
-        background-position: center;
+        background-color: #707882;
         @include py(5rem);
         &#{-container}{
             text-align: center;
             @include container;
             h2{
-                color: white;
+                color: #fdfcfc;
                 @include display-3;
                 font-weight: bolder;
                 margin-bottom: 0.5rem;
+                @include media-max($md) {
+                    margin-bottom: 0.25rem;
+                }
             }
             h3{
-                color: white;
-                font-size: 2rem;
-                font-weight: bolder;
+                color: #fdfcfc;
+                @include display-5;
                 margin-bottom: 0.5rem;
             }
             button{
-                background-color: white;
+                background-color: #fdfcfc;
+                color: #707882;
                 font-size: 1.125rem;
                 font-weight: bolder;
                 padding: 0.625rem 2.5rem;
@@ -186,7 +287,12 @@
                 @include row;
                 @include my(2rem);
                 &#{-col}{
-                    @include col(33.333%);
+                    @include col(100%);
+                    @include media-min($lg) {
+                        @include col(33.333%);
+                    }
+                    @include py(0.625rem);
+                    
                     img{
                         max-width: 100%;
                     }
@@ -210,20 +316,21 @@
                 h2{
                     @include display-3;
                     font-weight: bolder;
-                    color: white;
+                    color: #fdfcfc;
                     margin-bottom: 0.75rem;
                     text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
                 }
                 h3{
                     font-size: 2rem;
                     font-weight: bolder;
-                    color: white;
+                    color: #fdfcfc;
                     margin-top: 0.5rem;
                     margin-bottom: 0.75rem;
                     text-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.8);
                 }
                 button{
-                    background-color: white;
+                    background-color: #fdfcfc;
+                    color: #707882;
                     font-size: 1.125rem;
                     font-weight: bolder;
                     padding: 0.625rem 1.5rem;
@@ -240,18 +347,21 @@
     figure{
         width: 100%;
         text-align: center;
+        @include px(0.5rem);
         img{
             width: 100%;
         }
     }
     .slick-prev{
         left: -15px;
+        &::before{
+            content: '';
+        }
         img{
             transform: translate(-100%,-50%);
             cursor: pointer;
-        }
-        &::before{
-            content: '';
+            width: 4rem;
+            height: 5.5rem;
         }
     }
     .slick-next{
@@ -262,6 +372,8 @@
         img{
             transform: translate(100%,-50%);
             cursor: pointer;
+            width: 4rem;
+            height: 5.5rem;
         }
     }
     .slick-arrow{
@@ -274,5 +386,31 @@
         &:active{
             box-shadow: none;
         }
+        @include media-max($lg) {
+            display: none !important;
+        }
+    }
+}
+
+@keyframes star-sky-1{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes star-sky-2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }

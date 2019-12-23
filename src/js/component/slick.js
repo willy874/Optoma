@@ -45,14 +45,14 @@ export default {
              nextArrow: '<button type="button" class="slick-next"><img alt="next" src="./images/Manuscript/next.jpg" alt="next"></button>',
              responsive: [{
            
-                 breakpoint: 991,
+                 breakpoint: 1200,
                  settings: {
                    slidesToShow: 2,
                  }
            
                }, {
            
-                 breakpoint: 576,
+                 breakpoint: 768,
                  settings: {
                    slidesToShow: 1,
                  }
