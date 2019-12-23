@@ -1,0 +1,87 @@
+{
+    "node":[{
+        "nodeId": "a-1",
+        "nodeName": "OUR BRAND",
+        "href": "",
+        "title": "OUR BRAND"
+    },{
+        "nodeId": "a-2",
+        "nodeName": "ABOUT OPTOMA",
+        "href": "",
+        "title": "ABOUT OPTOMA"
+    },{
+        "nodeId": "a-3",
+        "nodeName": "APPLCATIONS",
+        "childrenNode": [{
+            "nodeId": "a-3.1",
+            "nodeName": "Home",
+            "href": "./index.php?page=2#sec1",
+            "title": "Home"
+        }, {
+            "nodeId": "a-3.2",
+            "nodeName": "Education",
+            "href": "",
+            "title": "Education"
+        }, {
+            "nodeId": "a-3.3",
+            "nodeName": "Corporate",
+            "href": "",
+            "title": "Corporate"
+        }, {
+            "nodeId": "a-3.4",
+            "nodeName": "Performance",
+            "href": "",
+            "title": "Performance"
+        }, {
+            "nodeId": "a-3.5",
+            "nodeName": "House of Worship",
+            "href": "",
+            "title": "House of Worship"
+        }, {
+            "nodeId": "a-3.4",
+            "nodeName": "Medical",
+            "href": "",
+            "title": "Medical"
+        }, {
+            "nodeId": "a-3.4",
+            "nodeName": "Gaming",
+            "href": "",
+            "title": "Gaming"
+        }, {
+            "nodeId": "a-3.4",
+            "nodeName": "Building Projection",
+            "href": "",
+            "title": "Building Projection"
+        }, {
+            "nodeId": "a-3.4",
+            "nodeName": "Museums",
+            "href": "",
+            "title": "Museums"
+        }, {
+            "nodeId": "a-3.4",
+            "nodeName": "Retail Signage",
+            "href": "",
+            "title": "Retail Signage"
+        }, {
+            "nodeId": "a-3.4",
+            "nodeName": "Simulation",
+            "href": "",
+            "title": "Simulation"
+        }]
+    },{
+        "nodeId": "a-4",
+        "nodeName": "INNOVATION",
+        "href": "",
+        "title": "INNOVATION"
+    },{
+        "nodeId": "a-5",
+        "nodeName": "DESIQN",
+        "href": "",
+        "title": "DESIQN"
+    },{
+        "nodeId": "a-6",
+        "nodeName": "KNOWLEGE CENTER",
+        "href": "./index.php?page=1",
+        "title": "KNOWLEGE CENTER"
+    }]
+}
