@@ -3,7 +3,7 @@
 <head>
     <?php include 'meta.php';?>
     <title>奧圖碼</title>   
-    <link rel='stylesheet' type='text/css' media='all' href='./dist/css/main.css'/>
+    <link rel='stylesheet' type='text/css' media='all' href='./dist/css/main.min.css'/>
 </head>
 <body>
 <?php include 'header.html';?>
