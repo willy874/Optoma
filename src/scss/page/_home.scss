@@ -67,14 +67,13 @@
                     text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
                 }
                 button{
-                    background-color: #fdfcfc;
+                    @include btn-outline(#fdfcfc,#000);
                     font-size: 1.125rem;
                     font-weight: bolder;
                     padding: 0.625rem 1.5rem;
                     margin-top: 0.5rem;
                     margin-bottom: 9rem;
-                    border: 0;
-                    border-radius: 0.125rem;
+                    border-radius: 0.25rem;
                 }
             }
         }
@@ -140,9 +139,8 @@
                     
                 }
                 button{
-                    background-color: #b68b69;
-                    border: #b68b69 solid 1px;
-                    border-radius: 0.125rem;
+                    @include btn-outline(#b68b69,#fdfcfc);
+                    border-radius: 0.25rem;
                     font-size: 1.125rem;
                     font-weight: bolder;
                     padding: 0.625rem 2.75rem;
@@ -151,11 +149,6 @@
                     @include media-max($md) {
                         margin-bottom: 0.5rem;
                     }
-                    @include media-max($lg) {
-                        background-color: transparent;
-                        color: #b68b69;
-                    }
-                    
                 }
             }
         }
@@ -176,16 +169,15 @@
                 margin-bottom: 1rem;
                 padding-top: 1.125rem;
             }
-            button{
-                background-color: #fdfcfc;
-                color: #333a44;
+            &#{-button}{
+                @include btn-outline(#fdfcfc,#333a44);
+                border-radius: 0.25rem;
                 font-size: 1.125rem;
                 font-weight: bolder;
                 padding: 0.625rem 2.5rem;
                 margin-top: 1rem;
                 margin-bottom: 2rem;
-                border: 0;
-                border-radius: 0.125rem;
+                
             }
             h3{
                 @include py(1.5rem);
@@ -237,19 +229,13 @@
                     line-height: 1.2;
                 }
                 button{
-                    background-color: #fdfcfc;
-                    color: #101010;
-                    border: #fdfcfc solid 1px;
+                    @include btn-outline(#fdfcfc,#101010);
+                    border-radius: 0.25rem;
                     font-size: 1.125rem;
                     font-weight: bolder;
                     padding: 0.625rem 2.75rem;
                     margin-top: 0.5rem;
                     margin-bottom: 2.5rem;
-                    border-radius: 0.125rem;
-                    @include media-max($lg) {
-                        background-color: transparent;
-                        color: #fdfcfc;
-                    }
                 }
             }
         }
@@ -272,16 +258,15 @@
             h3{
                 color: #fdfcfc;
                 @include display-5;
-                margin-bottom: 0.5rem;
+                margin-bottom: 1rem;
             }
             button{
-                background-color: #fdfcfc;
-                color: #707882;
+                @include btn-outline(#fdfcfc,#707882);
+                border-radius: 0.25rem;
                 font-size: 1.125rem;
                 font-weight: bolder;
                 padding: 0.625rem 2.5rem;
-                border: 0;
-                border-radius: 0.125rem;
+                
             }
             &#{-row}{
                 @include row;
@@ -311,7 +296,12 @@
                 align-items: center;
                 height: 100%;
             &#{-display}{
-                padding-left: 6.5rem;
+                max-width: 1140px;
+                margin: 0 auto;
+                width: 100%;
+                @include media-max($lg) {
+                    text-align: center;
+                }
 
                 h2{
                     @include display-3;
@@ -321,7 +311,7 @@
                     text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
                 }
                 h3{
-                    font-size: 2rem;
+                    @include display-5;
                     font-weight: bolder;
                     color: #fdfcfc;
                     margin-top: 0.5rem;
@@ -329,14 +319,12 @@
                     text-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.8);
                 }
                 button{
-                    background-color: #fdfcfc;
-                    color: #707882;
+                    @include btn-outline(#fdfcfc,#707882);
+                    border-radius: 0.25rem;
                     font-size: 1.125rem;
                     font-weight: bolder;
                     padding: 0.625rem 1.5rem;
                     margin-top: 0.5rem;
-                    border: 0;
-                    border-radius: 0.125rem;
                 }
             }
         }
@@ -389,6 +377,21 @@
         @include media-max($lg) {
             display: none !important;
         }
+    }
+    .slick-dots{
+        li>button:before{
+            content: '';
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            border:solid 0.125rem #fff;
+            opacity: 1;
+        }
+
+        li.slick-active>button:before{
+            background-color: #fff;
+        }
+
     }
 }
 

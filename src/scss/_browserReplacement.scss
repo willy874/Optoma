@@ -4,11 +4,20 @@
 
 // Target IE 10/11
 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none) {
-    .header_navbar-ul-dropdown .header_navbar-ul-li-link{
-        padding-left: 1rem;
-    }
     .header_navbar-logo{
         align-self: flex-start;
+    }
+    #silck-applications .slick-arrow{
+        top:40%;
+    }
+    #silck-applications .slick-arrow img{
+        transform: translate(0,0);
+    }
+    #silck-applications .slick-prev{
+        left: -70px;
+    }
+    #silck-applications .slick-next{
+        right: -70px;
     }
 }
 

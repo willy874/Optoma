@@ -66,53 +66,52 @@ header{
                 display: none;
             }
             &#{-icon}{
-                position: relative;
                 border-top:solid #fcfdfd 0.125rem;
                 border-bottom:solid #fcfdfd 0.125rem;
                 width: 1.5rem;
                 height: 1.25rem;
                 pointer-events: none;
                 transition: all 0.3s;
-                &::before{
-                    content: '';
-                    transition: all 0.3s;
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    width: 24px;
-                    background-color: #fcfdfd;
-                    height: 0.0625rem;
-                    transform: rotate(0deg) translate(-50%,0);
-                }
-                &::after{
-                    content: '';
-                    transition: all 0.3s;
-                    position: absolute;
-                    right: 50%;
-                    bottom: 50%;
-                    width: 24px;
-                    background-color: #fcfdfd;
-                    height: 0.0625rem;
-                    transform: rotate(0deg) translate(50%,0);
-                }
             }
+            &::before{
+                content: '';
+                transition: all 0.3s;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 24px;
+                background-color: #fcfdfd;
+                height: 0.125rem;
+                transform: rotate(0deg) translate(-50%,-50%);
+            }
+            &::after{
+                content: '';
+                transition: all 0.3s;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 24px;
+                background-color: #fcfdfd;
+                height: 0.125rem;
+                transform: rotate(0deg) translate(-50%,-50%);
+            }
+
             &.active{
                 span{
                     border-top:solid transparent 0.125rem;
                     border-bottom:solid transparent 0.125rem;
-                    &::before{
-                        left: 0%;
-                        top: 48%;
-                        height: 0.125rem;
-                        transform: rotate(-45deg) translate(0,0);
-                    }
-                    &::after{
-                        left: 0%;
-                        bottom: 42%;
-                        height: 0.125rem;
-                        transform: rotate(45deg) translate(0,0);
-                    }
                 }
+                &::before{
+                    left: 25%;
+                    height: 0.125rem;
+                    transform: rotate(-225deg) translate(0,0);
+                }
+                &::after{
+                    left: 25%;
+                    height: 0.125rem;
+                    transform: rotate(225deg) translate(0,0);
+                }
+                
             }
         }
             
@@ -210,6 +209,8 @@ header{
                     right: -1rem;
                     display: inline-block;
                     pointer-events: none;
+                    transform: translateY(0) rotate(0deg);
+                    transition: all 0.3s;
                     border: {
                         color: #fff transparent transparent transparent;
                         width: 0.35rem;
@@ -219,6 +220,10 @@ header{
                         right: 2rem;
                     }
                 }
+                &.active>a::after{
+                    transform: translateY(-50%) rotate(180deg);
+                }
+                
                 
                 &:hover {
                     @include media-min($xl) {
