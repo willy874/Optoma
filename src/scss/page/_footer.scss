@@ -20,7 +20,7 @@ footer{
                 }
                 &#{-text}{
                     color: white;
-                    @include media-max($sm) {
+                    @include media-max($md) {
                         margin-left: 1rem;
                     }
                 }
@@ -30,7 +30,7 @@ footer{
                     margin-left: 0.5rem;
                     display: flex;
                     flex-wrap: wrap;
-                    @include media-max($sm) {
+                    @include media-max($md) {
                         margin-left: 1rem;
                     }
                 }
@@ -42,7 +42,7 @@ footer{
                 @include media-max($lg) {
                     order: 1;
                 }
-                @include media-max($sm) {
+                @include media-max($md) {
                     margin-left: 1rem;
                 }
                 @include media-min($md) {
@@ -73,6 +73,11 @@ footer{
         &#{-copyright}{
             @include py(1.25rem);
             color: white;
+            &#{-br}{
+                @include media-min($lg) {
+                    display: none;
+                }
+            }
         }
     }
     

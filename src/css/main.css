@@ -1,4 +1,27 @@
-@charset "UTF-8";
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/HelveticaThin.woff) format("woff"), url(../fonts/HelveticaThin.ttf) format("opentype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/HelveticaLight.woff) format("woff"), url(../fonts/HelveticaLight.ttf) format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/HelveticaRoman.woff) format("woff"), url(../fonts/HelveticaRoman.ttf) format("opentype");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/HelveticaMedium.woff) format("woff"), url(../fonts/HelveticaMedium.ttf) format("opentype");
+  font-weight: bold;
+}
+
 @media (min-width: 1600px) and (max-width: 9999px) {
   :root {
     --container-width: 1540px;
@@ -196,7 +219,7 @@ table {
 }
 
 body {
-  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 微軟正黑體, sans-serif;
+  font-family: Helvetica;
 }
 
 a {
@@ -9190,8 +9213,8 @@ header {
 }
 
 .header_navbar-ul-li {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -9215,6 +9238,12 @@ header {
   .header_navbar-ul-li-link {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_navbar-ul-li-link {
+    font-size: 0.875rem;
   }
 }
 
@@ -9267,6 +9296,7 @@ header {
 @media (max-width: 1200px) {
   .header_navbar-ul-dropdown {
     width: 100%;
+    padding-left: 0.75rem;
   }
 }
 
@@ -9274,7 +9304,7 @@ header {
   content: '';
   position: absolute;
   top: 50%;
-  right: -1rem;
+  right: -1.25rem;
   display: inline-block;
   pointer-events: none;
   -webkit-transform: translateY(0) rotate(0deg);
@@ -9322,13 +9352,19 @@ header {
   padding: 0.35rem 1.5rem;
   color: white;
   font-weight: bolder;
-  font-size: 0.875rem;
+  font-size: 0.935rem;
 }
 
 @media (max-width: 1200px) {
   .header_dropdown-ul-li-link {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_dropdown-ul-li-link {
+    font-size: 0.875rem;
   }
 }
 
@@ -9440,7 +9476,7 @@ footer {
   color: white;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .footer-container-row-community-text {
     margin-left: 1rem;
   }
@@ -9457,7 +9493,7 @@ footer {
       flex-wrap: wrap;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .footer-container-row-community-icon {
     margin-left: 1rem;
   }
@@ -9495,7 +9531,7 @@ footer {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .footer-container-row-language {
     margin-left: 1rem;
   }
@@ -9548,6 +9584,12 @@ footer {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: white;
+}
+
+@media (min-width: 992px) {
+  .footer-container-copyright-br {
+    display: none;
+  }
 }
 
 .btn-icon {
@@ -9923,7 +9965,6 @@ footer {
 .home-sec2-container-display h2 {
   font-weight: bolder;
   color: #b68b69;
-  margin-left: -0.5rem;
   padding-top: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -10314,7 +10355,6 @@ footer {
 .home-sec4-container-display h2 {
   font-weight: bolder;
   color: #fdfcfc;
-  margin-left: -0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -10899,7 +10939,7 @@ footer {
 }
 
 #silck-applications .slick-prev {
-  left: -15px;
+  left: -20px;
 }
 
 #silck-applications .slick-prev::before {
@@ -10915,7 +10955,7 @@ footer {
 }
 
 #silck-applications .slick-next {
-  right: -15px;
+  right: -20px;
 }
 
 #silck-applications .slick-next::before {
@@ -11329,154 +11369,6 @@ footer {
   margin-bottom: 0.25rem;
 }
 
-.applications-sec1 {
-  background-color: gray;
-}
-
-.applications-sec1-container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (min-width: 576px) {
-  .applications-sec1-container {
-    max-width: 516px;
-  }
-}
-
-@media (min-width: 768px) {
-  .applications-sec1-container {
-    max-width: 708px;
-  }
-}
-
-@media (min-width: 992px) {
-  .applications-sec1-container {
-    max-width: 932px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .applications-sec1-container {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1460px) {
-  .applications-sec1-container {
-    max-width: 1400px;
-  }
-}
-
-.applications-sec1-container-display {
-  padding-left: 6.5rem;
-}
-
-.applications-sec1-container-display h2 {
-  color: white;
-  text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.8);
-}
-
-@media (min-width: 350px) {
-  .applications-sec1-container-display h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 400px) {
-  .applications-sec1-container-display h2 {
-    font-size: 1.75rem;
-  }
-}
-
-@media (min-width: 576px) {
-  .applications-sec1-container-display h2 {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .applications-sec1-container-display h2 {
-    font-size: 2.25rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .applications-sec1-container-display h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .applications-sec1-container-display h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1600px) {
-  .applications-sec1-container-display h2 {
-    font-size: 3.5rem;
-  }
-}
-
-.applications-sec1-container-display h3 {
-  max-width: 60rem;
-  color: white;
-  text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.8);
-}
-
-@media (min-width: 350px) {
-  .applications-sec1-container-display h3 {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 400px) {
-  .applications-sec1-container-display h3 {
-    font-size: 1.375rem;
-  }
-}
-
-@media (min-width: 576px) {
-  .applications-sec1-container-display h3 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .applications-sec1-container-display h3 {
-    font-size: 1.75rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .applications-sec1-container-display h3 {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .applications-sec1-container-display h3 {
-    font-size: 2.25rem;
-  }
-}
-
-@media (min-width: 1600px) {
-  .applications-sec1-container-display h3 {
-    font-size: 2.5rem;
-  }
-}
-
 .applications-container {
   width: 100%;
   padding-right: 15px;
@@ -11513,6 +11405,18 @@ footer {
   .applications-container {
     max-width: 1400px;
   }
+}
+
+@media (max-width: 768px) {
+  .applications-container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+.applications-container nav {
+  padding-left: 2.875rem;
+  padding-right: 2.875rem;
 }
 
 @media (min-width: 350px) {
@@ -11589,6 +11493,147 @@ footer {
   max-height: 20rem;
 }
 
+#navbar-applications .silck-item {
+  background-color: #c2bfcb;
+  height: 4.75rem;
+}
+
+#navbar-applications .silck-item h3 {
+  height: 4.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#navbar-applications .silck-item h3 a::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#navbar-applications .silck-item h3 a {
+  display: block;
+  color: #e5e3ea;
+  font-size: 1.125rem;
+  font-weight: bolder;
+  width: 100%;
+  border-right: solid 1px #e5e3ea;
+  border-left: solid 1px #e5e3ea;
+}
+
+#navbar-applications .silck-item h3 a:focus {
+  outline: 0;
+}
+
+#navbar-applications .silck-item h3::after {
+  content: '';
+  position: absolute;
+  background-color: #e80028;
+  bottom: 0;
+  height: 0.125rem;
+  left: 0;
+  right: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#navbar-applications .silck-item:hover {
+  background-color: #e5e3ea;
+}
+
+#navbar-applications .silck-item:hover h3 a {
+  color: #88868d;
+}
+
+#navbar-applications .silck-item:hover h3::after {
+  right: 0;
+}
+
+#navbar-applications .silck-item.active {
+  background-color: #e5e3ea;
+  color: #88868d;
+}
+
+#navbar-applications .slick-arrow {
+  background-color: #c2bfcb;
+  width: 2.875rem;
+  height: 4.75rem;
+}
+
+#navbar-applications .slick-arrow::after {
+  content: '';
+  position: absolute;
+  background-color: #e5e3ea;
+  top: 50%;
+  width: 1.5rem;
+  height: 0.125rem;
+  opacity: 1;
+}
+
+#navbar-applications .slick-arrow::before {
+  content: '';
+  position: absolute;
+  background-color: #e5e3ea;
+  bottom: 50%;
+  width: 1.5rem;
+  height: 0.125rem;
+  opacity: 1;
+}
+
+#navbar-applications .slick-prev {
+  top: 0;
+  bottom: 0;
+  left: -2.875rem;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+#navbar-applications .slick-prev::after {
+  -webkit-transform: translate(0.5rem, 0.45rem) rotate(45deg);
+          transform: translate(0.5rem, 0.45rem) rotate(45deg);
+  right: 50%;
+}
+
+#navbar-applications .slick-prev::before {
+  -webkit-transform: translate(0.5rem, -0.45rem) rotate(-45deg);
+          transform: translate(0.5rem, -0.45rem) rotate(-45deg);
+  right: 50%;
+}
+
+#navbar-applications .slick-next {
+  top: 0;
+  bottom: 0;
+  right: -2.875rem;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+#navbar-applications .slick-next::after {
+  -webkit-transform: translate(-0.5rem, -0.55rem) rotate(45deg);
+          transform: translate(-0.5rem, -0.55rem) rotate(45deg);
+  left: 50%;
+}
+
+#navbar-applications .slick-next::before {
+  -webkit-transform: translate(-0.5rem, 0.55rem) rotate(-45deg);
+          transform: translate(-0.5rem, 0.55rem) rotate(-45deg);
+  left: 50%;
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .header_navbar-logo {
     -ms-flex-item-align: start;
@@ -11602,10 +11647,10 @@ footer {
             transform: translate(0, 0);
   }
   #silck-applications .slick-prev {
-    left: -70px;
+    left: -75px;
   }
   #silck-applications .slick-next {
-    right: -70px;
+    right: -75px;
   }
 }
 /*# sourceMappingURL=main.css.map */

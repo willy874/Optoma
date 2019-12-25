@@ -120,7 +120,6 @@
                     @include display-3;
                     font-weight: bolder;
                     color: #b68b69;
-                    margin-left: -0.5rem;
                     padding-top: 0.5rem;
                     margin-bottom: 1rem;
                     @include media-max($md) {
@@ -217,7 +216,6 @@
                     @include display-3;
                     font-weight: bolder;
                     color: #fdfcfc;
-                    margin-left: -0.5rem;
                     margin-bottom: 1rem;
                 }
                 h3{
@@ -341,7 +339,7 @@
         }
     }
     .slick-prev{
-        left: -15px;
+        left: -20px;
         &::before{
             content: '';
         }
@@ -353,7 +351,7 @@
         }
     }
     .slick-next{
-        right: -15px;
+        right: -20px;
         &::before{
             content: '';
         }

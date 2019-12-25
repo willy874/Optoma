@@ -14,10 +14,10 @@ $fileUrl = $_GET['page'];
 switch ($fileUrl)
 {
 case '1':
-    $fileIndex = 'knowledge';
+    $fileIndex = 'applications';
     break;     
 case '2':
-    $fileIndex = 'applications';
+    $fileIndex = 'knowledge';
     break;  
 case '3':
     $fileIndex = 'page3';
