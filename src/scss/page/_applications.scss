@@ -1,41 +1,343 @@
-
-
-.applications{
-    &#{-carousel}{
-        
+#banner-applications{
+    padding-top: 4.125rem;
+    margin-bottom: 0;
+    
+                
+    .silck-item{
+        position: relative;
+        height: 45.5rem;
+        @include media-max($lg) {
+        height: 36rem;
+        }
+        @include media-max($md) {
+        height: 28.5rem;
+        }
+        @include media-max($sm) {
+        height: 21.75rem;
+        }
+        @include media-max($xs) {
+        height: 15.5rem;
+        }
+        @include media-max($xxs) {
+        height: 13.8rem;
+        }
+        figure{
+            img{
+                width: 100%;
+                object-fit: cover;
+                max-height: 46rem;
+            }
+            mask{
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: -0.125rem;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+        }
+        .silck-item-heading{
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translate(0 , -50%);
+            @include media-max($md) {
+                display: none;
+            }
+            h2{
+                max-width: 1140px;
+                margin: 0 auto;
+                width: 100%;
+                @include display-2;
+                @include media-max($xl) {
+                    @include px(3rem)
+                }
+                @include media-max($lg) {
+                    text-align: center;
+                    @include px(1rem)
+                }
+                text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
+            }
+            h3{
+                max-width: 1140px;
+                margin: 0 auto;
+                width: 100%;
+                @include display-5;
+                @include media-max($xl) {
+                    @include px(3rem)
+                }
+                @include media-max($lg) {
+                    text-align: center;
+                    @include px(1rem)
+                }
+                text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
+            }
+        }
+        .silck-item-video{
+                margin-left: auto;
+                margin-right: auto;
+            iframe{
+                height: 44rem;
+                @include media-max($lg) {
+                    height: 34rem;
+                }
+                @include media-max($md) {
+                    height: 27rem;
+                }
+                @include media-max($sm) {
+                    height: 20.25rem;
+                }
+                @include media-max($xs) {
+                    height: 14rem;
+                }
+                @include media-max($xxs) {
+                    height: 12.3rem;
+                }
+            }
+            #{-hover}{
+            }
+        }
     }
 
+    .slick-arrow{
+        background-color: transparent;
+        width: 2.875rem;
+        height: 4.75rem;
+        z-index: 15;
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: #e5e3ea;
+            top: 50%;
+            width: 1.5rem;
+            height: 0.125rem;
+            opacity: 1;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: #e5e3ea;
+            bottom: 50%;
+            width: 1.5rem;
+            height: 0.125rem;
+            opacity: 1;
+        }
+    }
+    .slick-prev{
+        top: 50%;
+        left: 0;
+        transform: translate(0,0);
+        &::after{
+            transform: translate(0.5rem,0.45rem) rotate(45deg);
+            right: 50%;
+        }
+        &::before{
+            transform: translate(0.5rem,-0.45rem) rotate(-45deg);
+            right: 50%;
+        }
+        
+    }
+    .slick-next{
+        top: 50%;
+        right: 0;
+        transform: translate(0,0);
+        &::after{
+            transform: translate(-0.5rem,-0.55rem) rotate(45deg);
+            left: 50%;
+        }
+        &::before{
+            transform: translate(-0.5rem,0.55rem) rotate(-45deg);
+            left: 50%;
+        }
+    }
+
+    .slick-dots{
+        bottom: 0;
+        li>button:before{
+            content: '';
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            border:solid 0.125rem #fff;
+            opacity: 1;
+        }
+
+        li.slick-active>button:before{
+            background-color: #fff;
+        }
+
+    }
+}
+//********************************************************************************************
+.applications{
+    &#{-carousel}{
+        background-color: #5d5854;
+    }
 
     &#{-container}{
         @include container;
+        padding-bottom: 0.25rem;
+        @include media-min($md) {
+            padding-bottom: 14rem;
+        }
         @include media-max($md) {
             @include px(0rem);
         }
         nav{
             @include px(2.875rem);
         }
+        &#{-heading}{
+            @include media-min($md) {
+                display: none;
+            }
+            text-align: center;
+            padding: 0.5rem 1.5rem;
+            h2{
+                font-size: 1.5rem;
+                color: #505050;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                font-size: 0.875rem;
+                color: #505050;
+                margin-bottom: 1rem;
+            }
+        }
+        //********************************************************************************************
+        &#{-btn}{
+            @include stretched-link;
+            background-color: #c2bfca;
+            padding: 0.5rem 2rem;
+            border-top: 0.0625rem solid #fff;
+            border-bottom: 0.0625rem solid #fff;
+            @include media-min($md) {
+                display: none;
+            }
+            a{
+                color: #e9e7ec;
+                display: block;
+                width: 100%;
+                .plus{
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 2rem;
+                        transform: translate(0,0) rotate(90deg);
+                        background-color: #fdfafa;
+                        height: 0.125rem;
+                        width: 1rem;
+                        transition: all 0.3s;
+                        pointer-events: none;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 2rem;
+                        transform: translate(0,0) rotate(0deg);
+                        background-color: #fdfafa;
+                        height: 0.125rem;
+                        width: 1rem;
+                        pointer-events: none;
+                    }
+                    &.active{
+                        &::before{
+                            transform: translate(0,0) rotate(-180deg);
+                        }
+                    }
+                }
+            }
+        }
+        //********************************************************************************************
         &#{-sec}{
+            @include px(0.5rem);
+            @include media-max($md) {
+                display: none;
+            }
+
             &#{-heading}{
+                text-align: center;
+                &#{-banner}{
+                    @include media-min($md) {
+                        display: none;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        font-size: #e5e3e9;
+                        margin-top: -0.5rem;
+                        z-index: 3;
+                        @include py(1.5rem);
+                        span{
+                            display: inline-block;
+                            max-width: 66%;
+                        }
+                    }
+                    @include mx(-0.5rem);
+                }
                 h3{
                     @include display-3;
+                    color: #000;
+                    margin-top: 4rem;
+                    margin-bottom: 2.5rem;
                 }
                 p{
-                    font-size: 0.875rem;
+                    font-size: 1rem;
+                    color: #000;
+                    margin-bottom: 5rem;
                 }
             }
             &#{-row}{
-                @include row;
-                
+                display: flex;
+                @include mx(-0.5rem);
+                @include media-max($md) {
+                    display: none;
+                }
                 &#{-col}{
-                    flex: 1 1 auto;
+                    flex: 1 1 50%;
                     max-width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    @include my(-0.5rem);
+                    @include px(0.5rem);
+                    p{
+                        flex: 1 1 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include my(0.5rem);
+                        span{
+                            max-width: 66%;
+                            text-align: center;
+                            font-size: 1.5rem;
+                            color: #e5e3ea;
+                        }
+                    }
                     figure{
-                        padding-bottom: 2rem;
+                        display: flex;
+                        flex-grow: 1;
+                        @include mx(-0.5rem);
+                        @include py(0.5rem);
                         img{
+                            flex: 1 1 auto;
+                            @include px(0.5rem);
                             max-width: 100%;
                             object-fit: cover;
-                            max-height: 20rem;
+                            
                         }
+                        hr{
+                            display: none;
+                            &~img{
+                                flex: 1 0 50%;
+                                max-width: 50%;
+                            }
+                        }
+                        
                     }
                 }
             }
@@ -43,11 +345,12 @@
     }
 }
 
-#banner-applications{
 
-}
-//42x76
+//********************************************************************************************
 #navbar-applications{
+    @include media-max($md) {
+        display: none;
+    }
     .silck-item{
         background-color: #c2bfcb;
         height: 4.75rem;

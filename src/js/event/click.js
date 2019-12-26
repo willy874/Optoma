@@ -29,4 +29,21 @@ $(document.body).on('click', function (e) {
             $this.removeClass('active')
         }
     }
+    if($this.attr('data-scroll') == 'true'){
+        var targetTop = $($this.attr('href')).position().top;
+        $('html,body').stop().animate({scrollTop:targetTop});
+        if($('#navbar-applications').is(':visible')){ $('#navbar-applications').trigger('click'); }          
+    }
+
+    if($this.attr('data-toggle') == 'navTab-collapse'){
+        if($this.attr('data-switch') == 'false') {
+            $this.attr('data-switch', 'true')
+            $($this.attr('data-target')).stop(false, false).slideDown()
+            $this.children('.plus').addClass('active')
+        }else{
+            $('.applications-container-btn a').attr('data-switch', 'false')
+            $($this.attr('data-target')).stop(false, false).slideUp()
+            $this.children('.plus').removeClass('active')
+        }
+    }
 })

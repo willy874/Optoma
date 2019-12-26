@@ -83,6 +83,7 @@ header{
                 background-color: #fcfdfd;
                 height: 0.125rem;
                 transform: rotate(0deg) translate(-50%,-50%);
+                pointer-events: none;
             }
             &::after{
                 content: '';
@@ -94,6 +95,7 @@ header{
                 background-color: #fcfdfd;
                 height: 0.125rem;
                 transform: rotate(0deg) translate(-50%,-50%);
+                pointer-events: none;
             }
 
             &.active{
@@ -160,17 +162,6 @@ header{
                     @include media-max($md) {
                         font-size: 0.875rem;
                     }
-                    &:link {
-                        color: #fdfafa;
-                    }
-
-                    &:visited {
-                        color: #fdfafa;
-                    }
-
-                    &:active {
-                        color: #fdfafa;
-                    }
                     &:hover {
                         color: #fdfafa;
                         @include media-max($xl) {
@@ -186,6 +177,7 @@ header{
                         background-color: #e80028;
                         height: 0.25rem;
                         transition: width 0.3s ease-in-out;
+                        pointer-events: none;
                     }
                 }
                 
@@ -216,7 +208,7 @@ header{
                     transform: translateY(0) rotate(0deg);
                     transition: all 0.3s;
                     border: {
-                        color: #fff transparent transparent transparent;
+                        color: #fdfafa transparent transparent transparent;
                         width: 0.35rem;
                         style: solid;
                     } 
@@ -257,20 +249,11 @@ header{
                 @include media-max($xl) {
                     @include py(0.5rem);
                 }
-                color: white;
-                font-weight: bolder;
+                color: #fdfafa;
+                font-weight: 700;
                 font-size: 0.935rem;
                 @include media-max($md) {
                     font-size: 0.875rem;
-                }
-                &:link {
-                    color: white;
-                }
-                &:visited {
-                    color: white;
-                }
-                &:active {
-                    color: white;
                 }
                 &:hover {
                     color: #b78a69;

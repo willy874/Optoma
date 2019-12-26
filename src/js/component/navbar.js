@@ -44,7 +44,7 @@ export default {
                             m('a',{
                                 class: 'header_navbar-ul-li-link',
                                 'data-toggle': 'dropdown',
-                                'data-switch': 'false'
+                                'data-switch': 'false',
                             }, node.nodeName),
                             m('ul',{
                                 class: 'header_dropdown-ul',
@@ -56,7 +56,7 @@ export default {
                                     m('a',{
                                         class: 'header_dropdown-ul-li-link',
                                         title: childrenNode.title,
-                                        href: childrenNode.href
+                                        href: childrenNode.href,
                                     }, childrenNode.nodeName)
                                 ])
                             }))
@@ -66,7 +66,7 @@ export default {
                             m('a', {
                                 class: 'header_navbar-ul-li-link',
                                 title: node.title,
-                                href: node.href
+                                href: node.href,
                             }, node.nodeName)
                         ])
                 }))

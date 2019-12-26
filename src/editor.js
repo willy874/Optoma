@@ -1,8 +1,5 @@
 import $ from 'jquery/src/jquery'
 //import 'jquery-migrate/dist/jquery-migrate.min'
-import '../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css'
-import '../node_modules/slick-carousel/slick/slick.css'
-import '../node_modules/slick-carousel/slick/slick-theme.css'
 //import 'jquery.animate-number/jquery.animateNumber.min'
 import * as Models from './js/model'
 Models.Status.knowledge.ajaxCondition = 'Wireless'
@@ -17,4 +14,10 @@ import Knowledge from './js/component/knowledge'
 $.ajax(Knowledge)
 
 import './js/event/click'
+import './js/event/onload'
 
+// let githubURL = new URL('https://github.com/search?q=react&type=Code');
+// let params = githubURL.searchParams;
+// for (let pair of params.entries()) {
+//   console.log(`key: ${pair[0]}, value: ${pair[1]}`)
+// }

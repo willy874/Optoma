@@ -13,10 +13,10 @@
 $fileUrl = $_GET['page'];
 switch ($fileUrl)
 {
-case '1':
+case 'applications':
     $fileIndex = 'applications';
     break;     
-case '2':
+case 'knowledge':
     $fileIndex = 'knowledge';
     break;  
 case '3':

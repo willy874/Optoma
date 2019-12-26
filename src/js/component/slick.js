@@ -19,9 +19,14 @@ export default {
                         class: 'silck-item'
                     },[
                         m('figure',[
-                            m('img',{
-                                src: item.src
-                            })
+                            m('a',{
+                                href: item.href,
+                                title: item.title
+                            },[
+                                m('img',{
+                                    src: item.src
+                                })
+                            ])
                         ]),
                         m('h3',[
                             m('a',{
@@ -65,7 +70,7 @@ export default {
         if( ajaxElement2 != undefined){ 
             m.render(ajaxElement2,[
                 data.bannerApplications.map(item=>{
-                    return m('div',{
+                    return (item.type === "image")?m('div',{
                         class: 'silck-item'
                     },[
                         m('figure',[
@@ -73,21 +78,48 @@ export default {
                                 src: item.src,
                                 alt: item.alt
                             }),
+                            m('mask')
+                        ]),
+                        m('div',{
+                            class: 'silck-item-heading'
+                        },[
                             m('h2',item.heading),
                             m('h3',item.description)
                         ])
-                    ])
+                        
+                    ]):(item.type === "youtobe")? m('div',{
+                        class: 'silck-item'
+                    },[
+                        m('div',{
+                            class: 'silck-item-video'
+                        },[
+                            m('iframe[allowfullscreen]',{
+                                src: `https://www.youtube.com/embed/${item.src.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop()}`,
+                                frameborder: 0,
+                                allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                                title: item.title,
+                                style: {
+                                    width: '100%',
+                                }
+                            }),
+                            m('div',{
+                                class: 'silck-item-video-hover'
+                            })
+                        ])
+                    ]): ''
+
                 })
                 
             ])
              $('#banner-applications').slick({
                  dots: true,
                  infinite: true,
+                 autoplay: false,
+                 prevArrow: '<button type="button" class="slick-prev"></button>',
+                 nextArrow: '<button type="button" class="slick-next"></button>',
                  speed: 400,
                  slidesToShow: 1,
                  slidesToScroll: 1,
-                 autoplay: true,
-                 autoplaySpeed: 5000,
                })    
         }
         //navbar Applications
@@ -100,6 +132,7 @@ export default {
                     },[
                         m('h3',[
                             m('a',{
+                                'data-scroll': 'true',
                                 href: item.href,
                                 title: item.title
                             },item.heading)
