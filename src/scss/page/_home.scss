@@ -68,7 +68,7 @@
                 }
                 button{
                      @include stretched-link;
-                     display: block;
+                     display: inline-block;
                      @include btn-outline(#fdfcfc,#000);
                      font-size: 1.125rem;
                      font-weight: bolder;

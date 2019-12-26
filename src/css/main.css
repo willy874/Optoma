@@ -1125,7 +1125,7 @@ footer {
 
 .home-sec1-container-display button {
   position: relative;
-  display: block;
+  display: inline-block;
   background-color: transparent;
   border: 0.0625rem solid #fdfcfc;
   overflow: hidden;
