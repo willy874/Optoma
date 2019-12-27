@@ -7,7 +7,7 @@
     },{
         "nodeId": "a-2",
         "nodeName": "ABOUT OPTOMA",
-        "href": "",
+        "href": "./index.php?page=about",
         "title": "ABOUT OPTOMA"
     },{
         "nodeId": "a-3",
