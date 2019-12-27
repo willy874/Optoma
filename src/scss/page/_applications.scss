@@ -1,34 +1,19 @@
 
 
 .applications{
-    &#{-sec1}{
-        background-color: gray;
-        &#{-container}{
-            @include container;
-            height: 100vh;
-            display: flex;
-                align-items: center;
-            &#{-display}{
-                padding-left: 6.5rem;
-
-                h2{
-                    @include display-3;
-                    color: white;
-                    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
-                }
-                h3{
-                    max-width: 60rem;
-                    @include display-4;
-                    color: white;
-                    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
-                }
-            }
-        }
+    &#{-carousel}{
+        
     }
 
 
     &#{-container}{
         @include container;
+        @include media-max($md) {
+            @include px(0rem);
+        }
+        nav{
+            @include px(2.875rem);
+        }
         &#{-sec}{
             &#{-heading}{
                 h3{
@@ -54,6 +39,117 @@
                     }
                 }
             }
+        }
+    }
+}
+
+#banner-applications{
+
+}
+//42x76
+#navbar-applications{
+    .silck-item{
+        background-color: #c2bfcb;
+        height: 4.75rem;
+            h3{
+                height: 4.75rem;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                @include stretched-link;
+                a{
+                    display: block;
+                    color: #e5e3ea;
+                    font-size: 1.125rem;
+                    font-weight: bolder;
+                    width: 100%;
+                    border-right: solid 1px #e5e3ea; 
+                    border-left: solid 1px #e5e3ea;
+                    &:focus{
+                        outline: 0;
+                    }
+                    
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background-color: #e80028;
+                    bottom: 0;
+                    height: 0.125rem;
+                    left: 0;
+                    right: 100%;
+                    z-index: 1;
+                    transition: all 0.3s ease-in;
+                }
+            }
+            
+        &:hover{
+            background-color: #e5e3ea;
+            h3 {
+                a{
+                    color: #88868d;
+                }
+                &::after{
+                    right: 0;
+                }
+            }
+            
+        }
+        &.active{
+            background-color: #e5e3ea;
+            color: #88868d;
+        }
+    }
+    .slick-arrow{
+        background-color: #c2bfcb;
+        width: 2.875rem;
+        height: 4.75rem;
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: #e5e3ea;
+            top: 50%;
+            width: 1.5rem;
+            height: 0.125rem;
+            opacity: 1;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: #e5e3ea;
+            bottom: 50%;
+            width: 1.5rem;
+            height: 0.125rem;
+            opacity: 1;
+        }
+    }
+    .slick-prev{
+        top: 0;
+        bottom: 0;
+        left: -2.875rem;
+        transform: translate(0,0);
+        &::after{
+            transform: translate(0.5rem,0.45rem) rotate(45deg);
+            right: 50%;
+        }
+        &::before{
+            transform: translate(0.5rem,-0.45rem) rotate(-45deg);
+            right: 50%;
+        }
+        
+    }
+    .slick-next{
+        top: 0;
+        bottom: 0;
+        right: -2.875rem;
+        transform: translate(0,0);
+        &::after{
+            transform: translate(-0.5rem,-0.55rem) rotate(45deg);
+            left: 50%;
+        }
+        &::before{
+            transform: translate(-0.5rem,0.55rem) rotate(-45deg);
+            left: 50%;
         }
     }
 }

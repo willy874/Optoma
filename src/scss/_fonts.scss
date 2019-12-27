@@ -1,0 +1,24 @@
+  @font-face {
+    font-family: Helvetica;
+    src: url(../fonts/HelveticaThin.woff) format("woff"),
+         url(../fonts/HelveticaThin.ttf) format("opentype");
+    font-weight: lighter;
+  }
+  @font-face {
+    font-family: Helvetica;
+    src: url(../fonts/HelveticaLight.woff) format("woff"),
+         url(../fonts/HelveticaLight.ttf) format("opentype");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: Helvetica;
+    src: url(../fonts/HelveticaRoman.woff) format("woff"),
+         url(../fonts/HelveticaRoman.ttf) format("opentype");
+    font-weight: bolder;
+  }
+  @font-face {
+    font-family: Helvetica;
+    src: url(../fonts/HelveticaMedium.woff) format("woff"),
+         url(../fonts/HelveticaMedium.ttf) format("opentype");
+    font-weight: bold;
+  }

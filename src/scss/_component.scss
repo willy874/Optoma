@@ -123,3 +123,36 @@
         }
     }
 }
+
+@mixin btn-outline($bg , $text){
+    background-color: transparent;
+    border: 0.0625rem solid $bg;
+    overflow: hidden;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        background-color: $bg;
+        transition: 0.2s ease-in;
+        z-index: 1;
+    }
+    span{
+        transition: 0.2s ease-in;
+        position: relative;
+        color: $bg;
+        z-index: 2;
+    }
+    &:hover{
+        span{
+            color: $text;
+        }
+        &::after{
+            right: 0;
+        }
+    }
+    
+}

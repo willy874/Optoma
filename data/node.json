@@ -15,57 +15,57 @@
         "childrenNode": [{
             "nodeId": "a-3.1",
             "nodeName": "Home",
-            "href": "./index.php?page=2#sec1",
+            "href": "./index.php?page=1#sec1",
             "title": "Home"
         }, {
             "nodeId": "a-3.2",
             "nodeName": "Education",
-            "href": "",
+            "href": "./index.php?page=1#sec2",
             "title": "Education"
         }, {
             "nodeId": "a-3.3",
             "nodeName": "Corporate",
-            "href": "",
+            "href": "./index.php?page=1#sec3",
             "title": "Corporate"
         }, {
             "nodeId": "a-3.4",
             "nodeName": "Performance",
-            "href": "",
+            "href": "./index.php?page=1#sec4",
             "title": "Performance"
         }, {
             "nodeId": "a-3.5",
             "nodeName": "House of Worship",
-            "href": "",
+            "href": "./index.php?page=1#sec5",
             "title": "House of Worship"
         }, {
             "nodeId": "a-3.4",
             "nodeName": "Medical",
-            "href": "",
+            "href": "./index.php?page=1#sec6",
             "title": "Medical"
         }, {
             "nodeId": "a-3.4",
             "nodeName": "Gaming",
-            "href": "",
+            "href": "./index.php?page=1#sec7",
             "title": "Gaming"
         }, {
             "nodeId": "a-3.4",
             "nodeName": "Building Projection",
-            "href": "",
+            "href": "./index.php?page=1#sec8",
             "title": "Building Projection"
         }, {
             "nodeId": "a-3.4",
             "nodeName": "Museums",
-            "href": "",
+            "href": "./index.php?page=1#sec9",
             "title": "Museums"
         }, {
             "nodeId": "a-3.4",
             "nodeName": "Retail Signage",
-            "href": "",
+            "href": "./index.php?page=1#sec10",
             "title": "Retail Signage"
         }, {
             "nodeId": "a-3.4",
             "nodeName": "Simulation",
-            "href": "",
+            "href": "./index.php?page=1#sec11",
             "title": "Simulation"
         }]
     },{
@@ -81,7 +81,7 @@
     },{
         "nodeId": "a-6",
         "nodeName": "KNOWLEGE CENTER",
-        "href": "./index.php?page=1",
+        "href": "./index.php?page=2",
         "title": "KNOWLEGE CENTER"
     }]
 }

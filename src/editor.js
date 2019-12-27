@@ -18,5 +18,3 @@ $.ajax(Knowledge)
 
 import './js/event/click'
 
-
- 
