@@ -19,11 +19,40 @@
     #silck-applications .slick-next{
         right: -75px;
     }
+
+    #sec1,#sec2,#sec5,#sec10,#sec12{
+        .applications-container-sec-row-col{
+            max-width: 50%;
+        }
+        img{
+            max-width: 50%;
+            flex: 1 1 50%;
+            object-fit: contain;
+        }
+        
+    }
+    #sec3,#sec4,#sec6,#sec8{
+        .applications-container-sec-row-col{
+            max-width: 100%;
+        }
+        img{
+            flex: 1 1 100%;
+        }
+        
+    }
 }
 
 // Target IE Edge
 @supports (-ms-ime-align:auto){
-    
+    #sec1,#sec2,#sec5,#sec10,#sec12{
+        .applications-container-sec-row-col{
+            max-width: 50%;
+        }
+        img{
+            max-width: 100%;
+            flex: 1 1 50%;
+        }
+    }
 }
 
 //***************************************************
