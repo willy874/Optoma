@@ -964,7 +964,6 @@ footer {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  top: -8rem;
   z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,12 +1004,6 @@ footer {
   }
 }
 
-@media (max-width: 576px) {
-  .home-sec1-container {
-    top: -6rem;
-  }
-}
-
 .home-sec1-container-display {
   max-width: 1140px;
   margin: 0 auto;
@@ -1033,43 +1026,43 @@ footer {
 
 @media (min-width: 350px) {
   .home-sec1-container-display h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 400px) {
   .home-sec1-container-display h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (min-width: 576px) {
   .home-sec1-container-display h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 @media (min-width: 768px) {
   .home-sec1-container-display h2 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 }
 
 @media (min-width: 992px) {
   .home-sec1-container-display h2 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
 @media (min-width: 1200px) {
   .home-sec1-container-display h2 {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
 }
 
 @media (min-width: 1600px) {
   .home-sec1-container-display h2 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 
@@ -2944,6 +2937,163 @@ footer {
   max-width: 992px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about-sec5 {
+  background-size: cover;
+  background-position: center;
+}
+
+.about-sec5-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 576px) {
+  .about-sec5-container {
+    max-width: 516px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-sec5-container {
+    max-width: 708px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-sec5-container {
+    max-width: 932px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-sec5-container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1460px) {
+  .about-sec5-container {
+    max-width: 1400px;
+  }
+}
+
+.about-sec5-container-display {
+  padding-top: 1rem;
+  padding-bottom: 7.5rem;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.about-sec5-container-display h2 {
+  color: #fcfcfb;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 350px) {
+  .about-sec5-container-display h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .about-sec5-container-display h2 {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .about-sec5-container-display h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-sec5-container-display h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-sec5-container-display h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-sec5-container-display h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about-sec5-container-display h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.about-sec5-container-display p {
+  color: #fcfcfb;
+  font-size: 0.9375rem;
+  max-width: 40rem;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.about-sec5-container-display small {
+  font-size: 0.5;
+}
+
+.about-sec5-container-row {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-sec5-container-row-col {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  max-width: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.about-sec5-container-row-col-number {
+  color: #fcfcfb;
+  font-size: 3.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-sec5-container-row-col-line {
+  background-color: #6da8f2;
+  height: 0.125rem;
+  width: 8.5rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.about-sec5-container-row-col-text {
+  color: #fcfcfb;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 #banner-applications {

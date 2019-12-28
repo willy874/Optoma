@@ -20,4 +20,4 @@ import './js/event/onload'
 // let params = githubURL.searchParams;
 // for (let pair of params.entries()) {
 //   console.log(`key: ${pair[0]}, value: ${pair[1]}`)
-// }
+// } 

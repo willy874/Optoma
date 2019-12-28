@@ -32,10 +32,6 @@
         &#{-container}{
             @include container;
             position: relative;
-            top: -8rem;
-            @include media-max($sm) {
-                top: -6rem;
-            }
             z-index: 5;
             display: flex;
             align-items: center;
@@ -51,7 +47,7 @@
                 }
 
                 h2{
-                    @include display-1;
+                    @include display-2;
                     font-weight: bolder;
                     color: #fdfcfc;
                     margin-left: -0.5rem;
