@@ -156,3 +156,11 @@
     }
     
 }
+
+@mixin outline {
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+}
