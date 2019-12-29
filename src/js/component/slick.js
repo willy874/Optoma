@@ -143,7 +143,7 @@ export default {
             ])
              $('#navbar-applications').slick({
                  dots: false,
-                 infinite: false,
+                 infinite: true,
                  autoplay: false,
                  speed: 300,
                  slidesToShow: 6,
@@ -170,23 +170,108 @@ export default {
                     }
                   }]
                })    
+               
         }
-
+        //home about
+        const ajaxElement4 = document.querySelector('#silck-about')
+        if( ajaxElement4 != undefined){ 
+            m.render(ajaxElement4,[
+                data.about.map(item=>{
+                    return m('div',{
+                        class: 'silck-item'
+                    },[
+                        m('figure',{
+                            style:{
+                                backgroundImage: `url(${item.src})`
+                            }
+                        },[
+                            m('div',[
+                                m('a',{
+                                    href: item.href,
+                                    title: item.title
+                                },item.title)
+                            ]),
+                            m('figcaption',[
+                                m('a',{
+                                    href: item.href,
+                                    title: item.title
+                                },[m.trust(item.figcaption)])
+                            ])
+                        ]),
+                        
+                    ])
+                })
+                
+            ])
+             $('#silck-about').slick({
+                 dots: true,
+                 infinite: false,
+                 speed: 300,
+                 slidesToShow: 4,
+                 slidesToScroll: 1,
+                 autoplay: false,
+                 prevArrow: '<button type="button" class="slick-prev"><img alt="prev" src="./images/Manuscript/prev.jpg" alt="prev"></button>',
+                 nextArrow: '<button type="button" class="slick-next"><img alt="next" src="./images/Manuscript/next.jpg" alt="next"></button>',
+                 responsive: [{
+               
+                     breakpoint: 1200,
+                     settings: {
+                       slidesToShow: 3,
+                     }
+               
+                   }, {
+               
+                     breakpoint: 768,
+                     settings: {
+                       slidesToShow: 2,
+                     }
+               
+                   }, {
+               
+                    breakpoint: 576,
+                    settings: {
+                      slidesToShow: 1,
+                    }
+              
+                  }]
+               }) 
+        }
+        const ajaxElement5 = document.querySelector('#silck-year')
+        if( ajaxElement5 != undefined){ 
+            m.render(ajaxElement5,[
+                data.about.map((item,index)=>{
+                    return m('div',{
+                        class: 'silck-item'
+                    },[
+                        m('buttom',{
+                            style:{
+                                width: '20px',
+                                height: '20px',
+                                backgroundColor: '#f00',
+                                borderRadius: '50%'
+                            },
+                            onclick: (e)=>{
+                                $('#silck-about').slick('slickGoTo',index)
+                            }
+                        },item.year)
+                    ])
+                })
+                
+            ])
+             $('#silck-year').slick({
+                 dots: false,
+                 infinite: false,
+                 autoplay: false,
+                 speed: 300,
+                 slidesToShow: 5,
+                 slidesToScroll: 1,
+                 prevArrow: '<button type="button" class="slick-prev"></button>',
+                 nextArrow: '<button type="button" class="slick-next"></button>'
+             }) 
+        }
     },
     error: function() {
         console.log('ajax:',ajaxUrl,'，載入失敗')
     }
 }
 
-
-/*
-<div id="banner-applications">
-        <div class="silck-item">
-            <figure>
-                <img src="" alt="">
-                <h2>Applications</h2>
-                <h3>Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration.</h3>
-            </figure>
-        </div>
-    </div>   
-*/

@@ -12,9 +12,6 @@ footer{
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-                @include media-max($lg) {
-                    order: 2;
-                }
                 @include media-min($md) {
                     @include col(auto);
                 }
@@ -26,12 +23,11 @@ footer{
                 }
                 &#{-icon}{
                     color: white;
-                    margin-right: 0.5rem;
-                    margin-left: 0.5rem;
+                    margin: 0.75rem 0.5rem;
                     display: flex;
                     flex-wrap: wrap;
                     @include media-max($md) {
-                        margin-left: 1rem;
+                        margin-left: 0.75rem;
                     }
                 }
             }
@@ -73,6 +69,7 @@ footer{
         &#{-copyright}{
             @include py(1.25rem);
             color: white;
+            font-size: 0.75rem;
             &#{-br}{
                 @include media-min($lg) {
                     display: none;
@@ -91,7 +88,10 @@ footer{
     height: 2rem;
     background-color: white;
     border-radius: 50%;
-    margin: 1.25rem 0.25rem;
+    margin: 0.25rem;
+    &:hover{
+        background-color: #aaa;
+    }
     img{
         position: relative;
         width: 1.375rem;

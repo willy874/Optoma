@@ -151,5 +151,109 @@
         "heading": "Simulation",
         "href": "#sec12",
         "title": "Simulation"
+    }],
+    "homeApplications":[{
+        "src": "./images/banner/main-page_home.jpg",
+        "alt": "Home",
+        "heading": "Home",
+        "href": "./index.php?page=applications#sec1",
+        "title": "Home"
+    },{
+        "src": "./images/banner/main-page_House of Worship.jpg",
+        "alt": "House of Worship",
+        "heading": "House of Worship",
+        "href": "./index.php?page=applications#sec4",
+        "title": "House of Worship"
+    },{
+        "src": "./images/banner/main-page_Medical.jpg",
+        "alt": "Medical",
+        "heading": "Medical",
+        "href": "./index.php?page=applications#sec8",
+        "title": "Medical"
+    },{
+        "src": "./images/banner/main-page_Museums.jpg",
+        "alt": "Museums",
+        "heading": "Museums",
+        "href": "./index.php?page=applications#sec9",
+        "title": "Museums"
+    },{
+        "src": "./images/banner/main-page_Portable.jpg",
+        "alt": "Portable",
+        "heading": "Portable",
+        "href": "./index.php?page=applications#sec7",
+        "title": "Portable"
+    },{
+        "src": "./images/banner/main-page_Public Sector.jpg",
+        "alt": "Sector",
+        "heading": "Sector",
+        "href": "./index.php?page=applications#sec11",
+        "title": "Sector"
+    },{
+        "src": "./images/banner/main-page_Retail.jpg",
+        "alt": "Retail",
+        "heading": "Retail",
+        "href": "./index.php?page=applications#sec5",
+        "title": "Retail"
+    },{
+        "src": "./images/banner/main-page_Simulation.jpg",
+        "alt": "Simulation",
+        "heading": "Simulation",
+        "href": "./index.php?page=applications#sec12",
+        "title": "Simulation"
+    }],
+    "about":[{
+        "year": "2002",
+        "src": "./images/about/2002.jpg",
+        "figcaption": "Optoma Corporation officially established.Developed world's first 65-inch HD2 DLP®-based projection TV, and the world’s lightest thinnest and 50-inch DLP®-based projection TV (RD50, RD65).",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2003",
+        "src": "./images/about/2003.jpg",
+        "figcaption": "Announced the world's first under 1kg DLP® projector, the EP725. Launched the first 480p Home Theater projector, the H30.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2004",
+        "src": "./images/about/2004.jpg",
+        "figcaption": "The H30 won the CES 2004 Innovations Award.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2005",
+        "src": "./images/about/2005.jpg",
+        "figcaption": "Announced revolutionary MovieTime™ DV10, the all-in-one digital DVD projector at CES 2005. Optoma's SV50XF DLP® TV wins the CES 2005 Innovations Award.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2006",
+        "src": "./images/about/2006.jpg",
+        "figcaption": "The No. 1 selling DLP® projector brand worldwide in 2006 (PMA Research). Launched the first true 1080P DLP® Home Cinema projector with studio quality image processor (HD81). Optoma is the first to introduce the high pixel, DLP® WXGA 720P home theater projector. Optoma is the first in the world to launch the SXGA+ high resolution, DLP® data projector.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2007",
+        "src": "./images/about/2007.jpg",
+        "figcaption": "The NO.1 selling DLP® projector brand worldwide in 2007 (PMA Research). Listed in 'Taiwan High-tech Fast 50', released by Deloitte. Optoma is the only projector brand ranked in 'Asia Pacific High-tech Fast 500' by Deloitte. Optoma is awarded No. 4 in the 'Top 10 Golden BRIC' selected by China Credit Information Service Limited. The 'Taiwan Excellence' and 'Good Design' Award forDV11. The first to launch 720p Home Theater projector at 2 kg (HD65). The first to launch the lightest wide-format data projector EP1691, weighing only 1.24 kg.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2008",
+        "src": "./images/about/2008.jpg",
+        "figcaption": "Launched the world's first Pico projector, the PK101. The PK101 won the 2009 Innovations Design and Engineering Award and selected as Time Magazine's Top Ten Gadget. Winner of the 'Good Design Award' for both HD65 & EP782 announced by Ministry of Economic Affairs, Taiwan. Optoma in the Top 10 of 'Taiwan High –tech Fast 50' in Revenue Ranking, released by Deloitte.Ranked No.31 of '2008 Asia Pacific High-tech Fast 500' announced by Deloitte. The HD803, won the 'Taiwan Excellence Award'.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2009",
+        "src": "./images/about/2009.jpg",
+        "figcaption": "Winner of the 'Good Design Award' for EX525ST, PK101, and EP783 announced by the Ministry of Economic Affairs, Taiwan. PK101 won the 'Taiwan Excellence Gold Award'. PK101 won the 'Best of What's New 2008', by Popular Science in China. Launched the market's most affordable 1080P Home Cinema Projector, the HD20.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2010",
+        "src": "./images/about/2010.jpg",
+        "figcaption": "Optoma's HD86 won the CEA 2010 Best Projector Award. Launched world’s first 3D projector adaptor (3D-XL). The EX762 and PK301 were winners of the 'Taiwan Excellence Award 2010'.",
+        "href": "",
+        "title": ""
     }]
 }
