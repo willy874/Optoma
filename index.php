@@ -15,11 +15,23 @@ switch ($fileUrl)
 {
 case 'about':
     $fileIndex = 'about';
+    break;  
+       
+case 'ourBrand':
+    $fileIndex = 'ourBrand';
     break;      
 
 case 'applications':
     $fileIndex = 'applications';
     break;     
+
+case 'innovation':
+    $fileIndex = 'innovation';
+    break;
+
+case 'desing':
+    $fileIndex = 'desing';
+    break;
 
 case 'knowledge':
     $fileIndex = 'knowledge';

@@ -152,55 +152,6 @@
         "href": "#sec12",
         "title": "Simulation"
     }],
-    "homeApplications":[{
-        "src": "./images/banner/main-page_home.jpg",
-        "alt": "Home",
-        "heading": "Home",
-        "href": "./index.php?page=applications#sec1",
-        "title": "Home"
-    },{
-        "src": "./images/banner/main-page_House of Worship.jpg",
-        "alt": "House of Worship",
-        "heading": "House of Worship",
-        "href": "./index.php?page=applications#sec4",
-        "title": "House of Worship"
-    },{
-        "src": "./images/banner/main-page_Medical.jpg",
-        "alt": "Medical",
-        "heading": "Medical",
-        "href": "./index.php?page=applications#sec8",
-        "title": "Medical"
-    },{
-        "src": "./images/banner/main-page_Museums.jpg",
-        "alt": "Museums",
-        "heading": "Museums",
-        "href": "./index.php?page=applications#sec9",
-        "title": "Museums"
-    },{
-        "src": "./images/banner/main-page_Portable.jpg",
-        "alt": "Portable",
-        "heading": "Portable",
-        "href": "./index.php?page=applications#sec7",
-        "title": "Portable"
-    },{
-        "src": "./images/banner/main-page_Public Sector.jpg",
-        "alt": "Sector",
-        "heading": "Sector",
-        "href": "./index.php?page=applications#sec11",
-        "title": "Sector"
-    },{
-        "src": "./images/banner/main-page_Retail.jpg",
-        "alt": "Retail",
-        "heading": "Retail",
-        "href": "./index.php?page=applications#sec5",
-        "title": "Retail"
-    },{
-        "src": "./images/banner/main-page_Simulation.jpg",
-        "alt": "Simulation",
-        "heading": "Simulation",
-        "href": "./index.php?page=applications#sec12",
-        "title": "Simulation"
-    }],
     "about":[{
         "year": "2002",
         "src": "./images/about/2002.jpg",
@@ -253,6 +204,54 @@
         "year": "2010",
         "src": "./images/about/2010.jpg",
         "figcaption": "Optoma's HD86 won the CEA 2010 Best Projector Award. Launched world’s first 3D projector adaptor (3D-XL). The EX762 and PK301 were winners of the 'Taiwan Excellence Award 2010'.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2011",
+        "src": "./images/about/2011.jpg",
+        "figcaption": "Announced world's first iPod dock pico projector, the Neo-i. The Neo-i went on to win the CES Innovation Award. Optoma awarded by the UK AV Magazine as the \"Best Home Cinema Projector Brand\".",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2013",
+        "src": "./images/about/2013.jpg",
+        "figcaption": "Launched evolutionary ultra-mobile LED projector range, the ML750 and ML1000.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2014",
+        "src": "./images/about/2014.jpg",
+        "figcaption": "Launched market's most affordable LED Home Cinema DLP projectors the HD90 and HD91. Optoma acquires critically acclaimed Californian consumer audio company, Nuforce.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2015",
+        "src": "./images/about/2015.jpg",
+        "figcaption": "Launched the ZU650, Optoma’s first projector utilizing laser phosphor illumination technology. Introduced the HD28DSE, the world's first projector with Darbee Visual Presence video processing integration. Launched the award winning Optoma Nuforce Primo8 In-Ear Headphones. Launched the best-selling BE6 wireless Bluetooth In-Ear Headphones.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2016",
+        "src": "./images/about/2016.jpg",
+        "figcaption": "Announced industry first IP-certified, dust resistant DuraCore laser light engine line-up ZU650+, ZU850, ZU510T, ZH/ZW400UST/i",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2017",
+        "src": "./images/about/2017.jpg",
+        "figcaption": "Optoma launched ProScene ZU850 featuring multicolor laser projector with ultimate color performance",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2018",
+        "src": "./images/about/2018.jpg",
+        "figcaption": "Optoma launched World’s 1st Smart Projector to support home automation, voice control, personal media center and App Marketplace (UHL55)",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2019",
+        "src": "./images/about/2019.jpg",
+        "figcaption": "Optoma’s 130\" Full HD 1080P award-winning all-in-one QUAD LED display integrates HQUltra and media player technology for an easy out-of-the-box installation (FHDQ130)",
         "href": "",
         "title": ""
     }]

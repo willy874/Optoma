@@ -185,15 +185,17 @@ export default {
                                 backgroundImage: `url(${item.src})`
                             }
                         },[
-                            m('div',[
+                            m('div',{
+                                class: 'year'
+                            },[
                                 m('a',{
-                                    href: item.href,
-                                    title: item.title
-                                },item.title)
+                                    //href: item.href,
+                                    title: item.year
+                                },item.year)
                             ]),
                             m('figcaption',[
                                 m('a',{
-                                    href: item.href,
+                                    //href: item.href,
                                     title: item.title
                                 },[m.trust(item.figcaption)])
                             ])
@@ -210,8 +212,10 @@ export default {
                  slidesToShow: 4,
                  slidesToScroll: 1,
                  autoplay: false,
-                 prevArrow: '<button type="button" class="slick-prev"><img alt="prev" src="./images/Manuscript/prev.jpg" alt="prev"></button>',
-                 nextArrow: '<button type="button" class="slick-next"><img alt="next" src="./images/Manuscript/next.jpg" alt="next"></button>',
+                 centerMode: true,
+                 centerPadding: '0px',
+                 prevArrow: '<button type="button" class="slick-prev"></button>',
+                 nextArrow: '<button type="button" class="slick-next"></button>',
                  responsive: [{
                
                      breakpoint: 1200,
@@ -241,19 +245,14 @@ export default {
             m.render(ajaxElement5,[
                 data.about.map((item,index)=>{
                     return m('div',{
-                        class: 'silck-item'
+                        class: 'silck-item',
+                        onclick: (e)=>{
+                            $('#silck-about').slick('slickGoTo',index)
+                        }
+                    
                     },[
-                        m('buttom',{
-                            style:{
-                                width: '20px',
-                                height: '20px',
-                                backgroundColor: '#f00',
-                                borderRadius: '50%'
-                            },
-                            onclick: (e)=>{
-                                $('#silck-about').slick('slickGoTo',index)
-                            }
-                        },item.year)
+                        m('button'),
+                        m('span',item.year)
                     ])
                 })
                 
@@ -263,12 +262,14 @@ export default {
                  infinite: false,
                  autoplay: false,
                  speed: 300,
-                 slidesToShow: 5,
+                 slidesToShow: 8,
                  slidesToScroll: 1,
                  prevArrow: '<button type="button" class="slick-prev"></button>',
                  nextArrow: '<button type="button" class="slick-next"></button>'
              }) 
+             
         }
+        $('#silck-about').slick('slickGoTo',data.about.length - 2)
     },
     error: function() {
         console.log('ajax:',ajaxUrl,'，載入失敗')

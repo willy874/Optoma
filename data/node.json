@@ -2,7 +2,7 @@
     "node":[{
         "nodeId": "a-1",
         "nodeName": "OUR BRAND",
-        "href": "",
+        "href": "./index.php?page=ourBrand",
         "title": "OUR BRAND"
     },{
         "nodeId": "a-2",
@@ -76,12 +76,12 @@
     },{
         "nodeId": "a-4",
         "nodeName": "INNOVATION",
-        "href": "",
+        "href": "./index.php?page=innovation",
         "title": "INNOVATION"
     },{
         "nodeId": "a-5",
         "nodeName": "DESIGN",
-        "href": "",
+        "href": "./index.php?page=desing",
         "title": "DESIGN"
     },{
         "nodeId": "a-6",
