@@ -20,7 +20,7 @@
         "../scss/page/_header.scss",
         "../scss/page/_footer.scss",
         "../scss/page/_home.scss",
-        "../scss/page/ourBraud.scss",
+        "../scss/page/_ourBraud.scss",
         "../scss/page/_about.scss",
         "../scss/page/_applications.scss",
         "../scss/page/_knowledge.scss",
