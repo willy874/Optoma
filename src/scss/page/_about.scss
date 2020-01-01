@@ -1,6 +1,6 @@
 .about{
     &#{-sec1}{
-        height: 100vh;
+        height: 80vh;
         @include media-max($xl) {
             height: 40rem;
         }
@@ -424,9 +424,7 @@
                 &#{-col}{
                     text-align: center;
                     @include col(33.333%);
-                    @include media-max($lg) {
-                        @include col(50%);
-                    }
+                    //@include media-max($lg) {@include col(50%);}
                     @include media-max($sm) {
                         @include col(100%);
                     }
@@ -594,7 +592,7 @@
 //******************************************************************************************************
 
 #silck-about{
-    
+    margin-bottom: 10rem;
     .silck-item{
         padding: 0 1rem;
         figure{
@@ -644,15 +642,16 @@
             display: none !important;
         }
         top: 50%;
-        background-color: rgba(255,255,255,0.3);
+        background-color: #212530;
         width: 2.875rem;
         height: 5rem;
         z-index: 900;
+        border-radius: 0.25rem;
         box-shadow: none;
         &::after{
             content: '';
             position: absolute;
-            background-color: #8d8c93;
+            background-color: #fff;
             top: 50%;
             width: 1rem;
             height: 0.125rem;
@@ -661,22 +660,23 @@
         &::before{
             content: '';
             position: absolute;
-            background-color: #8d8c93;
+            background-color: #fff;
             bottom: 50%;
             width: 1rem;
             height: 0.125rem;
             opacity: 1;
         }
     }
+    
     .slick-prev{
         left: 1.75rem;
         transform: translate(0,-50%);
         &::after{
-            transform: translate(0.5rem,0.35rem) rotate(50deg);
+            transform: translate(0.5rem,0.3rem) rotate(50deg);
             right: 50%;
         }
         &::before{
-            transform: translate(0.5rem,-0.35rem) rotate(-50deg);
+            transform: translate(0.5rem,-0.3rem) rotate(-50deg);
             right: 50%;
         }
         
@@ -693,16 +693,22 @@
             left: 50%;
         }
     }
+
+    .slick-arrow.slick-disabled{
+        display: none !important;
+    }
+
     .slick-dots{
-        bottom: -1.75rem;;
+        bottom: -2.5rem;;
         li{
-            width: 0.75rem;
-            height: 1.5rem;
+            width: 1rem;
+            height: 1rem;
             position: relative;
+            margin: 0;
 
             button{
-                width: 0.75rem;
-                height: 1.5rem;
+                width: 1rem;
+                height: 1rem;
             }
             
             >button:before{
@@ -711,8 +717,8 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
-                width: 0.25rem;
-                height: 0.25rem;
+                width: 0.5rem;
+                height: 0.5rem;
                 border-radius: 50%;
                 background-color: #aaa;
                 opacity: 1;

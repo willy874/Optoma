@@ -254,5 +254,30 @@
         "figcaption": "Optoma’s 130\" Full HD 1080P award-winning all-in-one QUAD LED display integrates HQUltra and media player technology for an easy out-of-the-box installation (FHDQ130)",
         "href": "",
         "title": ""
+    }],
+    "bannerOurBraud":[{
+        "type": "image",
+        "src": "./images/ourBrand/ourBrand-banner.png",
+        "alt": "ourBraud",
+        "heading": "ourBraud",
+        "description": "See more, Hear more."
+    },{
+        "type": "image",
+        "src": "./images/ourBrand/ourBrand-banner.png",
+        "alt": "ourBraud",
+        "heading": "ourBraud",
+        "description": "See more, Hear more."
+    },{
+        "type": "image",
+        "src": "./images/ourBrand/ourBrand-banner.png",
+        "alt": "ourBraud",
+        "heading": "ourBraud",
+        "description": "See more, Hear more."
+    },{
+        "type": "youtobe",
+        "src": "https://www.youtube.com/watch?v=RD6x79PyJR0",
+        "alt": "ourBraud",
+        "heading": "ourBraud",
+        "description": "See more, Hear more."
     }]
 }

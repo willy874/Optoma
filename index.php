@@ -17,8 +17,8 @@ case 'about':
     $fileIndex = 'about';
     break;  
        
-case 'ourBrand':
-    $fileIndex = 'ourBrand';
+case 'ourbraud':
+    $fileIndex = 'ourbraud';
     break;      
 
 case 'applications':

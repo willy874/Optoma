@@ -43,11 +43,11 @@ export default {
                  infinite: true,
                  speed: 300,
                  slidesToShow: 3,
-                 slidesToScroll: 1,
+                 slidesToScroll: 3,
                  autoplay: true,
                  autoplaySpeed: 2000,
-                 prevArrow: '<button type="button" class="slick-prev"><img alt="prev" src="./images/Manuscript/prev.jpg" alt="prev"></button>',
-                 nextArrow: '<button type="button" class="slick-next"><img alt="next" src="./images/Manuscript/next.jpg" alt="next"></button>',
+                 prevArrow: '<button type="button" class="slick-prev"></button>',
+                 nextArrow: '<button type="button" class="slick-next"></button>',
                  responsive: [{
                
                      breakpoint: 1200,
@@ -212,8 +212,6 @@ export default {
                  slidesToShow: 4,
                  slidesToScroll: 1,
                  autoplay: false,
-                 centerMode: true,
-                 centerPadding: '0px',
                  prevArrow: '<button type="button" class="slick-prev"></button>',
                  nextArrow: '<button type="button" class="slick-next"></button>',
                  responsive: [{
@@ -225,7 +223,7 @@ export default {
                
                    }, {
                
-                     breakpoint: 768,
+                     breakpoint: 992,
                      settings: {
                        slidesToShow: 2,
                      }
@@ -270,6 +268,63 @@ export default {
              
         }
         $('#silck-about').slick('slickGoTo',data.about.length - 2)
+        //banner ourbraud
+        const ajaxElement6 = document.querySelector('#banner-ourbraud')
+        if( ajaxElement6 != undefined){ 
+            m.render(ajaxElement6,[
+                data.bannerOurBraud.map(item=>{
+                    return (item.type === "image")?m('div',{
+                        class: 'silck-item'
+                    },[
+                        m('figure',[
+                            m('img',{
+                                src: item.src,
+                                alt: item.alt
+                            }),
+                            m('mask')
+                        ]),
+                        m('div',{
+                            class: 'silck-item-heading'
+                        },[
+                            m('h2',item.heading),
+                            m('h3',item.description)
+                        ])
+                        
+                    ]):(item.type === "youtobe")? m('div',{
+                        class: 'silck-item'
+                    },[
+                        m('div',{
+                            class: 'silck-item-video'
+                        },[
+                            m('iframe[allowfullscreen]',{
+                                src: `https://www.youtube.com/embed/${item.src.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop()}`,
+                                frameborder: 0,
+                                allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                                title: item.title,
+                                style: {
+                                    width: '100%',
+                                }
+                            }),
+                            m('div',{
+                                class: 'silck-item-video-hover'
+                            })
+                        ])
+                    ]): ''
+
+                })
+                
+            ])
+             $('#banner-ourbraud').slick({
+                 dots: true,
+                 infinite: true,
+                 autoplay: false,
+                 prevArrow: '<button type="button" class="slick-prev"></button>',
+                 nextArrow: '<button type="button" class="slick-next"></button>',
+                 speed: 400,
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
+               })    
+        }
     },
     error: function() {
         console.log('ajax:',ajaxUrl,'，載入失敗')
