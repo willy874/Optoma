@@ -212,6 +212,8 @@ export default {
                  slidesToShow: 4,
                  slidesToScroll: 1,
                  autoplay: false,
+                 centerMode: true,
+                 centerPadding: '0px',
                  prevArrow: '<button type="button" class="slick-prev"></button>',
                  nextArrow: '<button type="button" class="slick-next"></button>',
                  responsive: [{

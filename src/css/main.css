@@ -2630,8 +2630,8 @@ footer {
 
 @media (min-width: 992px) {
   .home-sec3-container {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 }
 
@@ -2856,7 +2856,6 @@ footer {
 }
 
 .home-sec4-container-display h3 {
-  font-weight: bolder;
   color: #fdfcfc;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -3172,8 +3171,17 @@ footer {
   }
 }
 
-.home-sec5-container-row-col img {
-  max-width: 100%;
+.home-sec5-container-row-col > a > figure {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 18rem;
+}
+
+@media (max-width: 576px) {
+  .home-sec5-container-row-col > a > figure {
+    height: 12rem;
+  }
 }
 
 .home-sec6 {
@@ -3388,7 +3396,7 @@ footer {
 
 #silck-applications .slick-arrow {
   top: 50%;
-  background-color: #212530;
+  background-color: #4c525b;
   width: 2.875rem;
   height: 5rem;
   z-index: 900;
@@ -3426,9 +3434,9 @@ footer {
 }
 
 #silck-applications .slick-prev {
-  left: 1.75rem;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  left: -3.5rem;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
 }
 
 #silck-applications .slick-prev::after {
@@ -3444,9 +3452,9 @@ footer {
 }
 
 #silck-applications .slick-next {
-  right: 1.75rem;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  right: -3.5rem;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
 }
 
 #silck-applications .slick-next::after {
@@ -3966,6 +3974,7 @@ footer {
 .about-sec1-container-display h2 {
   color: #fafaf9;
   text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.8);
+  font-weight: bolder;
 }
 
 @media (min-width: 350px) {
@@ -5218,7 +5227,7 @@ footer {
 
 #silck-about .slick-arrow {
   top: 50%;
-  background-color: #212530;
+  background-color: #dad9d930;
   width: 2.875rem;
   height: 5rem;
   z-index: 900;
@@ -5616,38 +5625,20 @@ footer {
   right: 50%;
 }
 
-#banner-applications .slick-next {
-  top: 50%;
-  right: 0;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
-#banner-applications .slick-next::after {
-  -webkit-transform: translate(-0.5rem, -0.55rem) rotate(45deg);
-          transform: translate(-0.5rem, -0.55rem) rotate(45deg);
-  left: 50%;
-}
-
-#banner-applications .slick-next::before {
-  -webkit-transform: translate(-0.5rem, 0.55rem) rotate(-45deg);
-          transform: translate(-0.5rem, 0.55rem) rotate(-45deg);
-  left: 50%;
-}
-
 #banner-applications .slick-dots {
-  bottom: 0;
+  bottom: 1rem;
 }
 
 #banner-applications .slick-dots li {
-  width: 0.75rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
+  margin: 0;
 }
 
 #banner-applications .slick-dots li button {
-  width: 0.75rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 #banner-applications .slick-dots li > button:before {
@@ -5657,8 +5648,8 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 0.25rem;
-  height: 0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background-color: #fff;
   opacity: 1;

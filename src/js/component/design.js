@@ -15,14 +15,16 @@ export default {
             data.design.reverse().map(item=>{
                 
                 if(eachIndex<3) return m('div',{
-                    class: 'home-sec5-container-row-col'
+                    class: 'home-sec5-container-row-col',
                 },[
                     m('a',{
                         href: item.href,
                         title: item.title
                     },[
-                        m('img',{
-                            src: item.src
+                        m('figure',{
+                            style:{
+                                backgroundImage: `url(${item.src})`,
+                            }
                         })
                     ])
                     

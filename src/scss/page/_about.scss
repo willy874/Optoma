@@ -30,6 +30,7 @@
                     @include display-2;
                     color: #fafaf9;
                     text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
+                    font-weight: bolder;
                 }
             }
         }
@@ -593,6 +594,7 @@
 
 #silck-about{
     margin-bottom: 10rem;
+    
     .silck-item{
         padding: 0 1rem;
         figure{
@@ -642,7 +644,7 @@
             display: none !important;
         }
         top: 50%;
-        background-color: #212530;
+        background-color: #dad9d930;
         width: 2.875rem;
         height: 5rem;
         z-index: 900;
