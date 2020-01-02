@@ -19,4 +19,9 @@ export default {
         method: 'GET',
         fileType: 'json'
     },
+    worldwide: {
+        url:'./data/worldwide.json',
+        method: 'GET',
+        fileType: 'json'
+    },
 }

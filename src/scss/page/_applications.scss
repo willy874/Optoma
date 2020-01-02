@@ -2,28 +2,18 @@
     margin-bottom: 0;
     .silck-item{
         position: relative;
-        height: 45.5rem;
-        @include media-max($lg) {
-        height: 36rem;
-        }
-        @include media-max($md) {
-        height: 28.5rem;
-        }
-        @include media-max($sm) {
-        height: 21.75rem;
-        }
-        @include media-max($xs) {
-        height: 15.5rem;
-        }
-        @include media-max($xxs) {
-        height: 13.8rem;
-        }
+        background-size: cover;
+        background-position: center;
+        height: 48rem;
+        @include media-max($xxl){height: 42rem;}
+        @include media-max($xl) {height: 36rem;}
+        @include media-max($lg) {height: 30rem;}
+        @include media-max($md) {height: 24rem;}
+        @include media-max($sm) {height: 20rem;}
+        @include media-max($xs) {height: 14rem;}
+        @include media-max($xxs){height: 12rem;}
+            
         figure{
-            img{
-                width: 100%;
-                object-fit: cover;
-                max-height: 46rem;
-            }
             mask{
                 position: absolute;
                 z-index: 5;
@@ -77,24 +67,14 @@
                 margin-left: auto;
                 margin-right: auto;
             iframe{
-                height: 44rem;
-                @include media-max($lg) {
-                    height: 34rem;
-                }
-                @include media-max($md) {
-                    height: 27rem;
-                }
-                @include media-max($sm) {
-                    height: 20.25rem;
-                }
-                @include media-max($xs) {
-                    height: 14rem;
-                }
-                @include media-max($xxs) {
-                    height: 12.3rem;
-                }
-            }
-            #{-hover}{
+                height: 48rem;
+                @include media-max($xxl){height: 42rem;}
+                @include media-max($xl) {height: 36rem;}
+                @include media-max($lg) {height: 30rem;}
+                @include media-max($md) {height: 24rem;}
+                @include media-max($sm) {height: 20rem;}
+                @include media-max($xs) {height: 14rem;}
+                @include media-max($xxs){height: 12rem;}
             }
         }
     }
@@ -152,15 +132,16 @@
     }
 
     .slick-dots{
-        bottom: 0;
+        bottom: 1rem;;
         li{
-            width: 0.75rem;
-            height: 1.5rem;
+            width: 1rem;
+            height: 1rem;
             position: relative;
+            margin: 0;
 
             button{
-                width: 0.75rem;
-                height: 1.5rem;
+                width: 1rem;
+                height: 1rem;
             }
             
             >button:before{
@@ -169,8 +150,8 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
-                width: 0.25rem;
-                height: 0.25rem;
+                width: 0.5rem;
+                height: 0.5rem;
                 border-radius: 50%;
                 background-color: #fff;
                 opacity: 1;

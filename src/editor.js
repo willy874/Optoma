@@ -12,6 +12,8 @@ import Design from './js/component/design'
 $.ajax(Design)
 import Knowledge from './js/component/knowledge'
 $.ajax(Knowledge)
+import Worldwide from './js/component/worldwide'
+$.ajax(Worldwide)
 
 import './js/event/click'
 import './js/event/onload'

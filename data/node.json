@@ -2,7 +2,7 @@
     "node":[{
         "nodeId": "a-1",
         "nodeName": "OUR BRAND",
-        "href": "./index.php?page=ourbrand",
+        "href": "./index.php?page=ourbraud",
         "title": "OUR BRAND"
     },{
         "nodeId": "a-2",
