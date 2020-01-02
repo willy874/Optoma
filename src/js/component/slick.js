@@ -71,13 +71,12 @@ export default {
             m.render(ajaxElement2,[
                 data.bannerApplications.map(item=>{
                     return (item.type === "image")?m('div',{
-                        class: 'silck-item'
+                        class: 'silck-item',
+                        style:{
+                            backgroundImage: `url(${item.src})`
+                        }
                     },[
                         m('figure',[
-                            m('img',{
-                                src: item.src,
-                                alt: item.alt
-                            }),
                             m('mask')
                         ]),
                         m('div',{
@@ -276,13 +275,12 @@ export default {
             m.render(ajaxElement6,[
                 data.bannerOurBraud.map(item=>{
                     return (item.type === "image")?m('div',{
-                        class: 'silck-item'
+                        class: 'silck-item',
+                        style:{
+                            backgroundImage: `url(${item.src})`
+                        }
                     },[
                         m('figure',[
-                            m('img',{
-                                src: item.src,
-                                alt: item.alt
-                            }),
                             m('mask')
                         ]),
                         m('div',{
@@ -327,9 +325,58 @@ export default {
                  slidesToScroll: 1,
                })    
         }
+        //home Applications
+        const ajaxElement7 = document.querySelector('#silck-awards')
+        if( ajaxElement7 != undefined){ 
+            m.render(ajaxElement7,[
+                data.awardsOurBraud.map(item=>{
+                    return m('div',{
+                        class: 'silck-item'
+                    },[
+                        m('figure',[
+                            m('img',{
+                                src: item.src,
+                                alt: item.alt
+                            }),
+                        ]),
+                        m('h3',[
+                            m('span',item.description)
+                        ])
+                    ])
+                })
+                
+            ])
+             $('#silck-awards').slick({
+                 dots: true,
+                 infinite: true,
+                 speed: 300,
+                 slidesToShow: 4,
+                 slidesToScroll: 4,
+                 autoplay: true,
+                 autoplaySpeed: 2000,
+                 prevArrow: '<button type="button" class="slick-prev"></button>',
+                 nextArrow: '<button type="button" class="slick-next"></button>',
+                 responsive: [{
+               
+                     breakpoint: 1200,
+                     settings: {
+                       slidesToShow: 2,
+                     }
+               
+                   }, {
+               
+                     breakpoint: 576,
+                     settings: {
+                       slidesToShow: 1,
+                     }
+               
+                   }]
+               })    
+        }
     },
     error: function() {
         console.log('ajax:',ajaxUrl,'，載入失敗')
     }
 }
 
+//awards-ourbraud

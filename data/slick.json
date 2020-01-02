@@ -258,26 +258,59 @@
     "bannerOurBraud":[{
         "type": "image",
         "src": "./images/ourBrand/ourBrand-banner.png",
-        "alt": "ourBraud",
-        "heading": "ourBraud",
+        "alt": "Our Braud",
+        "heading": "Our Braud",
         "description": "See more, Hear more."
     },{
         "type": "image",
         "src": "./images/ourBrand/ourBrand-banner.png",
-        "alt": "ourBraud",
-        "heading": "ourBraud",
+        "alt": "Our Braud",
+        "heading": "Our Braud",
         "description": "See more, Hear more."
     },{
         "type": "image",
         "src": "./images/ourBrand/ourBrand-banner.png",
-        "alt": "ourBraud",
-        "heading": "ourBraud",
+        "alt": "Our Braud",
+        "heading": "Our Braud",
         "description": "See more, Hear more."
     },{
         "type": "youtobe",
         "src": "https://www.youtube.com/watch?v=RD6x79PyJR0",
-        "alt": "ourBraud",
-        "heading": "ourBraud",
+        "alt": "Our Braud",
+        "heading": "Our Braud",
         "description": "See more, Hear more."
+    }],
+    "awardsOurBraud":[{
+        "src": "./images/ourBrand/ourBrand-sec3-img1.png",
+        "alt": "Our Braud",
+        "description": "Projector Central 2019 Infocomm Best of Show Award"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img2.png",
+        "alt": "Our Braud",
+        "description": "Best of CES Asia 2019 ZOL"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img3.png",
+        "alt": "Our Braud",
+        "description": "AV Technology’s Best of Show"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img4.png",
+        "alt": "Our Braud",
+        "description": "Amazon’s Choice"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img1.png",
+        "alt": "Our Braud",
+        "description": "Projector Central 2019 Infocomm Best of Show Award"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img2.png",
+        "alt": "Our Braud",
+        "description": "Best of CES Asia 2019 ZOL"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img3.png",
+        "alt": "Our Braud",
+        "description": "AV Technology’s Best of Show"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img4.png",
+        "alt": "Our Braud",
+        "description": "Amazon’s Choice"
     }]
 }
