@@ -1,0 +1,258 @@
+{
+    "social":[{
+        "id": "facebook",
+        "icon": {
+            "href": "./index.php?page=social#facebook",
+            "title": "facebook",
+            "src":{
+                "disabled": "./images/social/facebook-disabled.png",
+                "active": "./images/social/facebook-active.png"
+            },
+            "alt":{
+                "disabled": "facebook",
+                "active": "facebook"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img1.png",
+            "heading": "Optoma UK",
+            "title": "Optoma UK",
+            "href": ""
+        },{
+            "src": "./images/social/social-img2.png",
+            "heading": "Optoma USA",
+            "title": "Optoma USA",
+            "href": ""
+        },{
+            "src": "./images/social/social-img3.png",
+            "heading": "Optoma Taiwan",
+            "title": "Optoma Taiwan",
+            "href": ""
+        },{
+            "src": "./images/social/social-img4.png",
+            "heading": "Optoma Asia",
+            "title": "Optoma Asia",
+            "href": ""
+        },{
+            "src": "./images/social/social-img5.png",
+            "heading": "Optoma Korea",
+            "title": "Optoma Korea",
+            "href": ""
+        },{
+            "src": "./images/social/social-img6.png",
+            "heading": "Optoma Hong Kong",
+            "title": "Optoma Hong Kong",
+            "href": ""
+        },{
+            "src": "./images/social/social-img7.png",
+            "heading": "Optoma EMEA",
+            "title": "Optoma EMEA",
+            "href": ""
+        }]
+    },{
+        "id": "youtube",
+        "icon": {
+            "href": "./index.php?page=social#youtube",
+            "title": "youtube",
+            "src":{
+                "disabled": "./images/social/youtube-disabled.png",
+                "active": "./images/social/youtube-active.png"
+            },
+            "alt":{
+                "disabled": "youtube",
+                "active": "youtube"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img8.png",
+            "heading": "Optoma APAC",
+            "title": "Optoma APAC",
+            "href": ""
+        },{
+            "src": "./images/social/social-img9.png",
+            "heading": "Optoma EMEA",
+            "title": "Optoma EMEA",
+            "href": ""
+        },{
+            "src": "./images/social/social-img10.png",
+            "heading": "Optoma USA",
+            "title": "Optoma USA",
+            "href": ""
+        }]
+    },{
+        "id": "twitter",
+        "icon": {
+            "href": "./index.php?page=social#twitter",
+            "title": "twitter",
+            "src":{
+                "disabled": "./images/social/twitter-disabled.png",
+                "active": "./images/social/twitter-active.png"
+            },
+            "alt":{
+                "disabled": "twitter",
+                "active": "twitter"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img11.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        },{
+            "src": "./images/social/social-img9.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        },{
+            "src": "./images/social/social-img7.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        }]
+    },{
+        "id": "instagram",
+        "icon": {
+            "href": "./index.php?page=social#instagram",
+            "title": "instagram",
+            "src":{
+                "disabled": "./images/social/instagram-disabled.png",
+                "active": "./images/social/instagram-active.png"
+            },
+            "alt":{
+                "disabled": "instagram",
+                "active": "instagram"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img7.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        }]
+    },{
+        "id": "linkedin",
+        "icon": {
+            "href": "./index.php?page=social#linkedin",
+            "title": "linkedin",
+            "src":{
+                "disabled": "./images/social/linkedin-disabled.png",
+                "active": "./images/social/linkedin-active.png"
+            },
+            "alt":{
+                "disabled": "linkedin",
+                "active": "linkedin"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img3.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        },{
+            "src": "./images/social/social-img9.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        }]
+    },{
+        "id": "pinterest",
+        "icon": {
+            "href": "./index.php?page=social#pinterest",
+            "title": "pinterest",
+            "src":{
+                "disabled": "./images/social/pinterest-disabled.png",
+                "active": "./images/social/pinterest-active.png"
+            },
+            "alt":{
+                "disabled": "pinterest",
+                "active": "pinterest"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img12.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        }]
+    },{
+        "id": "weibo",
+        "icon": {
+            "href": "./index.php?page=social#weibo",
+            "title": "weibo",
+            "src":{
+                "disabled": "./images/social/weibo-disabled.png",
+                "active": "./images/social/weibo-active.png"
+            },
+            "alt":{
+                "disabled": "weibo",
+                "active": "weibo"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img13.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        }]
+    },{
+        "id": "wechat",
+        "icon": {
+            "href": "./index.php?page=social#wechat",
+            "title": "wechat",
+            "src":{
+                "disabled": "./images/social/wechat-disabled.png",
+                "active": "./images/social/wechat-active.png"
+            },
+            "alt":{
+                "disabled": "wechat",
+                "active": "wechat"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img14.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        }]
+    },{
+        "id": "youku",
+        "icon": {
+            "href": "./index.php?page=social#youku",
+            "title": "youku",
+            "src":{
+                "disabled": "./images/social/youku-disabled.png",
+                "active": "./images/social/youku-active.png"
+            },
+            "alt":{
+                "disabled": "youku",
+                "active": "youku"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img14.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        }]
+    },{
+        "id": "tiktok",
+        "icon": {
+            "href": "./index.php?page=social#tiktok",
+            "title": "tiktok",
+            "src":{
+                "disabled": "./images/social/tiktok-disabled.png",
+                "active": "./images/social/tiktok-active.png"
+            },
+            "alt":{
+                "disabled": "tiktok",
+                "active": "tiktok"
+            }
+        },
+        "link": [{
+            "src": "./images/social/social-img14.png",
+            "heading": "",
+            "title": "",
+            "href": ""
+        }]
+    }]
+}

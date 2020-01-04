@@ -91,6 +91,9 @@
         width: 2.875rem;
         height: 4.75rem;
         z-index: 15;
+        @include media-max($md) {
+            display: none !important;
+        }
         &::after{
             content: '';
             position: absolute;
@@ -113,7 +116,7 @@
     .slick-prev{
         top: 50%;
         left: 0;
-        transform: translate(0,0);
+        transform: translate(50%,-50%);
         &::after{
             transform: translate(0.5rem,0.45rem) rotate(45deg);
             right: 50%;
@@ -127,7 +130,7 @@
     .slick-next{
         top: 50%;
         right: 0;
-        transform: translate(0,0);
+        transform: translate(-50%,-50%);
         &::after{
             transform: translate(-0.5rem,-0.55rem) rotate(45deg);
             left: 50%;
@@ -257,7 +260,7 @@
                     &:nth-of-type(3){
                         @include col(30%);
                         @include media-max($xl) {
-                            display: none
+                            display: none;
                         }
                     }
                     figure{
@@ -323,6 +326,8 @@
                             border-right: 0.125rem solid #fff;
                             @include media-max($sm) {
                                 order: 1;
+                                border-left: 0;
+                                border-right: 0;
                             }
                             a{
                                 color: #6a8fc2;

@@ -30,7 +30,7 @@ $(document.body).on('click', function (e) {
         }
     }
     if($this.attr('data-scroll') == 'true'){
-        var targetTop = $($this.attr('href')).position().top;
+        const targetTop = $($this.attr('href')).position().top - 50;
         $('html,body').stop().animate({scrollTop:targetTop});
         if($('#navbar-applications').is(':visible')){ $('#navbar-applications').trigger('click'); }          
     }
@@ -45,5 +45,15 @@ $(document.body).on('click', function (e) {
             $($this.attr('data-target')).stop(false, false).slideUp()
             $this.children('.plus').removeClass('active')
         }
+    }
+    
+    if($this.attr('data-social') == 'true' && window.location.search == '?page=social'){
+        e.preventDefault()
+        let target = $this.attr('data-target')
+        $(`.social-main_navbar-row-col figure`).removeClass('active')
+        $(`#${target}`).addClass('active')
+        $('html,body').stop().animate({scrollTop: $('.social-main-container-tab-navbar').position().top});
+        if($(`#${target}`).is(':visible')){ $(`#${target}`).trigger('click'); }
+        $('.social-main_pagination-panels').css('transform',`translateX(-${$(`#${target}`).attr('data-index')*100}%)`)
     }
 })

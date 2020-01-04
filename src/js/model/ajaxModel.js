@@ -24,4 +24,9 @@ export default {
         method: 'GET',
         fileType: 'json'
     },
+    social: {
+        url:'./data/social.json',
+        method: 'GET',
+        fileType: 'json'
+    },
 }

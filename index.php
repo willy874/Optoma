@@ -36,6 +36,10 @@ case 'desing':
 case 'knowledge':
     $fileIndex = 'knowledge';
     break;
+
+case 'social':
+    $fileIndex = 'social';
+    break;
     
 default:
     $fileIndex = 'home';
