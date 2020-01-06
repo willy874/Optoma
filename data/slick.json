@@ -154,104 +154,116 @@
     }],
     "about":[{
         "year": "2002",
-        "src": "./images/about/2002.jpg",
-        "figcaption": "Optoma Corporation officially established.Developed world's first 65-inch HD2 DLP®-based projection TV, and the world’s lightest thinnest and 50-inch DLP®-based projection TV (RD50, RD65).",
+        "src": "./images/about/2002.png",
+        "figcaption": "Optoma Corporation established",
         "href": "",
         "title": ""
     },{
         "year": "2003",
-        "src": "./images/about/2003.jpg",
-        "figcaption": "Announced the world's first under 1kg DLP® projector, the EP725. Launched the first 480p Home Theater projector, the H30.",
+        "src": "./images/about/2003.png",
+        "figcaption": "Optoma launched RD65- World’s Largest 65” Rear-Projection TV",
         "href": "",
         "title": ""
     },{
         "year": "2004",
-        "src": "./images/about/2004.jpg",
+        "src": "./images/about/2004.png",
         "figcaption": "The H30 won the CES 2004 Innovations Award.",
         "href": "",
         "title": ""
     },{
         "year": "2005",
-        "src": "./images/about/2005.jpg",
-        "figcaption": "Announced revolutionary MovieTime™ DV10, the all-in-one digital DVD projector at CES 2005. Optoma's SV50XF DLP® TV wins the CES 2005 Innovations Award.",
+        "src": "./images/about/2005.png",
+        "figcaption": "Announced revolutionary MovieTime™ DV10, the all-in-one digital DVD projector at CES 2005.Optoma's SV50XF DLP® TV wins the CES 2005 Innovations Award.",
         "href": "",
         "title": ""
     },{
         "year": "2006",
-        "src": "./images/about/2006.jpg",
-        "figcaption": "The No. 1 selling DLP® projector brand worldwide in 2006 (PMA Research). Launched the first true 1080P DLP® Home Cinema projector with studio quality image processor (HD81). Optoma is the first to introduce the high pixel, DLP® WXGA 720P home theater projector. Optoma is the first in the world to launch the SXGA+ high resolution, DLP® data projector.",
+        "src": "./images/about/2006.png",
+        "figcaption": "Optoma launched HD81- World’s 1st 1080P Home Cinema Projector",
         "href": "",
         "title": ""
     },{
         "year": "2007",
-        "src": "./images/about/2007.jpg",
-        "figcaption": "The NO.1 selling DLP® projector brand worldwide in 2007 (PMA Research). Listed in 'Taiwan High-tech Fast 50', released by Deloitte. Optoma is the only projector brand ranked in 'Asia Pacific High-tech Fast 500' by Deloitte. Optoma is awarded No. 4 in the 'Top 10 Golden BRIC' selected by China Credit Information Service Limited. The 'Taiwan Excellence' and 'Good Design' Award forDV11. The first to launch 720p Home Theater projector at 2 kg (HD65). The first to launch the lightest wide-format data projector EP1691, weighing only 1.24 kg.",
+        "src": "./images/about/2007.png",
+        "figcaption": "The NO.1 selling DLP® projector brand worldwide in 2007 (PMA Research).",
         "href": "",
         "title": ""
     },{
         "year": "2008",
-        "src": "./images/about/2008.jpg",
-        "figcaption": "Launched the world's first Pico projector, the PK101. The PK101 won the 2009 Innovations Design and Engineering Award and selected as Time Magazine's Top Ten Gadget. Winner of the 'Good Design Award' for both HD65 & EP782 announced by Ministry of Economic Affairs, Taiwan. Optoma in the Top 10 of 'Taiwan High –tech Fast 50' in Revenue Ranking, released by Deloitte.Ranked No.31 of '2008 Asia Pacific High-tech Fast 500' announced by Deloitte. The HD803, won the 'Taiwan Excellence Award'.",
+        "src": "./images/about/2008.png",
+        "figcaption": "Optoma launched PK101 -World’s 1st Pico Projector",
         "href": "",
         "title": ""
     },{
         "year": "2009",
-        "src": "./images/about/2009.jpg",
-        "figcaption": "Winner of the 'Good Design Award' for EX525ST, PK101, and EP783 announced by the Ministry of Economic Affairs, Taiwan. PK101 won the 'Taiwan Excellence Gold Award'. PK101 won the 'Best of What's New 2008', by Popular Science in China. Launched the market's most affordable 1080P Home Cinema Projector, the HD20.",
+        "src": "./images/about/2009.png",
+        "figcaption": "Winner of the 'Good Design Award' for EX525ST, PK101, and EP783 announced by the Ministry of Economic Affairs, Taiwan.",
         "href": "",
         "title": ""
     },{
         "year": "2010",
-        "src": "./images/about/2010.jpg",
-        "figcaption": "Optoma's HD86 won the CEA 2010 Best Projector Award. Launched world’s first 3D projector adaptor (3D-XL). The EX762 and PK301 were winners of the 'Taiwan Excellence Award 2010'.",
+        "src": "./images/about/2010.png",
+        "figcaption": "Optoma's HD86 won the CEA 2010 Best Projector Award. Launched world’s first 3D projector adaptor (3D-XL).",
         "href": "",
         "title": ""
     },{
         "year": "2011",
-        "src": "./images/about/2011.jpg",
-        "figcaption": "Announced world's first iPod dock pico projector, the Neo-i. The Neo-i went on to win the CES Innovation Award. Optoma awarded by the UK AV Magazine as the \"Best Home Cinema Projector Brand\".",
+        "src": "./images/about/2011.png",
+        "figcaption": "Announced world's first iPod dock pico projector, the Neo-i The Neo-i went on to win the CES Innovation Award.",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2012",
+        "src": "./images/about/2012.png",
+        "figcaption": "Optoma launched ZX210ST/ZW210ST- Optoma’s 1st Laser-LED Hybrid projector",
         "href": "",
         "title": ""
     },{
         "year": "2013",
-        "src": "./images/about/2013.jpg",
+        "src": "./images/about/2013.png",
         "figcaption": "Launched evolutionary ultra-mobile LED projector range, the ML750 and ML1000.",
         "href": "",
         "title": ""
     },{
-        "year": "2014",
-        "src": "./images/about/2014.jpg",
-        "figcaption": "Launched market's most affordable LED Home Cinema DLP projectors the HD90 and HD91. Optoma acquires critically acclaimed Californian consumer audio company, Nuforce.",
-        "href": "",
-        "title": ""
-    },{
         "year": "2015",
-        "src": "./images/about/2015.jpg",
-        "figcaption": "Launched the ZU650, Optoma’s first projector utilizing laser phosphor illumination technology. Introduced the HD28DSE, the world's first projector with Darbee Visual Presence video processing integration. Launched the award winning Optoma Nuforce Primo8 In-Ear Headphones. Launched the best-selling BE6 wireless Bluetooth In-Ear Headphones.",
+        "src": "./images/about/2015.png",
+        "figcaption": "Launched the ZU650, Optoma’s first projector utilizing laser phosphor illumination technology.",
         "href": "",
         "title": ""
     },{
         "year": "2016",
-        "src": "./images/about/2016.jpg",
-        "figcaption": "Announced industry first IP-certified, dust resistant DuraCore laser light engine line-up ZU650+, ZU850, ZU510T, ZH/ZW400UST/i",
+        "src": "./images/about/2016.png",
+        "figcaption": "Announced industry first IP-certified, dust resistant DuraCore laser light engine line-up:ZU650+, ZU850, ZU510T, ZH/ZW400UST/i",
         "href": "",
         "title": ""
     },{
         "year": "2017",
-        "src": "./images/about/2017.jpg",
+        "src": "./images/about/2017.png",
         "figcaption": "Optoma launched ProScene ZU850 featuring multicolor laser projector with ultimate color performance",
         "href": "",
         "title": ""
     },{
         "year": "2018",
-        "src": "./images/about/2018.jpg",
+        "src": "./images/about/2018.png",
         "figcaption": "Optoma launched World’s 1st Smart Projector to support home automation, voice control, personal media center and App Marketplace (UHL55)",
         "href": "",
         "title": ""
     },{
         "year": "2019",
-        "src": "./images/about/2019.jpg",
+        "src": "./images/about/2019-1.png",
         "figcaption": "Optoma’s 130\" Full HD 1080P award-winning all-in-one QUAD LED display integrates HQUltra and media player technology for an easy out-of-the-box installation (FHDQ130)",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2019",
+        "src": "./images/about/2019-2.png",
+        "figcaption": "Optoma launched high brightness ProScene ZK1050 4K UHD Laser Projector",
+        "href": "",
+        "title": ""
+    },{
+        "year": "2019",
+        "src": "./images/about/2019-3.png",
+        "figcaption": "Optoma launched the Dolby Digital 2.0 all-in-one Smart 4K UHD Laser Cinema P1 Ultra-Short Throw Projector for Home",
         "href": "",
         "title": ""
     }],
@@ -297,20 +309,36 @@
         "alt": "Our Braud",
         "description": "Amazon’s Choice"
     },{
-        "src": "./images/ourBrand/ourBrand-sec3-img1.png",
+        "src": "./images/ourBrand/ourBrand-sec3-img5.png",
         "alt": "Our Braud",
-        "description": "Projector Central 2019 Infocomm Best of Show Award"
+        "description": "Gotta Be Mobile Best of CES 2019"
     },{
-        "src": "./images/ourBrand/ourBrand-sec3-img2.png",
+        "src": "./images/ourBrand/ourBrand-sec3-img6.png",
         "alt": "Our Braud",
-        "description": "Best of CES Asia 2019 ZOL"
+        "description": "Engadget Best of CES 2019 Finalist"
     },{
-        "src": "./images/ourBrand/ourBrand-sec3-img3.png",
+        "src": "./images/ourBrand/ourBrand-sec3-img7.png",
         "alt": "Our Braud",
-        "description": "AV Technology’s Best of Show"
+        "description": "WHAT HI*FI India 5 Stars"
     },{
-        "src": "./images/ourBrand/ourBrand-sec3-img4.png",
+        "src": "./images/ourBrand/ourBrand-sec3-img8.png",
         "alt": "Our Braud",
-        "description": "Amazon’s Choice"
+        "description": "India T3 Magazine Projector of the Year"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img9.png",
+        "alt": "Our Braud",
+        "description": "SVI Shortlisted Trade Award 2019 Finalist"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img10.png",
+        "alt": "Our Braud",
+        "description": "Digital Trends Editors’ Choice"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img11.png",
+        "alt": "Our Braud",
+        "description": "VGP2018 Summer Award – Japan"
+    },{
+        "src": "./images/ourBrand/ourBrand-sec3-img12.png",
+        "alt": "Our Braud",
+        "description": "Taiwan Excellence 2019 Silver Award"
     }]
 }

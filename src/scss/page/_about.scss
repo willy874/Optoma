@@ -28,9 +28,10 @@
 
                 h2{
                     @include display-2;
+                    font-weight: bolder;
                     color: #fafaf9;
                     text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
-                    font-weight: bolder;
+                    
                 }
             }
         }
@@ -536,6 +537,9 @@
         transform: translate(0,66%);
         box-shadow: none;
         border-radius: 50%;
+        @include media-max($sm) {
+            display: none !important;
+        }
         &:hover{
             background-color: #f6f6f6;
         }
@@ -615,7 +619,7 @@
                 position: relative;
                 margin: 0.5rem 0;
                 padding: 0 1.5rem;
-                height: 1.2rem * 4;
+                height: 1.2rem * 3;
                 overflow: hidden;
                 z-index: 950;
 
@@ -623,17 +627,17 @@
                     color: #fff;
                     font-size: 1rem;
                     line-height: 1.2rem;
-                    
+                    cursor: auto;
                 }
             }
-            &:hover{
-                padding: 0;
-                figcaption{
-                    padding: 3rem 1.5rem;
-                    background-color: rgba(0, 0, 0, 0.6);
-                    height: auto;
-                }
-            }
+            // &:hover{
+            //     padding: 0;
+            //     figcaption{
+            //         padding: 3rem 1.5rem;
+            //         background-color: rgba(0, 0, 0, 0.6);
+            //         height: auto;
+            //     }
+            // }
         }
         
     }
