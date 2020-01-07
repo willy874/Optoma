@@ -203,7 +203,7 @@ main{
                     right: -1.25rem;
                     display: inline-block;
                     pointer-events: none;
-                    transform: translateY(0) rotate(0deg);
+                    transform: translateY(-25%) rotate(0deg);
                     transition: all 0.3s;
                     border: {
                         color: #fdfafa transparent transparent transparent;
@@ -215,7 +215,7 @@ main{
                     }
                 }
                 &.active>a::after{
-                    transform: translateY(-50%) rotate(180deg);
+                    transform: translateY(-75%) rotate(180deg);
                 }
                 
                 

@@ -1,0 +1,109 @@
+{
+    "knowledge":[{
+        "keyword": ["Wireless","UHD","Panel","Displays"],
+        "article": [{
+            "type": "post",
+            "url": "",
+            "heading": "4K UHD",
+            "figcaption": "With over eight million pixels, 4K Ultra HD resolution brings four times more detail than Full HD; delivering sharper, life-like images and richer colors.?",
+            "paragraph": "",
+            "title": "4K UHD",
+            "alt": "4K UHD",
+            "src": "./images/knowledge/knowledge-img1.png"
+        }]
+    },{
+        "keyword": ["Wireless","HDR","Panel","Displays"],
+        "article": [{
+            "type": "post",
+            "url": "",
+            "heading": "HDR",
+            "figcaption": "High Dynamic Range, a larger, more perceptible range of contrast between the brightest and darkest parts of an image.",
+            "paragraph": "",
+            "title": "HDR",
+            "alt": "HDR",
+            "src": "./images/knowledge/knowledge-img2.png"
+        },{
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "DuraCore Laser",
+            "figcaption": "Maintenance-free laser light sources delivers a minimum of 20,000 hours in full brightness mode.",
+            "title": "DuraCore Laser",
+            "alt": "DuraCore Laser",
+            "src": "./images/knowledge/knowledge-img3.png"
+        }]
+    },{
+        "keyword": ["Wireless","MCL","Laser","3D","Viewing"],
+        "article": [{
+            "type": "post",
+            "url": "",
+            "heading": "MCL Laser",
+            "figcaption": "Multi-Color Laser technology delivers rich and accurate color using red and blue laser light sources.",
+            "paragraph": "",
+            "title": "MCL Laser",
+            "alt": "MCL Laser",
+            "src": "./images/knowledge/knowledge-img4.png"
+        },{
+            "type": "post",
+            "url": "",
+            "heading": "3D Viewing",
+            "figcaption": "Optoma Full 3D projectors display true 3D content from almost any 3D source, including Blu-ray  players, broadcasting, game consoles and gaming PCs.",
+            "paragraph": "",
+            "title": "3D Viewing",
+            "alt": "3D Viewing",
+            "src": "./images/knowledge/knowledge-img5.png"
+        }]
+    },{
+        "keyword": ["Wireless","Gaming","Game","Competition"],
+        "article": [{
+            "type": "youtube",
+            "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
+            "heading": "Gaming",
+            "figcaption": "Optoma’s Enhanced Gaming Mode gives gamers a best-in-class response time to keep gamers engaged with even the most demanding requirements.",
+            "title": "Gaming",
+            "alt": "Gaming",
+            "src": "./images/knowledge/knowledge-img6.png"
+        }]
+    },{
+        "keyword": ["Wireless","Cinematic","Blue Light","FOV"],
+        "article": [{
+            "type": "post",
+            "url": "",
+            "heading": "Low Blue Light",
+            "figcaption": "Reflective light carries lower levels of blue light and helps reduce eye strain and eye damage.",
+            "paragraph": "",
+            "title": "Low Blue Light",
+            "alt": "Low Blue Light",
+            "src": "./images/knowledge/knowledge-img7.png"
+        },{
+            "type": "post",
+            "url": "",
+            "heading": "Cinematic FOV",
+            "figcaption": "Watch movies at home that offer the same experience as movie theaters. The secret is following the cinematic field of view guide.",
+            "paragraph": "",
+            "title": "Cinematic FOV",
+            "alt": "Cinematic FOV",
+            "src": "./images/knowledge/knowledge-img8.png"
+        }]
+    },{
+        "keyword": ["Wireless","Interactivity","VR"],
+        "article": [{
+            "type": "post",
+            "url": "",
+            "heading": "Interactivity",
+            "figcaption": "Simple and efficient collaboration with interactive touch flat panels and projectors.",
+            "paragraph": "",
+            "title": "Interactivity",
+            "alt": "Interactivity",
+            "src": "./images/knowledge/knowledge-img9.png"
+        },{
+            "type": "post",
+            "url": "",
+            "heading": "NPP LED",
+            "figcaption": "LED walls utilize Narrow Pixel Pitch (NPP) technology to deliver a bright and complete image without the thin bezels of traditional LCD walls.",
+            "paragraph": "",
+            "title": "NPP LED",
+            "alt": "NPP LED",
+            "src": "./images/knowledge/knowledge-img10.png"
+        }]
+    }]
+}

@@ -29,8 +29,8 @@ case 'innovation':
     $fileIndex = 'innovation';
     break;
 
-case 'desing':
-    $fileIndex = 'desing';
+case 'design':
+    $fileIndex = 'design';
     break;
 
 case 'knowledge':

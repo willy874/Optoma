@@ -3,7 +3,7 @@ import $ from 'jquery/src/jquery'
 //import 'jquery.animate-number/jquery.animateNumber.min'
 import * as Models from './js/model'
 Models.Status.knowledge.ajaxCondition = 'Wireless'
-
+Models.Status.design.ajaxCondition = 'design'
 
 import Navbar from './js/component/navbar'
 $.ajax(Navbar)
@@ -17,6 +17,7 @@ import Worldwide from './js/component/worldwide'
 $.ajax(Worldwide)
 import Social from './js/component/social'
 $.ajax(Social)
+
 
 import './js/event/onload'
 import './js/event/click'
