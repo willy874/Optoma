@@ -325,7 +325,7 @@ export default {
                  slidesToScroll: 1,
                })    
         }
-        //home Applications
+        //home Awards
         const ajaxElement7 = document.querySelector('#silck-awards')
         if( ajaxElement7 != undefined){ 
             m.render(ajaxElement7,[
@@ -371,11 +371,124 @@ export default {
                      }
                
                    }]
+               })
+                   
+        }
+        //navbar Desing
+        const ajaxElement8 = document.querySelector('#banner-design')
+        if( ajaxElement8 != undefined){ 
+            m.render(ajaxElement8,[
+                data.bannerDesign.map(item=>{
+                    return (item.type === "image")? m('div',{
+                        class: 'silck-item',
+                        style:{
+                            backgroundImage: `url(${item.src})`
+                        }
+                    },[
+                        m('figure',[
+                            m('mask')
+                        ]),
+                        m('div',{
+                            class: 'silck-item-heading'
+                        },[
+                            m('h2',item.heading),
+                            m('h3',item.description)
+                        ])
+                        
+                    ]):(item.type === "youtobe")? m('div',{
+                        class: 'silck-item'
+                    },[
+                        m('div',{
+                            class: 'silck-item-video'
+                        },[
+                            m('iframe[allowfullscreen]',{
+                                src: `https://www.youtube.com/embed/${item.src.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop()}`,
+                                frameborder: 0,
+                                allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                                title: item.title,
+                                style: {
+                                    width: '100%',
+                                }
+                            }),
+                            m('div',{
+                                class: 'silck-item-video-hover'
+                            })
+                        ])
+                    ]): ''
+
+                })
+                
+            ])
+             $('#banner-design').slick({
+                 dots: true,
+                 infinite: true,
+                 autoplay: false,
+                 prevArrow: '<button type="button" class="slick-prev"></button>',
+                 nextArrow: '<button type="button" class="slick-next"></button>',
+                 speed: 400,
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
+               })    
+        }
+        //navbar Innovation 
+        const ajaxElement9 = document.querySelector('#banner-innovation')
+        if( ajaxElement9 != undefined){ 
+            m.render(ajaxElement9,[
+                data.bannerInnovation.map(item=>{
+                    return (item.type === "image")? m('div',{
+                        class: 'silck-item',
+                        style:{
+                            backgroundImage: `url(${item.src})`
+                        }
+                    },[
+                        m('figure',[
+                            m('mask')
+                        ]),
+                        m('div',{
+                            class: 'silck-item-heading'
+                        },[
+                            m('h2',m.trust(item.heading)),
+                            m('h3',m.trust(item.description))
+                        ])
+                        
+                    ]):(item.type === "youtobe")? m('div',{
+                        class: 'silck-item'
+                    },[
+                        m('div',{
+                            class: 'silck-item-video'
+                        },[
+                            m('iframe[allowfullscreen]',{
+                                src: `https://www.youtube.com/embed/${item.src.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop()}`,
+                                frameborder: 0,
+                                allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                                title: item.title,
+                                style: {
+                                    width: '100%',
+                                }
+                            }),
+                            m('div',{
+                                class: 'silck-item-video-hover'
+                            })
+                        ])
+                    ]): ''
+
+                })
+                
+            ])
+             $('#banner-innovation').slick({
+                 dots: true,
+                 infinite: true,
+                 autoplay: false,
+                 prevArrow: '<button type="button" class="slick-prev"></button>',
+                 nextArrow: '<button type="button" class="slick-next"></button>',
+                 speed: 400,
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
                })    
         }
     },
     error: function() {
-        console.log('ajax:',ajaxUrl,'，載入失敗')
+        console.log('ajax:',AjaxModel.slick.url,'，載入失敗')
     }
 }
 

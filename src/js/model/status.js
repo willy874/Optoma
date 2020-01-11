@@ -4,5 +4,8 @@ export default {
     },
     design:{
         ajaxCondition: 'none'
+    },
+    innovation:{
+        ajaxCondition: 'none'
     }
 }

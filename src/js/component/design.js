@@ -54,13 +54,17 @@ export default {
                                     alt: item.alt,
                                     src: item.src
                                 }),
-                                (item.heading)?m('h4',item.heading):'',                                
+                                (item.heading)?m('h4',[
+                                    m.trust(item.heading)
+                                ]):'',                                
                                 m('p',[ 
                                     m('a[target="_blank"]',{
                                         title: item.title,
                                         href: item.url,
                                         "data-fancybox": item.type === 'youtube'
-                                    },item.figcaption),
+                                    },[
+                                        m.trust(item.figcaption)
+                                    ]),
                                 ]),
                             ])
                         ])

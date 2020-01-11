@@ -340,5 +340,43 @@
         "src": "./images/ourBrand/ourBrand-sec3-img12.png",
         "alt": "Our Braud",
         "description": "Taiwan Excellence 2019 Silver Award"
+    }],
+    "bannerDesign":[{
+        "type": "image",
+        "src": "./images/design/design-banner.jpg",
+        "alt": "Desing Center",
+        "heading": "Desing Center",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/design/design-banner.jpg",
+        "alt": "Desing Center",
+        "heading": "Desing Center",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "youtobe",
+        "src": "https://www.youtube.com/watch?v=RD6x79PyJR0",
+        "alt": "OptomaAsia",
+        "heading": "OptomaAsia",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    }],
+    "bannerInnovation":[{
+        "type": "image",
+        "src": "./images/innovation/innovation-banner.jpg",
+        "alt": "Leading through Innovation",
+        "heading": "Leading through<br/>Innovation",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/innovation/innovation-banner.jpg",
+        "alt": "Leading through Innovation",
+        "heading": "Leading through<br/>Innovation",
+        "description": "Dream. Create. Inspire."
+    },{
+        "type": "youtobe",
+        "src": "https://www.youtube.com/watch?v=RD6x79PyJR0",
+        "alt": "OptomaAsia",
+        "heading": "OptomaAsia",
+        "description": "Dream. Create. Inspire."
     }]
 }

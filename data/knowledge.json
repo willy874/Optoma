@@ -1,6 +1,6 @@
 {
     "knowledge":[{
-        "keyword": ["Wireless","UHD","Panel","Displays"],
+        "keyword": ["knowledge","UHD","Panel","Displays"],
         "article": [{
             "type": "post",
             "url": "",
@@ -12,7 +12,7 @@
             "src": "./images/knowledge/knowledge-img1.png"
         }]
     },{
-        "keyword": ["Wireless","HDR","Panel","Displays"],
+        "keyword": ["knowledge","HDR","Panel","Displays"],
         "article": [{
             "type": "post",
             "url": "",
@@ -32,7 +32,7 @@
             "src": "./images/knowledge/knowledge-img3.png"
         }]
     },{
-        "keyword": ["Wireless","MCL","Laser","3D","Viewing"],
+        "keyword": ["knowledge","MCL","Laser","3D","Viewing"],
         "article": [{
             "type": "post",
             "url": "",
@@ -53,7 +53,7 @@
             "src": "./images/knowledge/knowledge-img5.png"
         }]
     },{
-        "keyword": ["Wireless","Gaming","Game","Competition"],
+        "keyword": ["knowledge","Gaming","Game","Competition"],
         "article": [{
             "type": "youtube",
             "url": "https://www.youtube.com/watch?v=q1ZLFmj038I",
@@ -64,7 +64,7 @@
             "src": "./images/knowledge/knowledge-img6.png"
         }]
     },{
-        "keyword": ["Wireless","Cinematic","Blue Light","FOV"],
+        "keyword": ["knowledge","Cinematic","Blue Light","FOV"],
         "article": [{
             "type": "post",
             "url": "",
@@ -85,7 +85,7 @@
             "src": "./images/knowledge/knowledge-img8.png"
         }]
     },{
-        "keyword": ["Wireless","Interactivity","VR"],
+        "keyword": ["knowledge","Interactivity","VR"],
         "article": [{
             "type": "post",
             "url": "",

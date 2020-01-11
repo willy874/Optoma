@@ -1,11 +1,11 @@
 import m from 'mithril'
-import AjaxModel from '../model/ajaxModel'
+import Models from '../model/ajaxModel'
 
 export default {
-    url: AjaxModel.node.url, 
-    dataType: AjaxModel.node.fileType, 
+    url: Models.node.url, 
+    dataType: Models.node.fileType, 
     async: true,
-    type: AjaxModel.node.method,
+    type: Models.node.method,
     success: function(data) {
         const ajaxElement = document.querySelector('#navbar-main')
         if( data.msg =="false" ) return
@@ -74,6 +74,6 @@ export default {
         ])
     },
     error: function() {
-        console.log('ajax:',ajaxUrl,'，navbar載入失敗')
+        console.log('ajax:',Models.node.url,'，navbar載入失敗')
     }
 }

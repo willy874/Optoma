@@ -19,6 +19,11 @@ export default {
         method: 'GET',
         fileType: 'json'
     },
+    innovation: {
+        url:'./data/innovation.json',
+        method: 'GET',
+        fileType: 'json'
+    },
     worldwide: {
         url:'./data/worldwide.json',
         method: 'GET',

@@ -157,6 +157,9 @@
                                     @include display-4;
                                 }
                             }
+                            &:hover{
+                                opacity: 0.9;
+                            }
                         }
                     }
                 }
