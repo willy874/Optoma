@@ -1,0 +1,41 @@
+<btn>
+15px
+#fbfcfc
+#dad9d9
+#92a9c9
+
+Voice assistant
+Optoma is the first projector brand to support Amazon Alexa and Google Assistant services. Connect your projector for seamless hands-free control. 
+
+InfoWall
+Optoma¡¦s InfoWall can be scheduled to make personalized information accessible, when you want it, the way you want it. 
+
+Optoma Connect
+The convenient gateway to set up and customize your InfoWall.
+
+IFTTT
+Seamlessly integrating your projector with your smart home ecosystem.
+
+QuickCast Pro
+No installation needed. Share your screen with a click of a button. 
+
+UHDCast Pro
+Enjoy screen sharing to any projector. 
+
+TapCast
+The smartphone APP to screen share and remote control with ease. 
+
+TapCast Pro
+Using smartphone APP to achieve wireless projection and various control functions
+on Smart projectors, IFPs and Smart Panels. 
+
+<h>
+27px
+<p>
+15px
+text-color
+#fff
+#505050
+bg-color
+#fdfcfc
+#c6d5e9

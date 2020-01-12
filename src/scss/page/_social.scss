@@ -20,7 +20,8 @@
         }
         &#{-display}{
             h2{
-                @include display-1;
+                @include display-2;
+                font-weight: bolder;
                 color: #000;
                 text-align: center;
             }
@@ -155,6 +156,9 @@
                                 a{
                                     @include display-4;
                                 }
+                            }
+                            &:hover{
+                                opacity: 0.9;
                             }
                         }
                     }

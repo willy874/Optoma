@@ -192,10 +192,33 @@ main{
                 position: relative;
                 margin-left: 0.75rem;
                 margin-right: 1.25rem;
+                
                 @include media-max($xl) {
                     width: 100%;
                     padding-left: 0.75rem;
                 }
+
+                @include media-min($xl) {
+                    &:not(.active){
+                        .header_dropdown-ul{
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            display: block!important;
+                            max-height: 0;
+                            transition: all 0.6s;
+                            overflow: hidden;
+                        }
+                        &:hover{
+                            .header_dropdown-ul{
+                                padding-top: 1rem;
+                                padding-bottom: 1rem;
+                                max-height: 25rem;
+                            }
+                        }
+                    }
+                }
+                
+
                 >a::after {
                     content: '';
                     position: absolute;
@@ -203,7 +226,7 @@ main{
                     right: -1.25rem;
                     display: inline-block;
                     pointer-events: none;
-                    transform: translateY(0) rotate(0deg);
+                    transform: translateY(-25%) rotate(0deg);
                     transition: all 0.3s;
                     border: {
                         color: #fdfafa transparent transparent transparent;
@@ -214,9 +237,12 @@ main{
                         right: 2rem;
                     }
                 }
+                
                 &.active>a::after{
-                    transform: translateY(-50%) rotate(180deg);
+                    transform: translateY(-75%) rotate(180deg);
                 }
+                
+                
                 
                 
                 &:hover {
@@ -232,7 +258,7 @@ main{
     }
 
     &#{_dropdown-ul} {
-        display: none;
+        //display: none;
         @include media-min($xl) {
             @include py(1rem);
             background-color: #4c4c4c;

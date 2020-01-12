@@ -27,14 +27,16 @@
             @include container;
             h2{
                 text-align: center;
-                font-size: 1.5rem;
-                font-weight: 700;
+                @include display-4;
+                font-weight: bolder;
                 margin-bottom: 0;
+                color: #000000;
             }
             h3{
+                font-size: 0.9375rem;
                 text-align: center;
-                font-size: 0.875rem;
-                font-weight: 700;
+                color: #000000;
+                margin-bottom: 3rem;
             }
 
             //&#{-video}{}
@@ -70,53 +72,58 @@
             &#{-row}{
                 @include row;
                 @include mx(-0.25rem);
-                img{
-                    width: 100%;
-                }
-                h4{
-                    font-weight: 900;
-                    @include text-ellipsis;
-                    @include my(0.5rem);
-                    @include px(1.5rem);
-                }
-                p{
-                    font-size: 0.875rem;
-                    line-height: 1.25rem;
-                    height: 5rem;
-                    overflow: hidden;
-                    margin-bottom: 0.75rem;
-                    @include px(1.5rem);
-                }
 
-                &#{-col-1}{
-                    @include stretched-link;
-                    @include col(25%);
-                    @include px(0.25rem);
-                    height: 480px;
-                    figure{
-                        box-shadow: 0 0.125rem 0.25rem 0.125rem rgba(0,0,0,0.15);
-                        overflow: hidden;
-                        img{
-                        width: 100%;
-                        height: 330px;
-                        background-size: cover;
-                        margin-bottom: 0.25rem;
-                        }
-                    }
-                }
-                &#{-col-2}{
-                    @include stretched-link;
+                &#{-col}{
                     @include col(50%);
-                    @include px(0.25rem);
-                    height: 480px;
-                    figure{
-                        box-shadow: 0 0.125rem 0.125rem 0.125rem rgba(0,0,0,0.15);
-                        overflow: hidden;
-                        img{
+                    @include media-max($lg) {
+                        @include col(100%);
+                    }
+                    @include px(0);
+                    display: flex;
+
+                    &#{-figure}{
+                        @include stretched-link;
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                        flex-basis: auto;
                         width: 100%;
-                        height: 330px;
-                        background-size: cover;
-                        margin-bottom: 0.25rem;
+                        @include px(0.25rem);
+                        height: 30rem;
+
+                        figure{
+                            box-shadow: 0 0.125rem 0.125rem 0.125rem rgba(0,0,0,0.15);
+                            overflow: hidden;
+                            transition: all 0.2s;
+
+                            img{
+                            width: 100%;
+                            height: 20rem;
+                            background-size: cover;
+                            margin-bottom: 0.25rem;
+                            }
+                            h4{
+                                @include text-ellipsis;
+                                @include my(0.5rem);
+                                @include px(1.5rem);
+                                a{
+                                    font-size: 1.25rem;
+                                    color: #000000;
+                                    font-weight: bolder;
+                                }
+                            }
+                            p{
+                                line-height: 1.25rem;
+                                height: 1.25rem*4;
+                                overflow: hidden;
+                                color: #000000;
+                                font-size: 0.875rem;
+                                @include px(1.5rem);
+                                margin-bottom: 0.75rem;
+                    
+                            }
+                            &:hover{
+                                background-color: #c6d5e9;
+                            } 
                         }
                     }
                 }

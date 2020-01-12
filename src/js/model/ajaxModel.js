@@ -1,6 +1,6 @@
 export default {
-    photo: {
-        url:'./data/photo.json',
+    design: {
+        url:'./data/design.json',
         method: 'GET',
         fileType: 'json',
     },
@@ -14,8 +14,13 @@ export default {
         method: 'GET',
         fileType: 'json',
     },
-    article: {
-        url:'./data/article.json',
+    knowledge: {
+        url:'./data/knowledge.json',
+        method: 'GET',
+        fileType: 'json'
+    },
+    innovation: {
+        url:'./data/innovation.json',
         method: 'GET',
         fileType: 'json'
     },

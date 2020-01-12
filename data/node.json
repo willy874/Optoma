@@ -11,7 +11,7 @@
         "title": "ABOUT OPTOMA"
     },{
         "nodeId": "a-3",
-        "nodeName": "APPLCATIONS",
+        "nodeName": "APPLICATIONS",
         "childrenNode": [{
             "nodeId": "a-3.1",
             "nodeName": "Home",
@@ -81,7 +81,7 @@
     },{
         "nodeId": "a-5",
         "nodeName": "DESIGN",
-        "href": "./index.php?page=desing",
+        "href": "./index.php?page=design",
         "title": "DESIGN"
     },{
         "nodeId": "a-6",

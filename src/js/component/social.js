@@ -105,6 +105,6 @@ export default {
         
     },
     error: function() {
-        console.log('ajax:',ajaxUrl,'，載入失敗')
+        console.log('ajax:',Models.Ajax.social.url,'，載入失敗')
     }
 }
