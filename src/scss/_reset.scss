@@ -160,9 +160,6 @@ a:not([href]):not([tabindex]):focus {
     outline: 0;
 }
 
-i {
-    @include fas-icon;
-}
 
 button{
     cursor: pointer;

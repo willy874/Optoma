@@ -3,96 +3,88 @@
         "keyword": ["innovation"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "Voice assistant",
             "figcaption": "Optoma is the first projector brand to support Amazon Alexa and Google Assistant services. Connect your projector for seamless hands-free control.",
             "paragraph": "",
             "title": "Voice assistant",
-            "alt": "Voice assistant",
             "src": "./images/innovation/innovation-img1.png"
         }]
     },{
         "keyword": ["innovation"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "InfoWall",
             "figcaption": "Optoma’s InfoWall can be scheduled to make personalized information accessible, when you want it, the way you want it. ",
             "paragraph": "",
             "title": "InfoWall",
-            "alt": "InfoWall",
             "src": "./images/innovation/innovation-img2.png"
         }]
     },{
         "keyword": ["innovation"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "Optoma Connect",
             "figcaption": "The convenient gateway to set up and customize your InfoWall.",
             "paragraph": "",
             "title": "Optoma Connect",
-            "alt": "Optoma Connect",
             "src": "./images/innovation/innovation-img3.png"
         }]
     },{
         "keyword": ["innovation"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "IFTTT",
             "figcaption": "Seamlessly integrating your projector with your smart home ecosystem.",
             "paragraph": "",
             "title": "IFTTT",
-            "alt": "IFTTT",
             "src": "./images/innovation/innovation-img4.png"
         }]
     },{
         "keyword": ["innovation"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "QuickCast Pro",
             "figcaption": "No installation needed. Share your screen with a click of a button.",
             "paragraph": "",
             "title": "QuickCast Pro",
-            "alt": "QuickCast Pro",
             "src": "./images/innovation/innovation-img5.png"
         }]
     },{
         "keyword": ["innovation"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "UHDCast Pro",
             "figcaption": "Enjoy screen sharing to any projector. ",
             "paragraph": "",
             "title": "UHDCast Pro",
-            "alt": "UHDCast Pro",
             "src": "./images/innovation/innovation-img6.png"
         }]
     },{
         "keyword": ["innovation"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "TapCast",
             "figcaption": "The smartphone APP to screen share and remote control with ease.",
             "paragraph": "",
             "title": "TapCast",
-            "alt": "TapCast",
             "src": "./images/innovation/innovation-img7.png"
         }]
     },{
         "keyword": ["innovation"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "TapCast Pro",
             "figcaption": "Using smartphone APP to achieve wireless projection and various control functions<br/>on Smart projectors, IFPs and Smart Panels. ",
             "paragraph": "",
             "title": "TapCast Pro",
-            "alt": "TapCast Pro",
             "src": "./images/innovation/innovation-img8.png"
         }]
     }]

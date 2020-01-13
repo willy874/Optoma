@@ -47,7 +47,7 @@ $(document.body).on('click', function (e) {
         }
     }
     
-    if($this.attr('data-social') == 'true' && window.location.search == '?page=social'){
+    if($this.attr('data-social') == 'true' && window.location.search == Models.Route.social){
         e.preventDefault()
         let target = $this.attr('data-target')
         $(`.social-main_navbar-row-col figure`).removeClass('active')

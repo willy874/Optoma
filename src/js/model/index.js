@@ -1,5 +1,6 @@
 import AjaxModel from './ajaxModel'
 import StatusModel from './status'
+import RouteModel from './route'
 
 class Model{
     constructor(vnode){
@@ -11,12 +12,17 @@ class Model{
     ajax(){
         return AjaxModel
     }
+    route(){
+        return RouteModel
+    }
 }
 const Models = new Model
 const Status = Models.status()
 const Ajax   = Models.ajax()
+const Route   = Models.route()
 
 export {
     Status,
-    Ajax
+    Ajax,
+    Route
 }

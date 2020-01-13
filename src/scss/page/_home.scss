@@ -6,6 +6,17 @@
         @include media-max($sm) {
             height: 800px;
         }
+        &#{-bg}{
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-position: 47% center;
+            background-size: cover;
+            z-index: 3;
+            opacity: 0.4;
+        }
         &#{-bgUpper}{
             position: absolute;
             top: 0;
@@ -15,7 +26,7 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 4;
-            animation: star-sky-1 5s linear infinite;//
+            animation: star-sky-1 2.5s linear infinite;//
         }
         &#{-bgLower}{
             position: absolute;
@@ -26,7 +37,7 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 5;
-            animation: star-sky-2 5s linear infinite;
+            animation: star-sky-2 2.5s linear infinite;
         }
         &#{-container}{
             @include container;
@@ -177,7 +188,7 @@
         background-size: cover;
         background-position: center;
         height: 100vh;
-
+        background-color: #101010;
         &#{-container}{
             @include container;
                 display: flex;
