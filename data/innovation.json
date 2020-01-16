@@ -1,4 +1,23 @@
 {
+    "banner":[{
+        "type": "image",
+        "src": "./images/innovation/innovation-banner.jpg",
+        "alt": "Leading through Innovation",
+        "heading": "Leading through<br/>Innovation",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/innovation/innovation-banner.jpg",
+        "alt": "Leading through Innovation",
+        "heading": "Leading through<br/>Innovation",
+        "description": "Dream. Create. Inspire."
+    },{
+        "type": "youtobe",
+        "src": "https://www.youtube.com/watch?v=RD6x79PyJR0",
+        "alt": "OptomaAsia",
+        "heading": "OptomaAsia",
+        "description": "Dream. Create. Inspire."
+    }],
     "list":[{
         "keyword": ["innovation"],
         "article": [{

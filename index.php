@@ -53,6 +53,7 @@ include $fileIndex.'.html';
 
     </main>
 <?php include 'footer.html'; ?>
+<?php include 'data/index.php'; ?>
 <script type="text/javascript" src="./dist/js/dist.bundle.js"></script>
 </body>
 </html>

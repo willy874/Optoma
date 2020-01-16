@@ -1,0 +1,106 @@
+{
+    "banner":[{
+        "type": "image",
+        "src": "./images/banner/main-page_home.jpg",
+        "alt": "Home",
+        "heading": "Home",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/banner/main-page_House of Worship.jpg",
+        "alt": "House of Worship",
+        "heading": "House of Worship",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/banner/main-page_Medical.jpg",
+        "alt": "Medical",
+        "heading": "Medical",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/banner/main-page_Museums.jpg",
+        "alt": "Museums",
+        "heading": "Museums",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/banner/main-page_Portable.jpg",
+        "alt": "Portable",
+        "heading": "Portable",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/banner/main-page_Public Sector.jpg",
+        "alt": "Sector",
+        "heading": "Sector",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/banner/main-page_Retail.jpg",
+        "alt": "Retail",
+        "heading": "Retail",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "image",
+        "src": "./images/banner/main-page_Simulation.jpg",
+        "alt": "Simulation",
+        "heading": "Simulation",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    },{
+        "type": "youtobe",
+        "src": "https://www.youtube.com/watch?v=RD6x79PyJR0",
+        "alt": "OptomaAsia",
+        "heading": "OptomaAsia",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+    }],
+    "navbar":[{
+        "heading": "Home",
+        "href": "#sec1",
+        "title": "Home"
+    },{
+        "heading": "Entertainment",
+        "href": "#sec2",
+        "title": "Entertainment"
+    },{
+        "heading": "Education & Training",
+        "href": "#sec3",
+        "title": "Education & Training"
+    },{
+        "heading": "House of Worship",
+        "href": "#sec4",
+        "title": "House of Worship"
+    },{
+        "heading": "Retail",
+        "href": "#sec5",
+        "title": "Retail"
+    },{
+        "heading": "Corporate",
+        "href": "#sec6",
+        "title": "Corporate"
+    },{
+        "heading": "Portable",
+        "href": "#sec7",
+        "title": "Portable"
+    },{
+        "heading": "Medical",
+        "href": "#sec8",
+        "title": "Medical"
+    },{
+        "heading": "Museums",
+        "href": "#sec9",
+        "title": "Museums"
+    },{
+        "heading": "Gaming",
+        "href": "#sec10",
+        "title": "Gaming"
+    },{
+        "heading": "Public Sectors",
+        "href": "#sec11",
+        "title": "Public Sectors"
+    },{
+        "heading": "Simulation",
+        "href": "#sec12",
+        "title": "Simulation"
+    }]
+}

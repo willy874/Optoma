@@ -1,16 +1,22 @@
-{
-    "home":[{
-        "src": "./images/design/design-img1.png",
-        "url": "index.php?page=detail",
-        "title": "Gaming"
+{   
+    "banner":[{
+        "type": "image",
+        "src": "./images/design/design-banner.jpg",
+        "alt": "Desing Center",
+        "heading": "Desing Center",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
     },{
-        "src": "./images/design/design-img2.png",
-        "url": "index.php?page=detail",
-        "title": "Entertainment"
+        "type": "image",
+        "src": "./images/design/design-banner.jpg",
+        "alt": "Desing Center",
+        "heading": "Desing Center",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
     },{
-        "src": "./images/design/design-img3.png",
-        "url": "index.php?page=detail",
-        "title": "Portable"
+        "type": "youtobe",
+        "src": "https://www.youtube.com/watch?v=RD6x79PyJR0",
+        "alt": "OptomaAsia",
+        "heading": "OptomaAsia",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
     }],
     "list":[{
         "keyword": ["design"],
