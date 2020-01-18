@@ -26,7 +26,7 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 4;
-            animation: star-sky-1 2.5s linear infinite;//
+            animation: star-sky-1 7.5s linear infinite;//
         }
         &#{-bgLower}{
             position: absolute;
@@ -37,7 +37,7 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 5;
-            animation: star-sky-2 2.5s linear infinite;
+            animation: star-sky-2 7.5s linear infinite;
         }
         &#{-container}{
             @include container;
@@ -189,6 +189,38 @@
         background-position: center;
         height: 100vh;
         background-color: #101010;
+        position: relative;
+
+        &#{-bgUpper}{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            z-index: 4;
+            background-position:  55% center;
+            pointer-events: none;
+           // animation:star-sky-1 7.5s linear infinite;
+        }
+        &#{-bgLower}{
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            z-index: 5;
+            background-position: 55% center;
+            pointer-events: none;
+            transform-origin: 50% 68%;
+            transform: scale(0.01);
+            transition: transform 3s ease;
+            &.animate{
+                transform: scale(1);
+            }
+            //animation: star-sky-2 7.5s linear infinite;
+        }
         &#{-container}{
             @include container;
                 display: flex;
@@ -263,7 +295,7 @@
                     @include media-min($lg) {
                         @include col(33.333%);
                     }
-                    @include py(0.375rem);
+                    @include py(0.125rem);
                     
                     > a > figure{
                         background-size: cover;
@@ -333,7 +365,7 @@
         }
     }
     .slick-arrow{
-        @include media-max($md) {
+        @include media-max($lg) {
             display: none !important;
         }
         top: 50%;

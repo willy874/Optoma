@@ -9,7 +9,8 @@ $(document).ready(function(){
         $(hash).stop(false, false).slideDown()
 
         const targetTop = $(hash).position().top - 50;
-        $('html,body').stop().animate({scrollTop:targetTop});
+        if(targetTop)$('html,body').stop().animate({scrollTop:targetTop});
+        window.history.pushState('','','?page=applications')
     }
 })
 
