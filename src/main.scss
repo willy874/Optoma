@@ -3,10 +3,10 @@
 @import 'scss/mixins';
 @import 'scss/component';
 @import 'scss/reset';
-//@import 'scss/font-awesome-5.11.2/index';
 @import 'scss/fancyapps/index';
 @import 'scss/slick-carousel/slick';
 @import 'scss/slick-carousel/slick-theme';
+@import 'scss/animate/about';
 @import 'scss/page/header';
 @import 'scss/page/footer';
 @import 'scss/page/home';
@@ -17,4 +17,5 @@
 @import 'scss/page/design';
 @import 'scss/page/innovation';
 @import 'scss/page/social';
+@import 'scss/page/detail';
 @import 'scss/browserReplacement';

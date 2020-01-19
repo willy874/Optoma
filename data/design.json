@@ -1,144 +1,135 @@
-{
-    "home":[{
-        "src": "./images/Manuscript/main-page_v3_18.jpg",
-        "alt": "Gaming",
-        "href": "",
-        "title": "Gaming"
+{   
+    "banner":[{
+        "type": "image",
+        "src": "./images/design/design-banner.jpg",
+        "alt": "Desing Center",
+        "heading": "Desing Center",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
     },{
-        "src": "./images/Manuscript/main-page_v3_19.jpg",
-        "alt": "Entertainment",
-        "href": "",
-        "title": "Entertainment"
+        "type": "image",
+        "src": "./images/design/design-banner.jpg",
+        "alt": "Desing Center",
+        "heading": "Desing Center",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
     },{
-        "src": "./images/Manuscript/main-page_v3_20.jpg",
-        "alt": "Portable",
-        "href": "",
-        "title": "Portable"
+        "type": "youtobe",
+        "src": "https://www.youtube.com/watch?v=RD6x79PyJR0",
+        "alt": "OptomaAsia",
+        "heading": "OptomaAsia",
+        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
     }],
     "list":[{
         "keyword": ["design"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "P1",
             "figcaption": "Optoma 4K UHD HDR Laser Cinema",
             "paragraph": "",
             "title": "P1",
-            "alt": "P1",
             "src": "./images/design/design-img1.png"
         }]
     },{
         "keyword": ["design"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "",
             "figcaption": "From home cinema to home decor",
             "paragraph": "",
             "title": "From home cinema to home decor",
-            "alt": "From home cinema to home decor",
             "src": "./images/design/design-img2.png"
         },{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "",
             "figcaption": "Just music. No crosstalk.",
             "paragraph": "",
             "title": "Just music. No crosstalk.",
-            "alt": "Just music. No crosstalk.",
             "src": "./images/design/design-img3.png"
         },{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "",
             "figcaption": "Reclaim your space",
             "paragraph": "",
             "title": "Reclaim your space",
-            "alt": "Reclaim your space",
             "src": "./images/design/design-img4.png"
         },{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "",
             "figcaption": "Amazon Alexa and Google<br/>Assistant voice control",
             "paragraph": "",
             "title": "Amazon Alexa and Google<br/>Assistant voice control",
-            "alt": "Amazon Alexa and Google<br/>Assistant voice control",
             "src": "./images/design/design-img5.png"
         }]
     },{
         "keyword": ["design"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "UHD65",
             "figcaption": "A greater sense of realism in every scene",
             "paragraph": "",
             "title": "UHD65",
-            "alt": "UHD65",
             "src": "./images/design/design-img6.png"
         }]
     },{
         "keyword": ["design"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "LV130",
             "figcaption": "Stunning images with ultimate convenience",
             "paragraph": "",
             "title": "LV130",
-            "alt": "LV130",
             "src": "./images/design/design-img7.png"
         }]
     },{
         "keyword": ["design"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "UHL55",
             "figcaption": "World’s 1st Smart Projector supporting home automation,<br/>voice control, a personal media center and an App Marketplace",
             "paragraph": "",
             "title": "UHL55",
-            "alt": "UHL55",
             "src": "./images/design/design-img8.png"
         }]
     },{
         "keyword": ["design"],
         "article": [{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "",
             "figcaption": "Built-in stereo with superior sound",
             "paragraph": "",
             "title": "Built-in stereo with superior sound",
-            "alt": "Built-in stereo with superior sound",
             "src": "./images/design/design-img9.png"
         },{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "",
             "figcaption": "Compatible with thousands<br/>of smart devices",
             "paragraph": "",
             "title": "Compatible with thousands<br/>of smart devices",
-            "alt": "Compatible with thousands<br/>of smart devices",
             "src": "./images/design/design-img10.png"
         },{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "",
             "figcaption": "Play 4K videos straight from a<br/>USB memory stick",
             "paragraph": "",
             "title": "Play 4K videos straight from a<br/>USB memory stick",
-            "alt": "Play 4K videos straight from a<br/>USB memory stick",
             "src": "./images/design/design-img11.png"
         },{
             "type": "post",
-            "url": "",
+            "url": "index.php?page=detail",
             "heading": "",
             "figcaption": "Built-in stereo with superior sound<br/>YouTube, Spotify and more...",
             "paragraph": "",
             "title": "Built-in stereo with superior sound<br/>YouTube, Spotify and more...",
-            "alt": "Built-in stereo with superior sound<br/>YouTube, Spotify and more...",
             "src": "./images/design/design-img12.png"
         }]
     }]

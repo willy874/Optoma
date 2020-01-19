@@ -241,9 +241,10 @@
                     @include px(0.5rem);
                     @include my(0.5rem);
                     &#{-figure}{
-                        height: 33rem;
+                        height: 32rem;
                         @include stretched-link;
                         padding: 0.5rem;
+                        width: 100%;
                         
                         figure{
                             box-shadow: 0 0.125rem 0.125rem 0.125rem rgba(0,0,0,0.15);
@@ -252,12 +253,14 @@
                             flex-direction: column;
                             height: 100%;
                             width: 100%;
-                            img{
+                            .img{
                                 flex-shrink: 0;
                                 width: 100%;
                                 background-size: cover;
                                 height: 21rem;
                                 margin-bottom: 0.375rem;
+                                background-size: cover;
+                                background-position: center;
                             }
                             h4{
                                 text-align: center;
@@ -290,6 +293,15 @@
                             }
                             &:hover{
                                 background-color: #c6d5e9;
+                                h4{
+                                    color: #fff;
+                                }
+                                p{
+                                    color: #fff;
+                                }
+                                a{
+                                    color: #fff;
+                                }
                             } 
                         }
                     }

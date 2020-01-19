@@ -1,0 +1,107 @@
+{
+    "banner": [{
+        "type": "image",
+        "src": "./images/ourBrand/ourBrand-banner.png",
+        "alt": "Our Braud",
+        "heading": "Our Braud",
+        "description": "See more, Hear more."
+    }, {
+        "type": "image",
+        "src": "./images/ourBrand/ourBrand-banner.png",
+        "alt": "Our Braud",
+        "heading": "Our Braud",
+        "description": "See more, Hear more."
+    }, {
+        "type": "image",
+        "src": "./images/ourBrand/ourBrand-banner.png",
+        "alt": "Our Braud",
+        "heading": "Our Braud",
+        "description": "See more, Hear more."
+    }, {
+        "type": "youtobe",
+        "src": "https://www.youtube.com/watch?v=RD6x79PyJR0",
+        "alt": "Our Braud",
+        "heading": "Our Braud",
+        "description": "See more, Hear more."
+    }],
+    "awards": [{
+        "src": "./images/ourBrand/ourBrand-sec3-img1.png",
+        "alt": "Our Braud",
+        "description": "Projector Central 2019 Infocomm Best of Show Award"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img2.png",
+        "alt": "Our Braud",
+        "description": "Best of CES Asia 2019 ZOL"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img3.png",
+        "alt": "Our Braud",
+        "description": "AV Technology’s Best of Show"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img4.png",
+        "alt": "Our Braud",
+        "description": "Amazon’s Choice"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img5.png",
+        "alt": "Our Braud",
+        "description": "Gotta Be Mobile Best of CES 2019"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img6.png",
+        "alt": "Our Braud",
+        "description": "Engadget Best of CES 2019 Finalist"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img7.png",
+        "alt": "Our Braud",
+        "description": "WHAT HI*FI India 5 Stars"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img8.png",
+        "alt": "Our Braud",
+        "description": "India T3 Magazine Projector of the Year"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img9.png",
+        "alt": "Our Braud",
+        "description": "SVI Shortlisted Trade Award 2019 Finalist"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img10.png",
+        "alt": "Our Braud",
+        "description": "Digital Trends Editors’ Choice"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img11.png",
+        "alt": "Our Braud",
+        "description": "VGP2018 Summer Award – Japan"
+    }, {
+        "src": "./images/ourBrand/ourBrand-sec3-img12.png",
+        "alt": "Our Braud",
+        "description": "Taiwan Excellence 2019 Silver Award"
+    }],
+    "worldwide": [{
+        "date": "June 23-26, 2019",
+        "show": "ISTE",
+        "locations": "Philadelphia, USA",
+        "href": "#",
+        "title": ""
+    }, {
+        "date": "June 12-14, 2019",
+        "show": "Infocomm",
+        "locations": "Orlando, USA",
+        "href": "#",
+        "title": ""
+    }, {
+        "date": "July 17-19, 2019",
+        "show": "InfoComm China",
+        "locations": "Beijing, China",
+        "href": "#",
+        "title": ""
+    }, {
+        "date": "February  24-26,2019",
+        "show": "Prolight + Sound GUANGZHOU",
+        "locations": "GuangZhou, China",
+        "href": "#",
+        "title": ""
+    }, {
+        "date": "February 5-8,2019",
+        "show": "Integrated Sytstems Europe",
+        "locations": "Amsterdam, Holland",
+        "href": "#",
+        "title": ""
+    }]
+}

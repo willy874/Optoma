@@ -44,9 +44,12 @@
         padding-top: 0.75rem; 
         padding-bottom: 1rem; 
     }
-    .ourbraud-sec5_table-body-row{
-        padding-bottom: 1.5rem; 
+    @include media-max($sm) {
+        .ourbraud-sec5_table-body-row{
+            padding-bottom: 1.5rem; 
+        }
     }
+    
 }
 
 // Target IE Edge

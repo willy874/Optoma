@@ -1,0 +1,39 @@
+{
+    "recommend": [{
+        "type": "post",
+        "url": "index.php?page=detail",
+        "heading": "",
+        "figcaption": "Built-in stereo with superior sound",
+        "paragraph": "",
+        "title": "Built-in stereo with superior sound",
+        "alt": "Built-in stereo with superior sound",
+        "src": "./images/design/design-img9.png"
+    },{
+        "type": "post",
+        "url": "index.php?page=detail",
+        "heading": "",
+        "figcaption": "Compatible with thousands<br/>of smart devices",
+        "paragraph": "",
+        "title": "Compatible with thousands<br/>of smart devices",
+        "alt": "Compatible with thousands<br/>of smart devices",
+        "src": "./images/design/design-img10.png"
+    },{
+        "type": "post",
+        "url": "index.php?page=detail",
+        "heading": "",
+        "figcaption": "Play 4K videos straight from a<br/>USB memory stick",
+        "paragraph": "",
+        "title": "Play 4K videos straight from a<br/>USB memory stick",
+        "alt": "Play 4K videos straight from a<br/>USB memory stick",
+        "src": "./images/design/design-img11.png"
+    },{
+        "type": "post",
+        "url": "index.php?page=detail",
+        "heading": "",
+        "figcaption": "Built-in stereo with superior sound<br/>YouTube, Spotify and more...",
+        "paragraph": "",
+        "title": "Built-in stereo with superior sound<br/>YouTube, Spotify and more...",
+        "alt": "Built-in stereo with superior sound<br/>YouTube, Spotify and more...",
+        "src": "./images/design/design-img12.png"
+    }]
+}

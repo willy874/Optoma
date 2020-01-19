@@ -1,11 +1,12 @@
+
 export default {
     knowledge:{
-        ajaxCondition: 'none'
+        keyword: window.static.keyword.knowledge
     },
     design:{
-        ajaxCondition: 'none'
+        keyword: window.static.keyword.design
     },
     innovation:{
-        ajaxCondition: 'none'
+        keyword: window.static.keyword.innovation
     }
 }

@@ -1,3 +1,7 @@
+const hrefUrl = window.location.href
+const hostName = window.location.hostname
+const ajaxUrl = './data/designHome.json'
+
 export default {
     design: {
         url:'./data/design.json',
@@ -31,6 +35,16 @@ export default {
     },
     social: {
         url:'./data/social.json',
+        method: 'GET',
+        fileType: 'json'
+    },
+    detail: {
+        url:'./data/detail.json',
+        method: 'GET',
+        fileType: 'json'
+    },
+    designHome: {
+        url: (window.location.host === 'localhost')?'./data/designHome.json': ajaxUrl,
         method: 'GET',
         fileType: 'json'
     },

@@ -2,7 +2,14 @@
     &#{-sec1}{
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        height: 48rem;
+        @include media-max($xxl){height: 42rem;}
+        @include media-max($xl) {height: 36rem;}
+        @include media-max($lg) {height: 30rem;}
+        @include media-max($md) {height: 24rem;}
+        @include media-max($sm) {height: 20rem;}
+        @include media-max($xs) {height: 14rem;}
+        @include media-max($xxs){height: 12rem;}
 
         &#{-container}{
             @include container;
@@ -95,11 +102,13 @@
                             overflow: hidden;
                             transition: all 0.2s;
 
-                            img{
+                            .img{
                             width: 100%;
                             height: 20rem;
                             background-size: cover;
                             margin-bottom: 0.25rem;
+                            background-size: cover;
+                            background-position: center;
                             }
                             h4{
                                 @include text-ellipsis;
@@ -123,6 +132,15 @@
                             }
                             &:hover{
                                 background-color: #c6d5e9;
+                                h4{
+                                    color: #fff;
+                                }
+                                a{
+                                    color: #fff;
+                                }
+                                p{
+                                    color: #fff;
+                                }
                             } 
                         }
                     }
