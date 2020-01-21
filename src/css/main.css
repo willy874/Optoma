@@ -2038,6 +2038,13 @@ main {
   }
 }
 
+.header_navbar-ul-dropdown .header_dropdown-ul {
+  max-height: 25rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
 .header_navbar-ul-dropdown:not(.active) .header_dropdown-ul {
   display: block;
   max-height: 0;
@@ -2053,24 +2060,13 @@ main {
   }
 }
 
-.header_navbar-ul-dropdown:not(.active):hover .header_dropdown-ul {
-  max-height: 25rem;
-}
-
-@media (min-width: 1200px) {
-  .header_navbar-ul-dropdown:not(.active):hover .header_dropdown-ul {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
 .header_navbar-ul-dropdown > a::after {
   content: '';
   position: absolute;
   top: 50%;
   right: -1.25rem;
   display: inline-block;
-  pointer-events: none;
+  pointer-events: auto;
   -webkit-transform: translateY(-25%) rotate(0deg);
           transform: translateY(-25%) rotate(0deg);
   -webkit-transition: all 0.3s;
@@ -2390,7 +2386,7 @@ footer {
   background-position: 47% center;
   background-size: cover;
   z-index: 3;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .home-sec1-bgUpper {
@@ -2402,8 +2398,8 @@ footer {
   background-position: 47% center;
   background-size: cover;
   z-index: 4;
-  -webkit-animation: star-sky-1 7.5s linear infinite;
-          animation: star-sky-1 7.5s linear infinite;
+  -webkit-animation: star-sky-1 2.5s linear infinite;
+          animation: star-sky-1 2.5s linear infinite;
 }
 
 .home-sec1-bgLower {
@@ -2415,8 +2411,8 @@ footer {
   background-position: 47% center;
   background-size: cover;
   z-index: 5;
-  -webkit-animation: star-sky-2 7.5s linear infinite;
-          animation: star-sky-2 7.5s linear infinite;
+  -webkit-animation: star-sky-2 2.5s linear infinite;
+          animation: star-sky-2 2.5s linear infinite;
 }
 
 .home-sec1-container {
@@ -3798,16 +3794,16 @@ footer {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #5d5854;
   opacity: 1;
 }
 
 #silck-applications .slick-dots li:hover button::before {
-  background-color: #5d5854;
+  background-color: #fff;
 }
 
 #silck-applications .slick-dots li.slick-active > button::before {
-  background-color: #5d5854;
+  background-color: #fff;
 }
 
 @-webkit-keyframes star-sky-1 {
@@ -3937,12 +3933,6 @@ footer {
   right: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-}
-
-@media (max-width: 768px) {
-  #banner-ourbraud .silck-item .silck-item-heading {
-    display: none;
-  }
 }
 
 #banner-ourbraud .silck-item .silck-item-heading h2 {
@@ -4226,16 +4216,16 @@ footer {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #5d5854;
   opacity: 1;
 }
 
 #banner-ourbraud .slick-dots li:hover button::before {
-  background-color: #5d5854;
+  background-color: #fff;
 }
 
 #banner-ourbraud .slick-dots li.slick-active > button::before {
-  background-color: #5d5854;
+  background-color: #fff;
 }
 
 .ourbraud-sec2 {
@@ -6775,16 +6765,16 @@ footer {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #5d5854;
   opacity: 1;
 }
 
 #banner-applications .slick-dots li:hover button::before {
-  background-color: #5d5854;
+  background-color: #fff;
 }
 
 #banner-applications .slick-dots li.slick-active > button::before {
-  background-color: #5d5854;
+  background-color: #fff;
 }
 
 .applications-carousel {
@@ -8708,16 +8698,16 @@ footer {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #5d5854;
   opacity: 1;
 }
 
 #banner-innovation .slick-dots li:hover button::before {
-  background-color: #5d5854;
+  background-color: #fff;
 }
 
 #banner-innovation .slick-dots li.slick-active > button::before {
-  background-color: #5d5854;
+  background-color: #fff;
 }
 
 .innovation-sec2 {

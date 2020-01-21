@@ -37,9 +37,6 @@
             left: 0;
             right: 0;
             transform: translate(0 , -50%);
-            @include media-max($md) {
-                display: none;
-            }
             h2{
                 max-width: 1140px;
                 margin: 0 auto;
@@ -168,16 +165,16 @@
                 width: 0.5rem;
                 height: 0.5rem;
                 border-radius: 50%;
-                background-color: #fff;
+                background-color: #5d5854;
                 opacity: 1;
             }
             &:hover{
                 button::before{
-                    background-color: #5d5854;
+                    background-color: #fff;
                 }
             }
             &.slick-active>button::before{
-                background-color: #5d5854;
+                background-color: #fff;
             }
     
         }

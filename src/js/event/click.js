@@ -4,7 +4,7 @@ import {Route} from '../model'
 $(document.body).on('click', function (e) {
 
     const $this = $(e.target)
-
+    console.log('e',e)
     if ($this.attr('data-toggle') == 'dropdown') {
         if ($this.attr('data-switch') == 'false') {
             $this.attr('data-switch', 'true')
@@ -23,11 +23,17 @@ $(document.body).on('click', function (e) {
             $this.attr('data-switch', 'true')
             $($this.attr('data-target')).addClass('active')
             $this.addClass('active')
-        }else{
-            $('.header_navbar-btn').attr('data-switch', 'false')
-            $('#navbar-menu').removeClass('active')
-            $('.header_navbar-btn').removeClass('active')
         }
+        else{
+             $('.header_navbar-btn').attr('data-switch', 'false')
+             $('#navbar-menu').removeClass('active')
+             $('.header_navbar-btn').removeClass('active')
+        }   
+    }else if($this.attr('data-toggle') == 'dropdown'){
+    }else{
+        $('.header_navbar-btn').attr('data-switch', 'false')
+        $('#navbar-menu').removeClass('active')
+        $('.header_navbar-btn').removeClass('active')
     }
 
     if($this.attr('data-scroll') == 'true'){

@@ -161,16 +161,16 @@
                 width: 0.5rem;
                 height: 0.5rem;
                 border-radius: 50%;
-                background-color: #fff;
+                background-color: #5d5854;
                 opacity: 1;
             }
             &:hover{
                 button::before{
-                    background-color: #5d5854;
+                    background-color: #fff;
                 }
             }
             &.slick-active>button::before{
-                background-color: #5d5854;
+                background-color: #fff;
             }
     
         }

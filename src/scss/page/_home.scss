@@ -15,7 +15,7 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 3;
-            opacity: 0.4;
+            opacity: 1;
         }
         &#{-bgUpper}{
             position: absolute;
@@ -26,7 +26,7 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 4;
-            animation: star-sky-1 7.5s linear infinite;//
+            animation: star-sky-1 2.5s linear infinite;//
         }
         &#{-bgLower}{
             position: absolute;
@@ -37,7 +37,7 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 5;
-            animation: star-sky-2 7.5s linear infinite;
+            animation: star-sky-2 2.5s linear infinite;
         }
         &#{-container}{
             @include container;
@@ -445,16 +445,16 @@
                 width: 0.5rem;
                 height: 0.5rem;
                 border-radius: 50%;
-                background-color: #fff;
+                background-color: #5d5854;
                 opacity: 1;
             }
             &:hover{
                 button::before{
-                    background-color: #5d5854;
+                    background-color: #fff;
                 }
             }
             &.slick-active>button::before{
-                background-color: #5d5854;
+                background-color: #fff;
             }
     
         }
