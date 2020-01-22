@@ -6,7 +6,7 @@ export default function(data) {
         const element1 = document.querySelector('.home-sec5-container-row')
         if( element1 != undefined){ 
             m.render(element1,[
-                data.design.reverse().map(item=>{
+                data.design.map(item=>{
                     return m('div',{
                         class: 'home-sec5-container-row-col',
                     },[

@@ -4,7 +4,6 @@ import {Route} from '../model'
 $(document.body).on('click', function (e) {
 
     const $this = $(e.target)
-    console.log('e',e)
     if ($this.attr('data-toggle') == 'dropdown') {
         if ($this.attr('data-switch') == 'false') {
             $this.attr('data-switch', 'true')
@@ -62,5 +61,20 @@ $(document.body).on('click', function (e) {
         $('html,body').stop().animate({scrollTop: $('.social-main-container-tab-navbar').position().top});
         if($(`#${target}`).is(':visible')){ $(`#${target}`).trigger('click'); }
         $('.social-main_pagination-panels').css('transform',`translateX(-${$(`#${target}`).attr('data-index')*100}%)`)
+    }
+
+
+    //popup
+    if ($this.attr('id') === 'popup'){
+        $('#popup').removeClass('popup-show');
+        $('#popup').addClass('popup-hide');
+    }
+    if ($this.attr('data-click') === 'popupOpen'){
+        $('#popup').removeClass('popup-hide');
+        $('#popup').addClass('popup-show');
+    }
+    if ($this.attr('data-click') === 'popupClose'){
+        $('#popup').removeClass('popup-show');
+        $('#popup').addClass('popup-hide');
     }
 })

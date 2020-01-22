@@ -11,10 +11,9 @@ export default function(data){
                     class: 'detail-article-container-row-col-figure'
                 },[ 
                     m('figure',[
-                        m('div.img',{
-                            style:{
-                                backgroundImage: `url(${item.src})`
-                            },
+                        m('img', {
+                            src: item.src,
+                            alt: item.title,
                         }),
                         (item.heading)?m('h4',[
                             m.trust(item.heading)

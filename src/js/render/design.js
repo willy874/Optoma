@@ -73,12 +73,14 @@ export default function (data) {
                             class: `design-sec2_video-row-col-figure ${(items.article.length > 1)? 'list': ''}`
                         },[ 
                             m('figure',[
-                                m('div.img',{
-                                    style:{
-                                        backgroundImage: `url(${item.src})`
-                                    },
-                                    class: (items.article.length > 1)? 'list': '',
-                                }),
+                                m('.img',{
+                                    class: `${(item.type === 'youtube')? 'video': ''} ${(items.article.length > 1) ? 'list' : ''}`,
+                                },[
+                                    m('img', {
+                                        src: item.src,
+                                        alt: item.title,
+                                    }),
+                                ]),
                                 (item.heading)?m('h4',[
                                     m.trust(item.heading)
                                 ]):'',                                
