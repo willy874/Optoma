@@ -29,12 +29,20 @@ case 'innovation':
     $fileIndex = 'innovation';
     break;
 
-case 'desing':
-    $fileIndex = 'desing';
+case 'design':
+    $fileIndex = 'design';
     break;
 
 case 'knowledge':
     $fileIndex = 'knowledge';
+    break;
+
+case 'social':
+    $fileIndex = 'social';
+    break;
+
+case 'detail':
+    $fileIndex = 'detail';
     break;
     
 default:
@@ -45,6 +53,8 @@ include $fileIndex.'.html';
 
     </main>
 <?php include 'footer.html'; ?>
+<?php include 'data/index.php'; ?>
 <script type="text/javascript" src="./dist/js/dist.bundle.js"></script>
 </body>
 </html>
+

@@ -73,6 +73,20 @@
     flex-shrink: 0;
 }
 
+@mixin row-float {
+    margin-left: -($grid-gutters/2);
+    margin-right: -($grid-gutters/2);
+    overflow: hidden;
+}
+
+@mixin col-float ($col) {
+    padding-left: ($grid-gutters/2);
+    padding-right: ($grid-gutters/2);
+    max-width: $col;
+    width: 100%;
+    float: left;
+}
+
 @mixin container {
     width: 100%;
     padding-right: ($grid-gutters/2);

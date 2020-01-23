@@ -1,0 +1,64 @@
+{
+    "design":[{
+        "src": "./images/home/sec5-img1.png",
+        "url": "index.php?page=detail",
+        "title": "Gaming"
+    },{
+        "src": "./images/home/sec5-img2.png",
+        "url": "index.php?page=detail",
+        "title": "Entertainment"
+    },{
+        "src": "./images/home/sec5-img3.png",
+        "url": "index.php?page=detail",
+        "title": "Portable"
+    }],
+    "applications":[{
+        "src": "./images/banner/main-page_home.jpg",
+        "alt": "Home",
+        "heading": "Home",
+        "href": "./index.php?page=applications#sec1",
+        "title": "Home"
+    },{
+        "src": "./images/banner/main-page_House of Worship.jpg",
+        "alt": "House of Worship",
+        "heading": "House of Worship",
+        "href": "./index.php?page=applications#sec4",
+        "title": "House of Worship"
+    },{
+        "src": "./images/banner/main-page_Medical.jpg",
+        "alt": "Medical",
+        "heading": "Medical",
+        "href": "./index.php?page=applications#sec8",
+        "title": "Medical"
+    },{
+        "src": "./images/banner/main-page_Museums.jpg",
+        "alt": "Museums",
+        "heading": "Museums",
+        "href": "./index.php?page=applications#sec9",
+        "title": "Museums"
+    },{
+        "src": "./images/banner/main-page_Portable.jpg",
+        "alt": "Portable",
+        "heading": "Portable",
+        "href": "./index.php?page=applications#sec7",
+        "title": "Portable"
+    },{
+        "src": "./images/banner/main-page_Public Sector.jpg",
+        "alt": "Sector",
+        "heading": "Sector",
+        "href": "./index.php?page=applications#sec11",
+        "title": "Sector"
+    },{
+        "src": "./images/banner/main-page_Retail.jpg",
+        "alt": "Retail",
+        "heading": "Retail",
+        "href": "./index.php?page=applications#sec5",
+        "title": "Retail"
+    },{
+        "src": "./images/banner/main-page_Simulation.jpg",
+        "alt": "Simulation",
+        "heading": "Simulation",
+        "href": "./index.php?page=applications#sec12",
+        "title": "Simulation"
+    }]
+}

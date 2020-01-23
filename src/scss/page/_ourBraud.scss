@@ -1,5 +1,6 @@
 #banner-ourbraud{
     margin-bottom: 0;
+    background-color: #e5e3ea;
     .silck-item{
         position: relative;
         background-size: cover;
@@ -25,7 +26,7 @@
                 top: 0;
                 left: 0;
                 right: 0;
-                bottom: -0.125rem;
+                bottom: 0;
                 background-color: rgba(0, 0, 0, 0.2);
             }
         }
@@ -36,16 +37,13 @@
             left: 0;
             right: 0;
             transform: translate(0 , -50%);
-            @include media-max($md) {
-                display: none;
-            }
             h2{
                 max-width: 1140px;
                 margin: 0 auto;
                 width: 100%;
-                font-weight: bolder;
                 text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
                 @include display-2;
+                font-weight: bolder;
                 @include media-max($xl) {
                     @include px(3rem)
                 }
@@ -87,53 +85,60 @@
     }
 
     .slick-arrow{
+        @include media-max($md) {
+            display: none !important;
+        }
+        top: 50%;
         background-color: transparent;
         width: 2.875rem;
-        height: 4.75rem;
-        z-index: 15;
+        height: 5rem;
+        z-index: 900;
+        border-radius: 0.25rem;
+        box-shadow: none;
         &::after{
             content: '';
             position: absolute;
-            background-color: #e5e3ea;
+            background-color: #fff;
             top: 50%;
-            width: 1.5rem;
+            border-radius: 0.25rem;
+            width: 0.625rem;
             height: 0.125rem;
             opacity: 1;
         }
         &::before{
             content: '';
             position: absolute;
-            background-color: #e5e3ea;
+            background-color: #fff;
             bottom: 50%;
-            width: 1.5rem;
+            border-radius: 0.25rem;
+            width: 0.625rem;
             height: 0.125rem;
             opacity: 1;
         }
     }
+    
     .slick-prev{
-        top: 50%;
         left: 0;
-        transform: translate(0,0);
+        transform: translate(0,-50%);
         &::after{
-            transform: translate(0.5rem,0.45rem) rotate(45deg);
+            transform: translate(0.325rem,0.15rem) rotate(65deg);
             right: 50%;
         }
         &::before{
-            transform: translate(0.5rem,-0.45rem) rotate(-45deg);
+            transform: translate(0.325rem, -0.25rem) rotate(-65deg);
             right: 50%;
         }
         
     }
     .slick-next{
-        top: 50%;
         right: 0;
-        transform: translate(0,0);
+        transform: translate(0,-50%);
         &::after{
-            transform: translate(-0.5rem,-0.55rem) rotate(45deg);
+            transform: translate(-0.3rem,-0.35rem) rotate(65deg);
             left: 50%;
         }
         &::before{
-            transform: translate(-0.5rem,0.55rem) rotate(-45deg);
+            transform: translate(-0.3rem,0.35rem) rotate(-65deg);
             left: 50%;
         }
     }
@@ -160,16 +165,16 @@
                 width: 0.5rem;
                 height: 0.5rem;
                 border-radius: 50%;
-                background-color: #fff;
+                background-color: #5d5854;
                 opacity: 1;
             }
             &:hover{
                 button::before{
-                    background-color: #5d5854;
+                    background-color: #fff;
                 }
             }
             &.slick-active>button::before{
-                background-color: #5d5854;
+                background-color: #fff;
             }
     
         }
@@ -257,7 +262,7 @@
                     &:nth-of-type(3){
                         @include col(30%);
                         @include media-max($xl) {
-                            display: none
+                            display: none;
                         }
                     }
                     figure{
@@ -323,6 +328,8 @@
                             border-right: 0.125rem solid #fff;
                             @include media-max($sm) {
                                 order: 1;
+                                border-left: 0;
+                                border-right: 0;
                             }
                             a{
                                 color: #6a8fc2;
@@ -418,7 +425,7 @@
             right: 50%;
         }
         &::before{
-            transform: translate(0.3rem,-0.15rem) rotate(-65deg);
+            transform: translate(0.325rem, -0.25rem) rotate(-65deg);
             right: 50%;
         }
         

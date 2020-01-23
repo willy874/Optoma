@@ -1,4 +1,4 @@
-<section class="knowledge-sec1" style="background-image: url(./images/Manuscript/Knowledge_01.jpg);">
+<section class="knowledge-sec1" style="background-image: url(./images/knowledge/knowledge-banner.jpg);">
     <div class="knowledge-sec1-container">
         <div class="knowledge-sec1-container-display">
             <h2>Knowledge Center</h2>
@@ -15,24 +15,35 @@
         <div class="knowledge-sec2-container-video">
             <div class="knowledge-sec2_video">
                 <div class="knowledge-sec2_video-buttonGroup">
-                    <button type="button">
-                        <span></span>
-                        <span>
-                            <i></i>
-                        </span>
+                    <button type="button" data-click="popupOpen">
+                        <span id="keyword">keyword</span>
+                        <i></i>
                     </button>
                 </div>
-                <div class="knowledge-sec2_video-row" id="video-area">
-                    <div class="knowledge-sec2_video-row-col-1">
-                        <figure>
-                            <div></div>
-                            <h4></h4>
-                            <p></p>
-                        </figure>
-                    </div>
+                <div class="knowledge-sec2_video-row" id="knowledge-area">
+                    <!-- <div class="knowledge-sec2_video-row-col">
+                        <div class="knowledge-sec2_video-row-col-figure">
+                            <figure>
+                                <div><img></div>
+                                <h4></h4>
+                                <p></p>
+                            </figure>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
-
 </section>
+
+<div class="popup-document popup-hide" id="popup">
+    <div class="popup-body">
+        <div class="popup-header">
+            <h5>Keyword Selection</h5>
+            <button type="button" data-click="popupClose"><i class="close"></i></button>
+        </div>
+        <div class="popup-main">
+        </div>
+        <div class="popup-footer"></div>
+    </div>
+</div>

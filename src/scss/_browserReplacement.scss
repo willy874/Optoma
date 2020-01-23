@@ -40,6 +40,16 @@
         }
         
     }
+    .ourbraud-sec5_table-body-row-col{
+        padding-top: 0.75rem; 
+        padding-bottom: 1rem; 
+    }
+    @include media-max($sm) {
+        .ourbraud-sec5_table-body-row{
+            padding-bottom: 1.5rem; 
+        }
+    }
+    
 }
 
 // Target IE Edge

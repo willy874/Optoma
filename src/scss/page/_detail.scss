@@ -1,0 +1,134 @@
+.detail{
+    &#{-banner}{
+        background-color: #000;
+        &#{-container}{
+            @include container;
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+        }
+    }
+    &#{-article}{
+        &#{-container}{
+            @include py(5rem);
+            @include container;
+            &#{-header}{
+                padding-bottom: 3rem;
+                h2{
+                    @include display-3;
+                    text-align: center;
+                    color: #505050;
+                }
+                h3{
+                    @include display-4;
+                    text-align: center;
+                    color: #505050;
+                }
+            }
+            &#{-content}{
+                color: #505050;
+
+                p{
+                    color: #505050;
+                }
+            }
+            &#{-row}{
+                @include py(3rem);
+                @include row;
+                @include mx(-1rem);
+                &#{-col}{
+                    @include col(25%);
+                    @include media-max($xl) {
+                        @include col(50%);
+                    }
+                    @include media-max($md) {
+                        @include col(100%);
+                    }
+                    display: flex;
+                    flex-wrap: wrap;
+                    @include px(0.5rem);
+                    @include my(0.5rem);
+                    &#{-figure}{
+                        @include stretched-link;
+                        width: 100%;
+                        
+                        figure{
+                            box-shadow: 0 0.125rem 0.125rem 0.125rem rgba(0,0,0,0.15);
+                            transition: all 0.2s;
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            width: 100%;
+                            .img{
+                                position: relative;
+                                &.video{
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-image: url(../../images/icon/play.png);
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                    }
+                                }
+                            }
+                            img{
+                                flex-shrink: 0;
+                                width: 100%;
+                                background-size: cover;
+                                //height: 10rem;
+                                margin-bottom: 0.375rem;
+                                background-size: cover;
+                                background-position: center;
+                            }
+                            h4{
+                                text-align: center;
+                                margin-top: 0.75rem;
+                                flex-shrink: 0;
+                                @include px(1.5rem);
+                                @include text-ellipsis;
+                                font-size: 1.25rem;
+                                color: #505050;
+                                font-weight: bolder;
+                                @include my(0.375rem);
+                            }
+                            p{
+                                text-align: left;
+                                flex-grow: 1;
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: center;
+                                @include px(1.5rem);
+                                margin-top: 0.375rem;
+                                margin-bottom: 0.75rem;
+
+                                a{
+                                    color: #505050;
+                                    font-size: 0.8125rem;
+                                    line-height: 1.25rem;
+                                    max-height: 1.25rem*4;
+                                    overflow: hidden;
+                                }
+                            }
+                            &:hover{
+                                background-color: #c6d5e9;
+                                h4{
+                                    color: #fff;
+                                }
+                                p{
+                                    color: #fff;
+                                }
+                                a{
+                                    color: #fff;
+                                }
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

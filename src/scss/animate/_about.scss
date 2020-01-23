@@ -1,0 +1,85 @@
+@keyframes about-sec2-heading-1-animate {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes about-sec2-heading-2-animate {
+    0%{
+        transform: translateX(-200%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes about-sec3-graphics-center-1-animate {
+    form{
+        transform: translate(-50%,0) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%,0) rotate(360deg);
+    }
+}
+@keyframes about-sec3-graphics-center-2-animate {
+    form{
+        transform: translate(-50%,0) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%,0) rotate(360deg);
+    }
+}
+@keyframes about-sec3-graphics-center-3-animate {
+    form{
+        transform: translate(-50%,0) rotate(240deg);
+    }
+    to{
+        transform: translate(-50%,0) rotate(600deg);
+    }
+}
+@keyframes about-sec3-graphics-center-4-animate {
+    form{
+        transform: translate(-50%,0) rotate(120deg);
+    }
+    to{
+        transform: translate(-50%,0) rotate(480deg);
+    }
+}
+@keyframes about-sec3-graphics-heading-4-animate {
+    0%{
+        transform: translate(445%, 140%);
+    }
+    50%{
+        transform: translate(445%, 140%);
+    }
+    100%{
+        transform: translate(145%, 140%);
+    }
+}
+@keyframes about-sec3-graphics-heading-3-animate {
+    0%{
+        transform: translate(-440%, 50%);
+    }
+    50%{
+        transform: translate(-440%, 50%);
+    }
+    100%{
+        transform: translate(-140%, 50%);
+    }
+}
+@keyframes about-sec3-graphics-heading-2-animate {
+    0%{
+        transform: translate(400%,-65%);
+    }
+    50%{
+        transform: translate(400%,-65%);
+    }
+    100%{
+        transform: translate(100%,-65%);
+    }
+}
