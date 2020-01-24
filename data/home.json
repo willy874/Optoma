@@ -19,11 +19,41 @@
         "href": "./index.php?page=applications#sec1",
         "title": "Home"
     },{
+        "src": "./images/banner/main-page_Entertainment.jpg",
+        "alt": "Entertainment",
+        "heading": "Entertainment",
+        "href": "./index.php?page=applications#sec2",
+        "title": "Entertainment"
+    },{
+        "src": "./images/banner/main-page_EducationTraining.jpg",
+        "alt": "EducationTraining",
+        "heading": "Education & Training",
+        "href": "./index.php?page=applications#sec3",
+        "title": "Education & Training"
+    },{
         "src": "./images/banner/main-page_House of Worship.jpg",
         "alt": "House of Worship",
         "heading": "House of Worship",
         "href": "./index.php?page=applications#sec4",
         "title": "House of Worship"
+    },{
+        "src": "./images/banner/main-page_Retail.jpg",
+        "alt": "Retail",
+        "heading": "Retail",
+        "href": "./index.php?page=applications#sec5",
+        "title": "Retail"
+    },{
+        "src": "./images/banner/main-page_Corporate.jpg",
+        "alt": "Corporate",
+        "heading": "Corporate",
+        "href": "./index.php?page=applications#sec6",
+        "title": "Corporate"
+    },{
+        "src": "./images/banner/main-page_Portable.jpg",
+        "alt": "Portable",
+        "heading": "Portable",
+        "href": "./index.php?page=applications#sec7",
+        "title": "Portable"
     },{
         "src": "./images/banner/main-page_Medical.jpg",
         "alt": "Medical",
@@ -37,23 +67,17 @@
         "href": "./index.php?page=applications#sec9",
         "title": "Museums"
     },{
-        "src": "./images/banner/main-page_Portable.jpg",
-        "alt": "Portable",
-        "heading": "Portable",
-        "href": "./index.php?page=applications#sec7",
-        "title": "Portable"
+        "src": "./images/banner/main-page_Gaming.jpg",
+        "alt": "Gaming",
+        "heading": "Gaming",
+        "href": "./index.php?page=applications#sec10",
+        "title": "Gaming"
     },{
         "src": "./images/banner/main-page_Public Sector.jpg",
-        "alt": "Sector",
-        "heading": "Sector",
+        "alt": "Public Sector",
+        "heading": "Public Sectors",
         "href": "./index.php?page=applications#sec11",
-        "title": "Sector"
-    },{
-        "src": "./images/banner/main-page_Retail.jpg",
-        "alt": "Retail",
-        "heading": "Retail",
-        "href": "./index.php?page=applications#sec5",
-        "title": "Retail"
+        "title": "Public Sectors"
     },{
         "src": "./images/banner/main-page_Simulation.jpg",
         "alt": "Simulation",

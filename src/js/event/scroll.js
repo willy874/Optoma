@@ -30,9 +30,13 @@ $(window).scroll(function(){
         $('.about-sec2-container-display-row-text-heading').addClass('animate')
         $('.about-sec2-container-display-row-text-heading').addClass('animate')
     }
-    if ($('.about-sec3').isInViewport() && !hasRender.coreValues){
+    if ($('.about-sec3-graphics').isInViewport() && !hasRender.coreValues){
         hasRender.coreValues = true
-        $('.about-sec3-graphics-center').addClass('animate')
+        $('#core-values').addClass('animate')
+        $('#innovation').addClass('animate')
+        $('#reliability').addClass('animate')
+        $('#customer-focus').addClass('animate')
+        $('#circle-line').addClass('animate')
         $('.about-sec3-graphics-center-heading').addClass('animate')
     }
     if ($('.about-sec5').isInViewport() && !hasRender.corporate){
