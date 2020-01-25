@@ -4,7 +4,6 @@ import {Route} from '../model'
 $(document.body).on('click', function (e) {
 
     const $this = $(e.target)
-
     if ($this.attr('data-toggle') == 'dropdown') {
         if ($this.attr('data-switch') == 'false') {
             $this.attr('data-switch', 'true')
@@ -23,11 +22,17 @@ $(document.body).on('click', function (e) {
             $this.attr('data-switch', 'true')
             $($this.attr('data-target')).addClass('active')
             $this.addClass('active')
-        }else{
-            $('.header_navbar-btn').attr('data-switch', 'false')
-            $('#navbar-menu').removeClass('active')
-            $('.header_navbar-btn').removeClass('active')
         }
+        else{
+             $('.header_navbar-btn').attr('data-switch', 'false')
+             $('#navbar-menu').removeClass('active')
+             $('.header_navbar-btn').removeClass('active')
+        }   
+    }else if($this.attr('data-toggle') == 'dropdown'){
+    }else{
+        $('.header_navbar-btn').attr('data-switch', 'false')
+        $('#navbar-menu').removeClass('active')
+        $('.header_navbar-btn').removeClass('active')
     }
 
     if($this.attr('data-scroll') == 'true'){
@@ -56,5 +61,20 @@ $(document.body).on('click', function (e) {
         $('html,body').stop().animate({scrollTop: $('.social-main-container-tab-navbar').position().top});
         if($(`#${target}`).is(':visible')){ $(`#${target}`).trigger('click'); }
         $('.social-main_pagination-panels').css('transform',`translateX(-${$(`#${target}`).attr('data-index')*100}%)`)
+    }
+
+
+    //popup
+    if ($this.attr('id') === 'popup'){
+        $('#popup').removeClass('popup-show');
+        $('#popup').addClass('popup-hide');
+    }
+    if ($this.attr('data-click') === 'popupOpen'){
+        $('#popup').removeClass('popup-hide');
+        $('#popup').addClass('popup-show');
+    }
+    if ($this.attr('data-click') === 'popupClose'){
+        $('#popup').removeClass('popup-show');
+        $('#popup').addClass('popup-hide');
     }
 })

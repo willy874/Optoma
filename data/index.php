@@ -14,9 +14,9 @@
     window.jsonData.detail = <?php include 'data/detail.json'; ?>;
     window.static = {
     keyword: {
-        knowledge: 'knowledge',
+        knowledge: 'All',
         design: 'design',
-        innovation: 'innovation',
+        innovation: 'All',
     }
 }
     

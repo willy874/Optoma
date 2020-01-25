@@ -19,7 +19,7 @@
         "description": "Dream. Create. Inspire."
     }],
     "list":[{
-        "keyword": ["innovation"],
+        "keyword": ["Wireless"],
         "article": [{
             "type": "post",
             "url": "index.php?page=detail",
@@ -30,7 +30,7 @@
             "src": "./images/innovation/innovation-img1.png"
         }]
     },{
-        "keyword": ["innovation"],
+        "keyword": ["Wireless"],
         "article": [{
             "type": "post",
             "url": "index.php?page=detail",
@@ -41,7 +41,7 @@
             "src": "./images/innovation/innovation-img2.png"
         }]
     },{
-        "keyword": ["innovation"],
+        "keyword": ["Wireless"],
         "article": [{
             "type": "post",
             "url": "index.php?page=detail",
@@ -52,7 +52,7 @@
             "src": "./images/innovation/innovation-img3.png"
         }]
     },{
-        "keyword": ["innovation"],
+        "keyword": ["Wireless"],
         "article": [{
             "type": "post",
             "url": "index.php?page=detail",
@@ -63,7 +63,7 @@
             "src": "./images/innovation/innovation-img4.png"
         }]
     },{
-        "keyword": ["innovation"],
+        "keyword": ["Smart"],
         "article": [{
             "type": "post",
             "url": "index.php?page=detail",
@@ -74,7 +74,7 @@
             "src": "./images/innovation/innovation-img5.png"
         }]
     },{
-        "keyword": ["innovation"],
+        "keyword": ["Smart"],
         "article": [{
             "type": "post",
             "url": "index.php?page=detail",
@@ -85,7 +85,7 @@
             "src": "./images/innovation/innovation-img6.png"
         }]
     },{
-        "keyword": ["innovation"],
+        "keyword": ["Smart"],
         "article": [{
             "type": "post",
             "url": "index.php?page=detail",
@@ -96,7 +96,7 @@
             "src": "./images/innovation/innovation-img7.png"
         }]
     },{
-        "keyword": ["innovation"],
+        "keyword": ["Smart"],
         "article": [{
             "type": "post",
             "url": "index.php?page=detail",
@@ -106,5 +106,6 @@
             "title": "TapCast Pro",
             "src": "./images/innovation/innovation-img8.png"
         }]
-    }]
+    }],
+    "keyword":["Smart","Wireless"]
 }
