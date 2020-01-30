@@ -16,7 +16,7 @@ $(document.body).on('click', function (e) {
         $('.header_navbar-ul-li-link').attr('data-switch', 'false')
         $('.header_navbar-ul-dropdown').removeClass('active')//.children('.header_dropdown-ul').hide()
     }
-//
+    //navbar
     if ($this.attr('data-toggle') == 'navbar-collapse'){
         if($this.attr('data-switch') == 'false') {
             $this.attr('data-switch', 'true')
@@ -35,6 +35,7 @@ $(document.body).on('click', function (e) {
         $('.header_navbar-btn').removeClass('active')
     }
 
+    //applications
     if($this.attr('data-scroll') == 'true'){
         const targetTop = $($this.attr('href')).position().top - 50;
         $('html,body').stop().animate({scrollTop:targetTop});
@@ -52,13 +53,15 @@ $(document.body).on('click', function (e) {
             $this.children('.plus').removeClass('active')
         }
     }
-    
+
+    //social
     if($this.attr('data-social') == 'true' && window.location.search == Route.social){
         e.preventDefault()
         let target = $this.attr('data-target')
         $(`.social-main_navbar-row-col figure`).removeClass('active')
         $(`#${target}`).addClass('active')
-        $('html,body').stop().animate({scrollTop: $('.social-main-container-tab-navbar').position().top});
+        //$('html,body').stop().animate({scrollTop: $('.social-main-container-tab-navbar').position().top});
+        $('html,body').stop().animate({scrollTop: 0},10);
         if($(`#${target}`).is(':visible')){ $(`#${target}`).trigger('click'); }
         $('.social-main_pagination-panels').css('transform',`translateX(-${$(`#${target}`).attr('data-index')*100}%)`)
     }

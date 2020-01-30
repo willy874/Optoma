@@ -28,15 +28,15 @@ export default function(data) {
                                 },[
                                     m('a',{
                                         href: item.icon.href,
-                                        title: item.icon.title
-                                        ,
-                                    onclick: (e)=>{
-                                        $(`.social-main_navbar-row-col figure`).removeClass('active')
-                                        $(e.target).parent().addClass('active')
-                                        $('html,body').stop().animate({scrollTop: $('.social-main-container-tab-navbar').position().top});
-                                        if($(`#${item.id}`).is(':visible')){ $(`#${item.id}`).trigger('click'); }
-                                        $('.social-main_pagination-panels').css('transform',`translateX(-${$(`#${item.id}`).attr('data-index')*100}%)`)
-                                    }
+                                        title: item.icon.title,
+                                        onclick: (e)=>{
+                                            e.preventDefault()
+                                            $(`.social-main_navbar-row-col figure`).removeClass('active')
+                                            $(e.target).parent().addClass('active')
+                                            //$('html,body').stop().animate({scrollTop: $('.social-main-container-tab-navbar').position().top});
+                                            if($(`#${item.id}`).is(':visible')){ $(`#${item.id}`).trigger('click'); }
+                                            $('.social-main_pagination-panels').css('transform',`translateX(-${$(`#${item.id}`).attr('data-index')*100}%)`)
+                                        },
                                     },[
                                         m('img',{
                                             src: item.icon.src.disabled,
@@ -69,7 +69,6 @@ export default function(data) {
                                     },[ 
                                         m('figure',{
                                             class: '',
-                                            style: `background-image: url(${link.src})`
                                         },[ 
                                             m('h4',{
                                                 class: ''
@@ -78,7 +77,11 @@ export default function(data) {
                                                     href: link.href,
                                                     title: link.title
                                                 },link.heading)
-                                            ])
+                                            ]),
+                                            m('img',{
+                                                src: link.src,
+                                                alt: link.title
+                                            })
                                         ])
                                     ])
                                 })    
