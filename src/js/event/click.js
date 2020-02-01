@@ -16,6 +16,7 @@ $(document.body).on('click', function (e) {
         $('.header_navbar-ul-li-link').attr('data-switch', 'false')
         $('.header_navbar-ul-dropdown').removeClass('active')//.children('.header_dropdown-ul').hide()
     }
+
     //navbar
     if ($this.attr('data-toggle') == 'navbar-collapse'){
         if($this.attr('data-switch') == 'false') {
@@ -35,13 +36,15 @@ $(document.body).on('click', function (e) {
         $('.header_navbar-btn').removeClass('active')
     }
 
-    //applications
+    //applications menuSlick
     if($this.attr('data-scroll') == 'true'){
+        e.preventDefault()
         const targetTop = $($this.attr('href')).position().top - 50;
         $('html,body').stop().animate({scrollTop:targetTop});
-        if($('#navbar-applications').is(':visible')){ $('#navbar-applications').trigger('click'); }          
+        window.history.pushState('','','?page=applications')          
     }
 
+    //applications navCollapse
     if($this.attr('data-toggle') == 'navTab-collapse'){
         if($this.attr('data-switch') == 'false') {
             $this.attr('data-switch', 'true')
@@ -54,7 +57,29 @@ $(document.body).on('click', function (e) {
         }
     }
 
-    //social
+    //applications navbar
+    if($this.attr('data-applications') == 'true'){
+        e.preventDefault()
+        const targetTop = $($this.attr('data-target')).position().top - 50;
+        $('html,body').stop().animate({scrollTop:targetTop});
+
+        if ($('.applications-container-sec').isInViewport() && $(window).width() < 768 ){
+
+            $('.applications-container-sec').stop(false, false).slideUp()
+            $('.applications-container-btn').children('a').attr('data-switch', 'false')
+            $('.applications-container-btn').children('a').children('.plus').removeClass('active')
+
+            $($this.attr('data-target')).stop(false, false).slideDown()
+            $($this.attr('data-target')).prev().children('a').attr('data-switch', 'true')
+            $($this.attr('data-target')).prev().children('a').children('.plus').addClass('active')
+
+        }
+        window.history.pushState('','','?page=applications')          
+    }
+        
+    
+
+    //social    
     if($this.attr('data-social') == 'true' && window.location.search == Route.social){
         e.preventDefault()
         let target = $this.attr('data-target')

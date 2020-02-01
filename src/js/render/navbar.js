@@ -50,6 +50,8 @@ export default function(data) {
                                     class: 'header_dropdown-ul-li-link',
                                     title: childrenNode.title,
                                     href: childrenNode.href,
+                                    'data-applications': (childrenNode.hasOwnProperty('target'))? 'true' : false,
+                                    'data-target': (childrenNode.hasOwnProperty('target'))? childrenNode.target : false
                                 }, childrenNode.nodeName)
                             ])
                         }))

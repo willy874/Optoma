@@ -244,9 +244,6 @@
     }
 }
 
-.innovation-sec2_video {}
-
-
 .innovation {
     &#{-sec2} {
         @include py(3.5rem);
@@ -283,6 +280,17 @@
                     border: 0.0625rem solid #fff;
                     max-width: 8.333%;
                     flex: 0 0 8.333%;
+                    @include media-max($lg) {
+                        max-width: 16.666%;
+                        flex: 0 0 16.666%;
+                    }
+                    @include media-max($sm) {
+                        max-width: 25%;
+                        flex: 0 0 25%;
+                    }
+
+
+                    
 
                     &.active {
                         background-color: #92a9c9;

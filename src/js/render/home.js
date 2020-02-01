@@ -69,6 +69,7 @@ export default function(data) {
                      breakpoint: 1200,
                      settings: {
                        slidesToShow: 2,
+                       slidesToScroll: 2,
                      }
                
                    }, {
@@ -76,6 +77,7 @@ export default function(data) {
                      breakpoint: 768,
                      settings: {
                        slidesToShow: 1,
+                       slidesToScroll: 1,
                      }
                
                    }]
