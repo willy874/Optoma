@@ -58,7 +58,7 @@ $(document.body).on('click', function (e) {
     }
 
     //applications navbar
-    if($this.attr('data-applications') == 'true'){
+    if($this.attr('data-applications') == 'true' && window.location.search == Route.applications){
         e.preventDefault()
         const targetTop = $($this.attr('data-target')).position().top - 50;
         $('html,body').stop().animate({scrollTop:targetTop});

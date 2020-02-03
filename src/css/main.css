@@ -3252,8 +3252,9 @@ footer {
 }
 
 .home-sec2 {
-  background-size: cover;
-  background-position: center;
+  background-color: #000;
+  background-position: right center;
+  background-repeat: no-repeat;
   height: 100vh;
   position: relative;
 }
@@ -4078,8 +4079,8 @@ footer {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media (min-width: 992px) {
@@ -4097,17 +4098,12 @@ footer {
   }
 }
 
-.home-sec5-container-row-col > a > figure {
-  background-size: cover;
-  background-position: center;
+.home-sec5-container-row-col figure {
   width: 100%;
-  height: 18rem;
 }
 
-@media (max-width: 576px) {
-  .home-sec5-container-row-col > a > figure {
-    height: 12rem;
-  }
+.home-sec5-container-row-col figure img {
+  width: 100%;
 }
 
 .home-sec6 {
@@ -4357,6 +4353,10 @@ footer {
   width: 0.625rem;
   height: 0.125rem;
   opacity: 1;
+}
+
+#silck-applications .slick-arrow:hover {
+  opacity: 0.75;
 }
 
 #silck-applications .slick-prev {
@@ -4781,6 +4781,10 @@ footer {
   opacity: 1;
 }
 
+#banner-ourbraud .slick-arrow:hover {
+  opacity: 0.75;
+}
+
 #banner-ourbraud .slick-prev {
   left: 0;
   -webkit-transform: translate(0, -50%);
@@ -4897,7 +4901,7 @@ footer {
 .ourbraud-sec2-container h2 {
   font-weight: bolder;
   margin-bottom: 1.5rem;
-  color: #000;
+  color: #2F353D;
 }
 
 @media (min-width: 350px) {
@@ -4945,7 +4949,7 @@ footer {
 .ourbraud-sec2-container p {
   font-size: 0.9325rem;
   margin-bottom: 1.5rem;
-  color: #000;
+  color: #2F353D;
 }
 
 .ourbraud-sec3 {
@@ -4975,7 +4979,7 @@ footer {
 
 .ourbraud-sec4-container h2 {
   text-align: center;
-  color: #000;
+  color: #2F353D;
   font-weight: bolder;
   margin-bottom: 3rem;
 }
@@ -5067,7 +5071,7 @@ footer {
 
 .ourbraud-sec5-container h2 {
   text-align: center;
-  color: #000;
+  color: #2F353D;
   font-weight: bolder;
   margin-bottom: 3rem;
 }
@@ -5319,7 +5323,7 @@ footer {
 }
 
 .ourbraud-sec5_table-body-row-col a {
-  color: #000;
+  color: #2F353D;
 }
 
 .ourbraud-sec5_table-body-row-col:nth-of-type(1) {
@@ -5407,7 +5411,7 @@ footer {
 #silck-awards .silck-item h3 span {
   padding-left: 1rem;
   padding-right: 1rem;
-  color: #1b212d;
+  color: #2F353D;
   font-size: 1.5rem;
   font-weight: bolder;
   line-height: 2rem;
@@ -5452,6 +5456,10 @@ footer {
   width: 0.625rem;
   height: 0.125rem;
   opacity: 1;
+}
+
+#silck-awards .slick-arrow:hover {
+  opacity: 0.75;
 }
 
 #silck-awards .slick-prev {
@@ -5529,26 +5537,50 @@ footer {
 }
 
 .about-sec1 {
-  height: 80vh;
+  height: 48rem;
   background-size: cover;
   background-position: center center;
 }
 
+@media (max-width: 1600px) {
+  .about-sec1 {
+    height: 42rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .about-sec1 {
-    height: 40rem;
+    height: 36rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-sec1 {
+    height: 30rem;
   }
 }
 
 @media (max-width: 768px) {
   .about-sec1 {
-    height: 30rem;
+    height: 24rem;
   }
 }
 
 @media (max-width: 576px) {
   .about-sec1 {
     height: 20rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-sec1 {
+    height: 14rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .about-sec1 {
+    height: 12rem;
   }
 }
 
@@ -5607,6 +5639,7 @@ footer {
   font-weight: bolder;
   color: #fafaf9;
   text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.8);
+  font-weight: bolder;
 }
 
 @media (min-width: 350px) {
@@ -5779,6 +5812,7 @@ footer {
   color: #fefefe;
   margin-top: 3rem;
   margin-bottom: 0.5rem;
+  font-weight: bolder;
 }
 
 @media (min-width: 350px) {
@@ -5901,7 +5935,7 @@ footer {
 }
 
 .about-sec3-text p {
-  color: #010101;
+  color: #2F353D;
   font-size: 0.9375rem;
 }
 
@@ -5944,8 +5978,9 @@ footer {
 }
 
 .about-sec4-container-display h2 {
-  color: #000;
+  color: #2F353D;
   margin-bottom: 1.5rem;
+  font-weight: bolder;
 }
 
 @media (min-width: 350px) {
@@ -5991,7 +6026,7 @@ footer {
 }
 
 .about-sec4-container-display p {
-  color: #000;
+  color: #2F353D;
   font-size: 0.9375rem;
   margin-bottom: 1rem;
 }
@@ -6065,6 +6100,7 @@ footer {
 .about-sec5-container-display h2 {
   color: #fcfcfb;
   margin-bottom: 1.5rem;
+  font-weight: bolder;
 }
 
 @media (min-width: 350px) {
@@ -6261,8 +6297,9 @@ footer {
 }
 
 .about-sec6-container-display h2 {
-  color: #000;
+  color: #2F353D;
   margin-bottom: 1.5rem;
+  font-weight: bolder;
 }
 
 @media (min-width: 350px) {
@@ -6308,7 +6345,7 @@ footer {
 }
 
 .about-sec6-container-display p {
-  color: #000;
+  color: #2F353D;
   font-size: 0.9375rem;
   max-width: 992px;
   margin: 1rem auto;
@@ -6393,7 +6430,7 @@ footer {
 
 .about-sec6-container-row-col figure figcaption {
   font-size: 1.25rem;
-  color: #000;
+  color: #2F353D;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
@@ -6412,8 +6449,9 @@ footer {
 }
 
 .about-sec7-container-display h2 {
-  color: #000;
+  color: #2F353D;
   margin-bottom: 1.5rem;
+  font-weight: bolder;
 }
 
 @media (min-width: 350px) {
@@ -6685,6 +6723,10 @@ footer {
   width: 1rem;
   height: 0.125rem;
   opacity: 1;
+}
+
+#silck-about .slick-arrow:hover {
+  opacity: 0.9;
 }
 
 #silck-about .slick-prev {
@@ -7069,6 +7111,10 @@ footer {
   opacity: 1;
 }
 
+#banner-applications .slick-arrow:hover {
+  opacity: 0.9;
+}
+
 #banner-applications .slick-prev {
   left: 0;
   -webkit-transform: translate(0, -50%);
@@ -7333,10 +7379,10 @@ footer {
 }
 
 .applications-container-sec-heading h3 {
-  color: #000;
+  color: #2F353D;
   margin-top: 4rem;
   margin-bottom: 2rem;
-  font-weight: border;
+  font-weight: bolder;
 }
 
 @media (min-width: 350px) {
@@ -7383,7 +7429,7 @@ footer {
 
 .applications-container-sec-heading p {
   font-size: 1rem;
-  color: #000;
+  color: #2F353D;
   margin: 0 auto 5rem auto;
   max-width: 50rem;
 }
@@ -7813,7 +7859,7 @@ footer {
   text-align: center;
   font-weight: bolder;
   margin-bottom: 0;
-  color: #000000;
+  color: #2F353D;
 }
 
 @media (min-width: 350px) {
@@ -7861,7 +7907,7 @@ footer {
 .knowledge-sec2-container h3 {
   font-size: 0.9375rem;
   text-align: center;
-  color: #000000;
+  color: #2F353D;
   margin-bottom: 3rem;
 }
 
@@ -8050,7 +8096,7 @@ footer {
 
 .knowledge-sec2_video-row-col-figure figure h4 a {
   font-size: 1.25rem;
-  color: #000000;
+  color: #2F353D;
   font-weight: bolder;
 }
 
@@ -8058,7 +8104,7 @@ footer {
   line-height: 1.25rem;
   height: 5rem;
   overflow: hidden;
-  color: #000000;
+  color: #2F353D;
   font-size: 0.875rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -8581,6 +8627,10 @@ footer {
   width: 0.625rem;
   height: 0.125rem;
   opacity: 1;
+}
+
+#banner-design .slick-arrow:hover {
+  opacity: 0.9;
 }
 
 #banner-design .slick-prev {
@@ -9265,6 +9315,10 @@ footer {
   opacity: 1;
 }
 
+#banner-innovation .slick-arrow:hover {
+  opacity: 0.9;
+}
+
 #banner-innovation .slick-prev {
   left: 0;
   -webkit-transform: translate(0, -50%);
@@ -9380,7 +9434,7 @@ footer {
   text-align: center;
   font-weight: bolder;
   margin-bottom: 0;
-  color: #505050;
+  color: #2F353D;
 }
 
 @media (min-width: 350px) {
@@ -9428,7 +9482,7 @@ footer {
 .innovation-sec2-container h3 {
   font-size: 0.9375rem;
   text-align: center;
-  color: #505050;
+  color: #2F353D;
   margin-bottom: 3rem;
 }
 
@@ -9448,6 +9502,24 @@ footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 8.333%;
           flex: 0 0 8.333%;
+}
+
+@media (max-width: 992px) {
+  .innovation-sec2_video-buttonGroup button {
+    max-width: 16.666%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666%;
+            flex: 0 0 16.666%;
+  }
+}
+
+@media (max-width: 576px) {
+  .innovation-sec2_video-buttonGroup button {
+    max-width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
 }
 
 .innovation-sec2_video-buttonGroup button.active {
@@ -9602,7 +9674,7 @@ footer {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 1.25rem;
-  color: #505050;
+  color: #2F353D;
   font-weight: bolder;
   margin-top: 0.375rem;
   margin-bottom: 0.375rem;
@@ -9634,7 +9706,7 @@ footer {
 }
 
 .innovation-sec2_video-row-col-figure figure p a {
-  color: #505050;
+  color: #2F353D;
   font-size: 0.8125rem;
   line-height: 1.25rem;
   max-height: 5rem;
@@ -9688,7 +9760,7 @@ footer {
 
 .social-banner-display h2 {
   font-weight: bolder;
-  color: #000;
+  color: #2F353D;
   text-align: center;
 }
 

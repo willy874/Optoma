@@ -107,6 +107,7 @@ export default function (data) {
             infinite: false,
             autoplay: false,
             touchMove: false,
+            draggable: false,
             speed: 300,
             slidesToShow: 8,
             slidesToScroll: 1,

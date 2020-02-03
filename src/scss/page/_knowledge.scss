@@ -37,12 +37,12 @@
                 @include display-4;
                 font-weight: bolder;
                 margin-bottom: 0;
-                color: #000000;
+                color: #2F353D;
             }
             h3{
                 font-size: 0.9375rem;
                 text-align: center;
-                color: #000000;
+                color: #2F353D;
                 margin-bottom: 3rem;
             }
 
@@ -162,7 +162,7 @@
                                 @include px(1.5rem);
                                 a{
                                     font-size: 1.25rem;
-                                    color: #000000;
+                                    color: #2F353D;
                                     font-weight: bolder;
                                 }
                             }
@@ -170,7 +170,7 @@
                                 line-height: 1.25rem;
                                 height: 1.25rem*4;
                                 overflow: hidden;
-                                color: #000000;
+                                color: #2F353D;
                                 font-size: 0.875rem;
                                 @include px(1.5rem);
                                 margin-bottom: 0.75rem;

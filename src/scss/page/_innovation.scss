@@ -169,6 +169,9 @@
             height: 0.125rem;
             opacity: 1;
         }
+        &:hover {
+            opacity: 0.9;
+        }
     }
 
     .slick-prev {
@@ -256,13 +259,13 @@
                 @include display-4;
                 font-weight: bolder;
                 margin-bottom: 0;
-                color: #505050;
+                color: #2F353D;
             }
 
             h3 {
                 font-size: 0.9375rem;
                 text-align: center;
-                color: #505050;
+                color: #2F353D;
                 margin-bottom: 3rem;
             }
 
@@ -376,7 +379,7 @@
                                 @include px(1.5rem);
                                 @include text-ellipsis;
                                 font-size: 1.25rem;
-                                color: #505050;
+                                color: #2F353D;
                                 font-weight: bolder;
                                 @include my(0.375rem);
                             }
@@ -392,7 +395,7 @@
                                 margin-bottom: 0.75rem;
 
                                 a {
-                                    color: #505050;
+                                    color: #2F353D;
                                     font-size: 0.8125rem;
                                     line-height: 1.25rem;
                                     max-height: 1.25rem*4;

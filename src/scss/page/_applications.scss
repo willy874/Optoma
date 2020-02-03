@@ -111,6 +111,9 @@
             height: 0.125rem;
             opacity: 1;
         }
+        &:hover {
+            opacity: 0.9;
+        }
     }
     
     .slick-prev{
@@ -289,14 +292,14 @@
                 }
                 h3{
                     @include display-3;
-                    color: #000;
+                    color: #2F353D;
                     margin-top: 4rem;
                     margin-bottom: 2rem;
-                    font-weight: border;
+                    font-weight: bolder;
                 }
                 p{
                     font-size: 1rem;
-                    color: #000;
+                    color: #2F353D;
                     margin: 0 auto 5rem auto;
                     max-width: 50rem;
                 }

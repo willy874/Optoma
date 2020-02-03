@@ -111,6 +111,9 @@
             height: 0.125rem;
             opacity: 1;
         }
+        &:hover {
+            opacity: 0.9;
+        }
     }
     
     .slick-prev{
