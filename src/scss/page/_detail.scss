@@ -44,11 +44,8 @@
                 @include mx(-1rem);
                 &#{-col}{
                     @include col(25%);
-                    @include media-max($xl) {
+                    @include media-max($lg) {
                         @include col(50%);
-                    }
-                    @include media-max($md) {
-                        @include col(100%);
                     }
                     display: flex;
                     flex-wrap: wrap;

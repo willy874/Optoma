@@ -141,6 +141,13 @@
                 font-size: 0.9375rem;
             }
         }
+        &#{-graphics}{
+            transform: scale(1);
+            @include media-max($lg) {transform: scale(0.9);}
+            @include media-max($md) {transform: scale(0.8);}
+            @include media-max($sm) {transform: scale(0.7);}
+            @include media-max($xs) {transform: scale(0.6); margin-top: 0;}
+        }
     }
     //******************************************************************************************************
     &#{-sec4}{
@@ -469,45 +476,45 @@
     margin-bottom: 10rem;
     .silck-item{
         padding: 0 1rem;
-        figure{
-            height: 30rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            background-size: cover;
-            background-position: center;
-            padding: 3rem 0;
-            .year{
-                padding: 1rem 1.5rem;
-                a{
-                    color: #fff;
-                    font-size: 1.5rem;
+        .silck-item-dispay{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            figure{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 3rem 0;
+                .year{
+                    padding: 1rem 1.5rem;
+                    a{
+                        color: #fff;
+                        font-size: 1.5rem;
+                    }
+                }
+                figcaption{
+                    margin: 0.5rem 0;
+                    padding: 0 1.5rem;
+                    height: 1.2rem * 3;
+                    overflow: hidden;
+                    z-index: 950;
+    
+                    a{
+                        color: #fff;
+                        font-size: 1rem;
+                        line-height: 1.2rem;
+                        cursor: auto;
+                    }
                 }
             }
-            figcaption{
-                position: relative;
-                margin: 0.5rem 0;
-                padding: 0 1.5rem;
-                height: 1.2rem * 3;
-                overflow: hidden;
-                z-index: 950;
-
-                a{
-                    color: #fff;
-                    font-size: 1rem;
-                    line-height: 1.2rem;
-                    cursor: auto;
-                }
-            }
-            // &:hover{
-            //     padding: 0;
-            //     figcaption{
-            //         padding: 3rem 1.5rem;
-            //         background-color: rgba(0, 0, 0, 0.6);
-            //         height: auto;
-            //     }
-            // }
         }
+        
         
     }
 

@@ -238,11 +238,9 @@
                     }
                     display: flex;
                     flex-wrap: wrap;
-                    
-                    @include px(0.5rem);
-                    @include my(0.5rem);
+                    @include px(0);
+                    @include my(0);
                     &#{-figure}{
-                        //height: 33rem;
                         @include stretched-link;
                         &.list{
                             width: 50%;

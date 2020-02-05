@@ -10,28 +10,33 @@ export default function (data) {
         m.render(element1, [
             data.milestones.map(item => {
                 return m('div', {
-                    class: 'silck-item'
+                    class: 'silck-item',
                 }, [
-                    m('figure', {
-                        style: {
-                            backgroundImage: `url(${item.src})`
-                        }
-                    }, [
-                        m('div', {
-                            class: 'year'
-                        }, [
-                            m('a', {
-                                //href: item.href,
-                                title: item.year
-                            }, item.year)
-                        ]),
-                        m('figcaption', [
-                            m('a', {
-                                //href: item.href,
-                                title: item.title
-                            }, [m.trust(item.figcaption)])
+                    m('div',{
+                        class: 'silck-item-dispay'
+                    },[
+                        m('img',{
+                            src: item.src,
+                            alt: item.year
+                        }),
+                        m('figure', [
+                            m('div', {
+                                class: 'year'
+                            }, [
+                                m('a', {
+                                    //href: item.href,
+                                    title: item.year
+                                }, item.year)
+                            ]),
+                            m('figcaption', [
+                                m('a', {
+                                    //href: item.href,
+                                    title: item.title
+                                }, [m.trust(item.figcaption)])
+                            ])
                         ])
                     ]),
+                    
 
                 ])
             })

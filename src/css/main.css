@@ -3033,8 +3033,8 @@ footer {
   background-position: 47% center;
   background-size: cover;
   z-index: 4;
-  -webkit-animation: star-sky-1 2.5s linear infinite;
-          animation: star-sky-1 2.5s linear infinite;
+  -webkit-animation: star-sky-1 4s linear infinite;
+          animation: star-sky-1 4s linear infinite;
 }
 
 .home-sec1-bgLower {
@@ -3046,8 +3046,8 @@ footer {
   background-position: 47% center;
   background-size: cover;
   z-index: 5;
-  -webkit-animation: star-sky-2 2.5s linear infinite;
-          animation: star-sky-2 2.5s linear infinite;
+  -webkit-animation: star-sky-2 4s linear infinite;
+          animation: star-sky-2 4s linear infinite;
 }
 
 .home-sec1-container {
@@ -3655,6 +3655,33 @@ footer {
   pointer-events: none;
 }
 
+@media (max-width: 992px) {
+  .home-sec4-bgUpper {
+    background-position: 55% bottom;
+    background-repeat: no-repeat;
+    background-size: 180%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-sec4-bgUpper {
+    background-size: 230%;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-sec4-bgUpper {
+    background-size: 300%;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-sec4-bgUpper {
+    background-size: 400%;
+    background-position: 55% 75%;
+  }
+}
+
 .home-sec4-bgLower {
   position: absolute;
   top: 0;
@@ -3665,19 +3692,44 @@ footer {
   z-index: 5;
   background-position: 55% center;
   pointer-events: none;
-  -webkit-transform-origin: 50% 68%;
-          transform-origin: 50% 68%;
-  -webkit-transform: scale(0.01);
-          transform: scale(0.01);
-  -webkit-transition: -webkit-transform 3s ease;
-  transition: -webkit-transform 3s ease;
-  transition: transform 3s ease;
-  transition: transform 3s ease, -webkit-transform 3s ease;
+  -webkit-transition: -webkit-clip-path 3s ease;
+  transition: -webkit-clip-path 3s ease;
+  transition: clip-path 3s ease;
+  transition: clip-path 3s ease, -webkit-clip-path 3s ease;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 }
 
 .home-sec4-bgLower.animate {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 992px) {
+  .home-sec4-bgLower {
+    background-position: 55% bottom;
+    background-repeat: no-repeat;
+    background-size: 180%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-sec4-bgLower {
+    background-size: 230%;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-sec4-bgLower {
+    background-size: 300%;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-sec4-bgLower {
+    background-size: 400%;
+    background-position: 55% 75%;
+  }
 }
 
 .home-sec4-container {
@@ -5948,6 +6000,40 @@ footer {
   font-size: 0.9375rem;
 }
 
+.about-sec3-graphics {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (max-width: 992px) {
+  .about-sec3-graphics {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-sec3-graphics {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 576px) {
+  .about-sec3-graphics {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@media (max-width: 400px) {
+  .about-sec3-graphics {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    margin-top: 0;
+  }
+}
+
 .about-sec4-container {
   width: 100%;
   padding-right: 15px;
@@ -6655,8 +6741,20 @@ footer {
   padding: 0 1rem;
 }
 
-#silck-about .silck-item figure {
-  height: 30rem;
+#silck-about .silck-item .silck-item-dispay {
+  position: relative;
+}
+
+#silck-about .silck-item .silck-item-dispay img {
+  width: 100%;
+}
+
+#silck-about .silck-item .silck-item-dispay figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6667,22 +6765,19 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-size: cover;
-  background-position: center;
   padding: 3rem 0;
 }
 
-#silck-about .silck-item figure .year {
+#silck-about .silck-item .silck-item-dispay figure .year {
   padding: 1rem 1.5rem;
 }
 
-#silck-about .silck-item figure .year a {
+#silck-about .silck-item .silck-item-dispay figure .year a {
   color: #fff;
   font-size: 1.5rem;
 }
 
-#silck-about .silck-item figure figcaption {
-  position: relative;
+#silck-about .silck-item .silck-item-dispay figure figcaption {
   margin: 0.5rem 0;
   padding: 0 1.5rem;
   height: 3.6rem;
@@ -6690,7 +6785,7 @@ footer {
   z-index: 950;
 }
 
-#silck-about .silck-item figure figcaption a {
+#silck-about .silck-item .silck-item-dispay figure figcaption a {
   color: #fff;
   font-size: 1rem;
   line-height: 1.2rem;
@@ -7260,14 +7355,14 @@ footer {
 
 .applications-container-heading h2 {
   font-size: 1.5rem;
-  color: #505050;
+  color: #2F353D;
   margin-bottom: 0.5rem;
-  font-weight: border;
+  font-weight: bolder;
 }
 
 .applications-container-heading p {
   font-size: 0.875rem;
-  color: #505050;
+  color: #2F353D;
   margin-bottom: 1rem;
 }
 
@@ -8883,10 +8978,10 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 992px) {
@@ -9640,6 +9735,21 @@ footer {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     max-width: 50%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .innovation-sec2_video-row-col {
+    padding-left: 15px;
+    padding-right: 15px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
@@ -10499,28 +10609,13 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .detail-article-container-row-col {
     padding-left: 15px;
     padding-right: 15px;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     max-width: 50%;
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .detail-article-container-row-col {
-    padding-left: 15px;
-    padding-right: 15px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
