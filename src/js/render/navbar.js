@@ -14,9 +14,9 @@ export default function(data) {
                     title: 'back home',
                     href: './index.php'
                 }, [
-                    m('img', {
-                        src: './images/optoma-logo.png'
-                    })
+                     m('img', {
+                         src: './images/Optoma_edit.svg'
+                     })
                 ])
             ]),
             m('button[type="button"]', {

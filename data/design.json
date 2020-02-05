@@ -4,19 +4,19 @@
         "src": "./images/design/design-banner.jpg",
         "alt": "Design Center",
         "heading": "Design Center",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+        "description": "Users first, design follows, technology supports."
     },{
         "type": "image",
         "src": "./images/design/design-banner.jpg",
         "alt": "Design Center",
         "heading": "Design Center",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+        "description": "Users first, design follows, technology supports."
     },{
         "type": "youtobe",
         "src": "https://www.youtube.com/watch?v=Rr4WH3qRpd8",
         "alt": "OptomaAsia",
         "heading": "OptomaAsia",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+        "description": "Users first, design follows, technology supports."
     }],
     "list":[{
         "keyword": ["design"],
@@ -59,9 +59,9 @@
             "type": "post",
             "url": "index.php?page=detail",
             "heading": "",
-            "figcaption": "Amazon Alexa and Google<br/>Assistant voice control",
+            "figcaption": "Amazon Alexa and Google Assistant voice control",
             "paragraph": "",
-            "title": "Amazon Alexa and Google<br/>Assistant voice control",
+            "title": "Amazon Alexa and Google Assistant voice control",
             "src": "./images/design/design-img5.png"
         }]
     },{
@@ -92,7 +92,7 @@
             "type": "post",
             "url": "index.php?page=detail",
             "heading": "UHL55",
-            "figcaption": "World’s 1st Smart Projector supporting home automation,<br/>voice control, a personal media center and an App Marketplace",
+            "figcaption": "World’s 1st Smart Projector supporting home automation, voice control, a personal media center and an App Marketplace",
             "paragraph": "",
             "title": "UHL55",
             "src": "./images/design/design-img8.png"
@@ -111,25 +111,25 @@
             "type": "post",
             "url": "index.php?page=detail",
             "heading": "",
-            "figcaption": "Compatible with thousands<br/>of smart devices",
+            "figcaption": "Compatible with thousands of smart devices",
             "paragraph": "",
-            "title": "Compatible with thousands<br/>of smart devices",
+            "title": "Compatible with thousands of smart devices",
             "src": "./images/design/design-img10.png"
         },{
             "type": "post",
             "url": "index.php?page=detail",
             "heading": "",
-            "figcaption": "Play 4K videos straight from a<br/>USB memory stick",
+            "figcaption": "Play 4K videos straight from a USB memory stick",
             "paragraph": "",
-            "title": "Play 4K videos straight from a<br/>USB memory stick",
+            "title": "Play 4K videos straight from a USB memory stick",
             "src": "./images/design/design-img11.png"
         },{
             "type": "post",
             "url": "index.php?page=detail",
             "heading": "",
-            "figcaption": "Built-in stereo with superior sound<br/>YouTube, Spotify and more...",
+            "figcaption": "Built-in stereo with superior sound YouTube, Spotify and more...",
             "paragraph": "",
-            "title": "Built-in stereo with superior sound<br/>YouTube, Spotify and more...",
+            "title": "Built-in stereo with superior sound YouTube, Spotify and more...",
             "src": "./images/design/design-img12.png"
         }]
     }]

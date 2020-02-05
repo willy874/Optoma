@@ -205,8 +205,11 @@
     }
     &#{-sec3}{
         background-size: cover;
-        background-position: center;
+        background-position: left center;
         height: 30rem;
+        @include media-max($xl) {
+            background-position: 40% center;
+        }
     }
     &#{-sec4}{
         background-color: #e5e3ea;
@@ -327,8 +330,6 @@
                         &:nth-of-type(2){order: 3;}
                         &:nth-of-type(3){order: 4;}
                         &:nth-of-type(2){
-                            border-left: 0.125rem solid #fff;
-                            border-right: 0.125rem solid #fff;
                             @include media-max($sm) {
                                 order: 1;
                                 border-left: 0;

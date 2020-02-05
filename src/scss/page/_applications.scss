@@ -31,9 +31,6 @@
             left: 0;
             right: 0;
             transform: translate(0 , -50%);
-            @include media-max($md) {
-                display: none;
-            }
             h2{
                 max-width: 1140px;
                 margin: 0 auto;

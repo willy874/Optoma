@@ -17,7 +17,9 @@
                 align-items: center;
                 height: 100%;
             &#{-display}{
-
+                @include media-max($md) {
+                    margin: auto;
+                }
                 h2{
                     @include display-2;
                     font-weight: bolder;
@@ -51,11 +53,18 @@
         &#{_video}{
             &#{-buttonGroup}{
                 margin-bottom: 1.5rem;
+                @include media-max($xl) {
+                    @include px(0.25rem);
+                    text-align: center;
+                }
 
                 button {
                     background-color: #dad9d9;
                     border: 0.0625rem solid #dad9d9;
                     padding: 0.25rem 3rem;
+                    @include media-max($xl) {
+                        margin: auto;
+                    }
 
                     span{
                         font-weight: bolder;
@@ -130,7 +139,7 @@
                             box-shadow : 1px 1px 2px 1px rgba(100,100,100,.2);
                             overflow: hidden;
                             transition: all 0.2s;
-                            margin-bottom: 0.75rem;
+                            margin-bottom: 0.5rem;
 
                             .img{
                                 position: relative;

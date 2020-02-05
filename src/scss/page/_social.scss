@@ -137,7 +137,7 @@
 
                     &#{-col}{
                         @include col-float(50%);
-                        @include media-max($sm){
+                        @include media-max($lg){
                             @include col(100%);
                         }
                         @include py(1rem);
