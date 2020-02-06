@@ -27,7 +27,7 @@
             "figcaption": "Optoma 4K UHD HDR Laser Cinema",
             "paragraph": "",
             "title": "P1",
-            "src": "./images/design/design-img1.png"
+            "src": "./images/design/design-img1.jpg"
         }]
     },{
         "keyword": ["design"],
@@ -38,7 +38,7 @@
             "figcaption": "From home cinema to home decor",
             "paragraph": "",
             "title": "From home cinema to home decor",
-            "src": "./images/design/design-img2.png"
+            "src": "./images/design/design-img2.jpg"
         },{
             "type": "post",
             "url": "index.php?page=detail",
@@ -46,7 +46,7 @@
             "figcaption": "Just music. No crosstalk.",
             "paragraph": "",
             "title": "Just music. No crosstalk.",
-            "src": "./images/design/design-img3.png"
+            "src": "./images/design/design-img3.jpg"
         },{
             "type": "post",
             "url": "index.php?page=detail",
@@ -54,7 +54,7 @@
             "figcaption": "Reclaim your space",
             "paragraph": "",
             "title": "Reclaim your space",
-            "src": "./images/design/design-img4.png"
+            "src": "./images/design/design-img4.jpg"
         },{
             "type": "post",
             "url": "index.php?page=detail",
@@ -62,7 +62,7 @@
             "figcaption": "Amazon Alexa and Google Assistant voice control",
             "paragraph": "",
             "title": "Amazon Alexa and Google Assistant voice control",
-            "src": "./images/design/design-img5.png"
+            "src": "./images/design/design-img5.jpg"
         }]
     },{
         "keyword": ["design"],
@@ -73,7 +73,7 @@
             "figcaption": "A greater sense of realism in every scene",
             "paragraph": "",
             "title": "UHD65",
-            "src": "./images/design/design-img6.png"
+            "src": "./images/design/design-img6.jpg"
         }]
     },{
         "keyword": ["design"],
@@ -84,7 +84,7 @@
             "figcaption": "Stunning images with ultimate convenience",
             "paragraph": "",
             "title": "LV130",
-            "src": "./images/design/design-img7.png"
+            "src": "./images/design/design-img7.jpg"
         }]
     },{
         "keyword": ["design"],
@@ -95,7 +95,7 @@
             "figcaption": "World’s 1st Smart Projector supporting home automation, voice control, a personal media center and an App Marketplace",
             "paragraph": "",
             "title": "UHL55",
-            "src": "./images/design/design-img8.png"
+            "src": "./images/design/design-img8.jpg"
         }]
     },{
         "keyword": ["design"],
@@ -106,7 +106,7 @@
             "figcaption": "Built-in stereo with superior sound",
             "paragraph": "",
             "title": "Built-in stereo with superior sound",
-            "src": "./images/design/design-img9.png"
+            "src": "./images/design/design-img9.jpg"
         },{
             "type": "post",
             "url": "index.php?page=detail",
@@ -114,7 +114,7 @@
             "figcaption": "Compatible with thousands of smart devices",
             "paragraph": "",
             "title": "Compatible with thousands of smart devices",
-            "src": "./images/design/design-img10.png"
+            "src": "./images/design/design-img10.jpg"
         },{
             "type": "post",
             "url": "index.php?page=detail",
@@ -122,7 +122,7 @@
             "figcaption": "Play 4K videos straight from a USB memory stick",
             "paragraph": "",
             "title": "Play 4K videos straight from a USB memory stick",
-            "src": "./images/design/design-img11.png"
+            "src": "./images/design/design-img11.jpg"
         },{
             "type": "post",
             "url": "index.php?page=detail",
@@ -130,7 +130,7 @@
             "figcaption": "Built-in stereo with superior sound YouTube, Spotify and more...",
             "paragraph": "",
             "title": "Built-in stereo with superior sound YouTube, Spotify and more...",
-            "src": "./images/design/design-img12.png"
+            "src": "./images/design/design-img12.jpg"
         }]
     }]
 }
