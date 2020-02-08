@@ -1,6 +1,6 @@
 @keyframes about-sec2-heading-1-animate {
     0%{
-        transform: translateX(-200%);
+        transform: translateX(-400%);
     }
     100%{
         transform: translateX(0);
@@ -8,10 +8,10 @@
 }
 @keyframes about-sec2-heading-2-animate {
     0%{
-        transform: translateX(-200%);
+        transform: translateX(-400%);
     }
     50%{
-        transform: translateX(-200%);
+        transform: translateX(-400%);
     }
     100%{
         transform: translateX(0);
@@ -275,17 +275,17 @@
 }
 
 @keyframes about-sec2-heading-1 {
-    0%{transform: translate(250%,0);}
-    80%{transform: translate(250%,0);}
+    0%{transform: translate(400%,0);}
+    80%{transform: translate(400%,0);}
     100%{transform: translate(0,0);}
 }
 @keyframes about-sec2-heading-2 {
-    0%{transform: translate(-250%,0);}
-    80%{transform: translate(-250%,0);}
+    0%{transform: translate(-400%,0);}
+    80%{transform: translate(-400%,0);}
     100%{transform: translate(0,0);}
 }
 @keyframes about-sec2-heading-3 {
-    0%{transform: translate(250%,0);}
-    80%{transform: translate(250%,0);}
+    0%{transform: translate(400%,0);}
+    80%{transform: translate(400%,0);}
     100%{transform: translate(0,0);}
 }

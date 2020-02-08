@@ -25,5 +25,3 @@ Design(PageData.design)
 Knowledge(PageData.knowledge)
 Social(PageData.social)
 Detail(PageData.detail)
-
-console.log('PageData',PageData)

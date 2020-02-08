@@ -65,20 +65,8 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: ['@babel/preset-env'],
-                        // plugins: ['@babel/plugin-transform-runtime']
                     }
                 }
             }],
-            // loaders: [
-            //     {
-            //       test: require.resolve("jquery"),
-            //       use: [
-            //         {
-            //           loader: "expose-loader",
-            //           options: "$"
-            //         }
-            //       ]
-            //     }        
-            // ],
         }
 };

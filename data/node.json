@@ -16,62 +16,74 @@
             "nodeId": "a-3.1",
             "nodeName": "Home",
             "href": "./index.php?page=applications#sec1",
-            "title": "Home"
+            "title": "Home",
+            "target":"#sec1"
         }, {
             "nodeId": "a-3.2",
             "nodeName": "Entertainment",
             "href": "./index.php?page=applications#sec2",
-            "title": "Entertainment"
+            "title": "Entertainment",
+            "target":"#sec2"
         }, {
             "nodeId": "a-3.3",
             "nodeName": "Education & Training",
             "href": "./index.php?page=applications#sec3",
-            "title": "Education & Training"
+            "title": "Education & Training",
+            "target":"#sec3"
         }, {
             "nodeId": "a-3.4",
             "nodeName": "House of Worship",
             "href": "./index.php?page=applications#sec4",
-            "title": "House of Worship"
+            "title": "House of Worship",
+            "target":"#sec4"
         }, {
             "nodeId": "a-3.5",
             "nodeName": "Retail",
             "href": "./index.php?page=applications#sec5",
-            "title": "Retail"
+            "title": "Retail",
+            "target":"#sec5"
         }, {
             "nodeId": "a-3.6",
             "nodeName": "Corporate",
             "href": "./index.php?page=applications#sec6",
-            "title": "Corporate"
+            "title": "Corporate",
+            "target":"#sec6"
         }, {
             "nodeId": "a-3.7",
             "nodeName": "Portable",
             "href": "./index.php?page=applications#sec7",
-            "title": "Portable"
+            "title": "Portable",
+            "target":"#sec7"
         }, {
             "nodeId": "a-3.8",
             "nodeName": "Medical",
             "href": "./index.php?page=applications#sec8",
-            "title": "Medical"
+            "title": "Medical",
+            "target":"#sec8"
         }, {
             "nodeId": "a-3.9",
             "nodeName": "Museums",
             "href": "./index.php?page=applications#sec9",
-            "title": "Museums"
+            "title": "Museums",
+            "target":"#sec9"
         }, {
             "nodeId": "a-3.10",
             "nodeName": "Gaming",
             "href": "./index.php?page=applications#sec10",
-            "title": "Gaming"
+            "title": "Gaming",
+            "target":"#sec10"
         }, {
             "nodeId": "a-3.11",
             "nodeName": "Public Sectors",
             "href": "./index.php?page=applications#sec11",
-            "title": "Public Sectors"
+            "title": "Public Sectors",
+            "target":"#sec11"
         }, {
             "nodeId": "a-3.12",
             "nodeName": "Simulation",
             "href": "./index.php?page=applications#sec12",
-            "title": "Simulation"
+            "title": "Simulation",
+            "target":"#sec12"
         }]
     },{
         "nodeId": "a-4",
