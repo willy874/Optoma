@@ -10,18 +10,18 @@ export default function(data) {
                     return m('div',{
                         class: 'home-sec5-container-row-col',
                     },[
-                        m('a',{
-                            //target: '_blank',
-                            href: item.url,
-                            title: item.title
-                        },[
-                            m('figure',{
-                                style:{
-                                    backgroundImage: `url(${item.src})`,
-                                }
-                            })
+                        m('figure',[
+                            m('a',{
+                                //target: '_blank',
+                                href: item.url,
+                                title: item.title
+                            },[
+                                m('img', {
+                                    src: item.src,
+                                    alt: item.title
+                                })
+                            ])
                         ])
-                        
                     ])
                 })
             ])

@@ -27,6 +27,9 @@ main{
 .header {
     &#{-container} {
         @include container;
+        @include media-max($xl) {
+            max-width: 100%;
+        }
         &#{-navbar} {
             display: flex;
             align-items: center;
@@ -34,6 +37,7 @@ main{
             @include media-max($xl) {
                 flex-direction: column;
                 align-items: start;
+                @include mx(0);
             }
         }
         

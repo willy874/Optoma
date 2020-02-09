@@ -31,9 +31,6 @@
             left: 0;
             right: 0;
             transform: translate(0 , -50%);
-            @include media-max($md) {
-                display: none;
-            }
             h2{
                 max-width: 1140px;
                 margin: 0 auto;
@@ -110,6 +107,9 @@
             width: 0.625rem;
             height: 0.125rem;
             opacity: 1;
+        }
+        &:hover {
+            opacity: 0.9;
         }
     }
     
@@ -202,13 +202,13 @@
             padding: 0.5rem 1.5rem;
             h2{
                 font-size: 1.5rem;
-                color: #505050;
+                color: #2F353D;
                 margin-bottom: 0.5rem;
-                font-weight: border;
+                font-weight: bolder;
             }
             p{
                 font-size: 0.875rem;
-                color: #505050;
+                color: #2F353D;
                 margin-bottom: 1rem;
             }
         }
@@ -289,14 +289,14 @@
                 }
                 h3{
                     @include display-3;
-                    color: #000;
+                    color: #2F353D;
                     margin-top: 4rem;
                     margin-bottom: 2rem;
-                    font-weight: border;
+                    font-weight: bolder;
                 }
                 p{
                     font-size: 1rem;
-                    color: #000;
+                    color: #2F353D;
                     margin: 0 auto 5rem auto;
                     max-width: 50rem;
                 }

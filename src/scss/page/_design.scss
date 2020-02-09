@@ -21,7 +21,7 @@
                 left: 0;
                 right: 0;
                 bottom: -0.125rem;
-                background-color: rgba(0, 0, 0, 0.6);
+                background-color: rgba(0, 0, 0, 0);
             }
         }
         .silck-item-heading{
@@ -32,7 +32,7 @@
             right: 0;
             transform: translate(0 , -50%);
             @include media-max($md) {
-                display: none;
+                text-align: center;
             }
             h2{
                 max-width: 1140px;
@@ -111,6 +111,9 @@
             height: 0.125rem;
             opacity: 1;
         }
+        &:hover {
+            opacity: 0.9;
+        }
     }
     
     .slick-prev{
@@ -186,12 +189,12 @@
                 @include display-4;
                 font-weight: bolder;
                 margin-bottom: 0;
-                color: #505050;
+                color: #2F353D;
             }
             h3{
                 font-size: 0.9375rem;
                 text-align: center;
-                color: #505050;
+                color: #2F353D;
                 margin-bottom: 3rem;
             }
 
@@ -235,11 +238,9 @@
                     }
                     display: flex;
                     flex-wrap: wrap;
-                    
-                    @include px(0.5rem);
-                    @include my(0.5rem);
+                    @include px(0);
+                    @include my(0);
                     &#{-figure}{
-                        //height: 33rem;
                         @include stretched-link;
                         &.list{
                             width: 50%;
@@ -289,7 +290,7 @@
                                 @include px(1.5rem);
                                 @include text-ellipsis;
                                 font-size: 1.25rem;
-                                color: #505050;
+                                color: #2F353D;
                                 font-weight: bolder;
                                 @include my(0.375rem);
                             }
@@ -303,7 +304,7 @@
                                 margin-bottom: 1.5rem;
 
                                 a{
-                                    color: #505050;
+                                    color: #2F353D;
                                     font-size: 0.8125rem;
                                     line-height: 1.25rem;
                                     max-height: 1.25rem*2;

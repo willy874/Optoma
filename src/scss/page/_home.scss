@@ -26,7 +26,7 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 4;
-            animation: star-sky-1 2.5s linear infinite;//
+            animation: star-sky-1 4s linear infinite;//
         }
         &#{-bgLower}{
             position: absolute;
@@ -37,7 +37,7 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 5;
-            animation: star-sky-2 2.5s linear infinite;
+            animation: star-sky-2 4s linear infinite;
         }
         &#{-container}{
             @include container;
@@ -80,7 +80,10 @@
         }
     }
     &#{-sec2}{
-        background-position: center;
+        background-color: #000;
+        background-position: right center;
+        background-repeat: no-repeat;
+
         height: 100vh;
         position: relative;
         @include media-max($sm) {
@@ -200,7 +203,14 @@
             z-index: 4;
             background-position:  55% center;
             pointer-events: none;
-           // animation:star-sky-1 7.5s linear infinite;
+            @include media-max($lg) {
+                background-position: 55% bottom;
+                background-repeat: no-repeat;
+                background-size: 180%;
+            }
+            @include media-max($md) {background-size: 230%;}
+            @include media-max($sm) {background-size: 300%;}
+            @include media-max($xs) {background-size: 400%; background-position:  55% 75%;}
         }
         &#{-bgLower}{
             position: absolute;
@@ -212,13 +222,19 @@
             z-index: 5;
             background-position: 55% center;
             pointer-events: none;
-            transform-origin: 50% 68%;
-            transform: scale(0.01);
-            transition: transform 3s ease;
+            transition: clip-path 3s ease;
+            clip-path: polygon(0 100%,100% 100%,100% 100%,0 100%);
             &.animate{
-                transform: scale(1);
+                clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
             }
-            //animation: star-sky-2 7.5s linear infinite;
+            @include media-max($lg) {
+                background-position: 55% bottom;
+                background-repeat: no-repeat;
+                background-size: 180%;
+            }
+            @include media-max($md) {background-size: 230%;}
+            @include media-max($sm) {background-size: 300%;}
+            @include media-max($xs) {background-size: 400%; background-position:  55% 75%;}
         }
         &#{-container}{
             @include container;
@@ -294,15 +310,11 @@
                     @include media-min($lg) {
                         @include col(33.333%);
                     }
-                    @include py(0.125rem);
-                    
-                    > a > figure{
-                        background-size: cover;
-                        background-position: center;
+                    @include py(0.5rem);
+                    figure{
                         width: 100%;
-                        height: 18rem;
-                        @include media-max($sm) {
-                            height: 12rem;
+                        img{
+                            width: 100%;
                         }
                     }
                 }
@@ -393,6 +405,9 @@
             width: 0.625rem;
             height: 0.125rem;
             opacity: 1;
+        }
+        &:hover {
+            opacity: 0.75;
         }
     }
     

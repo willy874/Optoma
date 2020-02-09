@@ -2,10 +2,16 @@
     &#{-banner}{
         background-color: #000;
         &#{-container}{
-            @include container;
             background-size: cover;
             background-position: center;
-            height: 70vh;
+            height: 48rem;
+            @include media-max($xxl){height: 42rem;}
+            @include media-max($xl) {height: 36rem;}
+            @include media-max($lg) {height: 30rem;}
+            @include media-max($md) {height: 24rem;}
+            @include media-max($sm) {height: 20rem;}
+            @include media-max($xs) {height: 14rem;}
+            @include media-max($xxs){height: 12rem;}
         }
     }
     &#{-article}{
@@ -38,11 +44,8 @@
                 @include mx(-1rem);
                 &#{-col}{
                     @include col(25%);
-                    @include media-max($xl) {
+                    @include media-max($lg) {
                         @include col(50%);
-                    }
-                    @include media-max($md) {
-                        @include col(100%);
                     }
                     display: flex;
                     flex-wrap: wrap;

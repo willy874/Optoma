@@ -22,7 +22,7 @@
             h2{
                 @include display-2;
                 font-weight: bolder;
-                color: #000;
+                color: #2F353D;
                 text-align: center;
             }
         }
@@ -137,7 +137,7 @@
 
                     &#{-col}{
                         @include col-float(50%);
-                        @include media-max($sm){
+                        @include media-max($lg){
                             @include col(100%);
                         }
                         @include py(1rem);
@@ -176,11 +176,4 @@
         }
     }
     
-}
-
-
-@for $i from 0 to 10 {
-   .translateX-n#{$i}{
-    transform: translateX( -($i*100%)) !important;
-   }
 }
