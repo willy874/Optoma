@@ -18,16 +18,56 @@
     }
 }
 
+
+@keyframes about-sec3-text1 {
+    0%{
+        transform: translateX(-400%);
+    }
+    75%{
+        transform: translateX(-400%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes about-sec3-text2 {
+    0%{
+        transform: translateX(-400%);
+    }
+    80%{
+        transform: translateX(-400%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes about-sec3-text3 {
+    0%{
+        transform: translateX(-400%);
+    }
+    83%{
+        transform: translateX(-400%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
 .about-sec3-graphics {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
+    @include media-min($lg) {
+        margin-top: 0;
+    }
+    
     &#{-center}{        
         width: 35rem;
         height: 35rem;
         position: relative;
-
+        
         &#{-heading}{
             max-width: 19rem;
             position: absolute;
@@ -199,7 +239,7 @@
         }
     }
     #circle-line.animate{
-        animation: line-position 2.4s linear;
+        animation: line-position 3.2s linear;
     }
 
 
@@ -227,14 +267,14 @@
 }
 @keyframes line-position{
     0% {clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 0, 50% 0, 50% 0, 50% 0);}
-    84% {clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 0, 50% 0, 50% 0, 50% 0);}
-    86% {clip-path: polygon(100% 0, 100% 0, 50% 50%, 50% 0, 100% 0, 100% 0, 100% 0);}
-    88% {clip-path: polygon(100% 50%, 100% 50%, 50% 50%, 50% 0, 100% 0, 100% 50%, 100% 50%);}
-    90% {clip-path: polygon(100% 100%, 100% 100%, 50% 50%, 50% 0, 100% 0, 100% 100%, 100% 100%);}
-    92% {clip-path: polygon(50% 100%, 50% 100%, 50% 50%, 50% 0, 100% 0, 100% 100%, 50% 100%);}
-    94% {clip-path: polygon(0 100%, 0 100%, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);}
-    96% {clip-path: polygon(0 50%, 0 50%, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);}
-    98% {clip-path: polygon(0 0, 0 0, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);}
+    76% {clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 0, 50% 0, 50% 0, 50% 0);}
+    79% {clip-path: polygon(100% 0, 100% 0, 50% 50%, 50% 0, 100% 0, 100% 0, 100% 0);}
+    82% {clip-path: polygon(100% 50%, 100% 50%, 50% 50%, 50% 0, 100% 0, 100% 50%, 100% 50%);}
+    85% {clip-path: polygon(100% 100%, 100% 100%, 50% 50%, 50% 0, 100% 0, 100% 100%, 100% 100%);}
+    88% {clip-path: polygon(50% 100%, 50% 100%, 50% 50%, 50% 0, 100% 0, 100% 100%, 50% 100%);}
+    91% {clip-path: polygon(0 100%, 0 100%, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);}
+    94% {clip-path: polygon(0 50%, 0 50%, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);}
+    97% {clip-path: polygon(0 0, 0 0, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);}
     100% {clip-path: polygon(0 0, 50% 0, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);}
 }
 

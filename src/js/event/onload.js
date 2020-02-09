@@ -12,6 +12,7 @@ $(document).ready(function(){
         const targetTop = $(hash).position().top - 50;
         if(targetTop)$('html,body').stop().animate({scrollTop:targetTop});
         window.history.pushState('','','?page=applications')
+        
     }
 
     const readyElement2 = ( search != '' && search == Models.Route.social) ? document.querySelector(hash) : undefined
@@ -19,6 +20,12 @@ $(document).ready(function(){
 
         $('html,body').stop().animate({scrollTop: 0},10);
         window.history.pushState('','','?page=social')
+
+        
     }
+
+    
+    
+        
 })
 

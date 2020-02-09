@@ -76,6 +76,7 @@ export default function (data) {
 
             }]
         })
+        $('#silck-about').slick('slickGoTo', data.milestones.length-4)
     }
     const element2 = document.querySelector('#silck-year')
     const year = {
@@ -119,8 +120,8 @@ export default function (data) {
             prevArrow: '<button type="button" class="slick-prev"></button>',
             nextArrow: '<button type="button" class="slick-next"></button>'
         })
-
+        $('#silck-year').slick('slickGoTo', data.milestones.length-8)
+        
     }
-
-    $('#silck-about').slick('slickGoTo', data.milestones.length - 2)
+    
 }

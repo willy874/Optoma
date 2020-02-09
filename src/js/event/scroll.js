@@ -7,6 +7,8 @@ const hasRender = {
     leadingThrough: false,
     coreValues: false,
     corporate: false,
+    coreValuesHeading: false,
+    milestones: false,
 }
 $.fn.isInViewport = function () {
     if($(this).length === 0)return
@@ -24,10 +26,12 @@ $(window).scroll(function(){
         $('.home-sec4-bgLower').addClass('animate')
     }
 
-
+    if ($('.about-sec2').isInViewport() && !hasRender.coreValuesHeading){
+        hasRender.coreValuesHeading = true
+        $('.about-sec3-text').addClass('animate')
+    }
     if ($('.about-sec2').isInViewport() && !hasRender.VisionMission){
         hasRender.VisionMission = true
-        $('.about-sec2-container-display-row-text-heading').addClass('animate')
         $('.about-sec2-container-display-row-text-heading').addClass('animate')
     }
     if ($('.about-sec3-graphics').isInViewport() && !hasRender.coreValues){
@@ -62,6 +66,4 @@ $(window).scroll(function(){
     }
     
 
-    
-    
 })

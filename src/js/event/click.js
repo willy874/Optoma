@@ -69,7 +69,10 @@ $(document.body).on('click', function (e) {
             $('.applications-container-btn').children('a').attr('data-switch', 'false')
             $('.applications-container-btn').children('a').children('.plus').removeClass('active')
 
-            $($this.attr('data-target')).stop(false, false).slideDown()
+            $($this.attr('data-target')).stop(false, false).slideDown(400,()=>{
+                const targetTop = $($this.attr('data-target')).position().top - 87; 
+                $('html,body').stop().animate({scrollTop:targetTop});
+            })
             $($this.attr('data-target')).prev().children('a').attr('data-switch', 'true')
             $($this.attr('data-target')).prev().children('a').children('.plus').addClass('active')
 
@@ -89,6 +92,13 @@ $(document.body).on('click', function (e) {
         $('html,body').stop().animate({scrollTop: 0},10);
         if($(`#${target}`).is(':visible')){ $(`#${target}`).trigger('click'); }
         $('.social-main_pagination-panels').css('transform',`translateX(-${$(`#${target}`).attr('data-index')*100}%)`)
+
+        if(target === 'facebook'){
+            $('.social-main-container-tab-pagination').addClass('facebook')
+        }else if( $('.social-main-container-tab-pagination').hasClass('facebook')){
+            $('.social-main-container-tab-pagination').removeClass('facebook')
+        }
+
     }
 
 

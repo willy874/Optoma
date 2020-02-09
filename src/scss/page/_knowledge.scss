@@ -21,6 +21,7 @@
                     margin: auto;
                 }
                 h2{
+                    @include px(3.75rem);
                     @include display-2;
                     font-weight: bolder;
                     color: white;
@@ -184,6 +185,18 @@
                                 @include px(1.5rem);
                                 margin-bottom: 0.75rem;
                     
+                            }
+                            &:active{
+                                background-color: #c6d5e9;
+                                h4{
+                                    color: #fff;
+                                }
+                                p{
+                                    color: #fff;
+                                }
+                                a{
+                                    color: #fff;
+                                }
                             }
                             &:hover{
                                 background-color: #c6d5e9;

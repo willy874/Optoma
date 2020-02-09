@@ -46,9 +46,10 @@ main{
         &#{-logo} {
             >a{
                 display: block;
-                padding: 0.5rem $grid-gutters/2;
+                padding: 0.5rem 0.75rem;
                  >img {
                      width: 100px;
+                     height: 30px;
                  }
             }
         }

@@ -1,3 +1,8 @@
+$size-lg: 0.9;
+$size-md: 0.8;
+$size-sm: 0.7;
+$size-xs: 0.6;
+
 .about{
     &#{-sec1}{
         
@@ -22,6 +27,7 @@
                 max-width: 1140px;
                 margin: 0 auto;
                 width: 100%;
+                @include px(3.75rem);
                 @include media-max($lg) {
                     text-align: center;
                 }
@@ -121,6 +127,10 @@
     //******************************************************************************************************
     &#{-sec3}{
         @include py(1.5rem);
+        padding-top: 5rem;
+        @include media-max($lg) {
+            padding-top: 1rem;
+        }
         background-color: #e5e3ea;
         overflow: hidden;
         &#{-text}{
@@ -129,6 +139,17 @@
             margin: auto;
             text-align: center;
             @include py(1.5rem);
+            &.animate{
+                &:nth-of-type(2){
+                    animation: about-sec3-text1 4s ease;
+                }
+                &:nth-of-type(3){
+                    animation: about-sec3-text2 5s ease;
+                }
+                &:nth-of-type(4){
+                    animation: about-sec3-text3 6s ease;
+                }
+            }
             @include media-min($lg) {
                 display: none;
             }
@@ -143,10 +164,19 @@
         }
         &#{-graphics}{
             transform: scale(1);
-            @include media-max($lg) {transform: scale(0.9);}
-            @include media-max($md) {transform: scale(0.8);}
-            @include media-max($sm) {transform: scale(0.7);}
-            @include media-max($xs) {transform: scale(0.6); margin-top: 0;}
+            
+            @include media-max($lg) {transform: scale($size-lg); margin-top: 3rem;}
+            @include media-max($md) {transform: scale($size-md); margin-top: 1rem;}
+            @include media-max($sm) {transform: scale($size-sm);}
+            @include media-max($xs) {transform: scale($size-xs);}
+
+            &#{-center}{
+                margin: auto;
+                @include media-max($lg) {width: 35rem*$size-lg; height:35rem*$size-lg;}
+                @include media-max($md) {width: 35rem*$size-md; height:35rem*$size-md;}
+                @include media-max($sm) {width: 35rem*$size-sm; height:35rem*$size-sm;}
+                @include media-max($xs) {width: 35rem*$size-xs; height:35rem*$size-xs;}
+            }
         }
     }
     //******************************************************************************************************
@@ -195,6 +225,12 @@
             @include container;
             padding-top: 5rem;
             padding-bottom: 8rem;
+            @include media-max($lg) {
+                padding-bottom: 6rem;
+            }
+            @include media-max($sm) {
+                padding-bottom: 4rem;
+            }
 
             &#{-display}{
                 padding-top: 1rem;
@@ -203,7 +239,13 @@
                 margin: 0 auto;
                 width: 100%;
                 text-align: center;
-                
+                @include media-max($lg) {
+                    padding-bottom: 4.875rem;
+                }
+                @include media-max($sm) {
+                    padding-bottom: 3.25rem;
+                }
+
                 h2{
                     color: #fcfcfb;
                     @include display-3;
