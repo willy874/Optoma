@@ -57,6 +57,7 @@ export default function (data) {
             slidesToShow: 1,
             slidesToScroll: 1,
         })
+        
     }
     const element2 = document.querySelector('#navbar-applications')
     if (element2 != undefined) {
