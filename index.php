@@ -54,7 +54,21 @@ include $fileIndex.'.html';
     </main>
 <?php include 'footer.html'; ?>
 <?php include 'data/index.php'; ?>
+
 <script type="text/javascript" src="./dist/js/dist.bundle.js"></script>
+<script type="text/javascript">
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var initYT = true;
+    function onYouTubeIframeAPIReady() {
+        if(initYT){
+            window.onYTAPIReady()
+            initYT = false
+        }
+    }
+</script>
 </body>
 </html>
 

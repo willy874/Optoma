@@ -2797,6 +2797,7 @@ footer {
 @media (max-width: 992px) {
   .home-sec4 {
     height: 90vh;
+    background-size: 200%;
     background-position: 70% bottom;
   }
 }
@@ -2804,6 +2805,7 @@ footer {
 @media (max-width: 768px) {
   .home-sec4 {
     height: 80vh;
+    background-size: 180%;
     background-position: 60% bottom;
   }
 }
@@ -2811,12 +2813,14 @@ footer {
 @media (max-width: 576px) {
   .home-sec4 {
     height: 65vh;
+    background-size: 240%;
   }
 }
 
 @media (max-width: 400px) {
   .home-sec4 {
     height: 50vh;
+    background-size: 200%;
   }
 }
 
@@ -5750,6 +5754,8 @@ footer {
 @media (max-width: 992px) {
   .about-sec1-container-display {
     text-align: center;
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
   }
 }
 
@@ -6781,6 +6787,7 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, 100%);
           transform: translate(-50%, 100%);
+  font-weight: bolder;
 }
 
 #silck-year .silck-item:hover button {
@@ -6911,6 +6918,7 @@ footer {
 #silck-about .silck-item .silck-item-dispay figure .year a {
   color: #fff;
   font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 #silck-about .silck-item .silck-item-dispay figure figcaption {
