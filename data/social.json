@@ -17,37 +17,37 @@
             "src": "./images/social/facebook/uk.jpg",
             "heading": "Optoma UK",
             "title": "Optoma UK",
-            "href": ""
+            "href": "https://www.facebook.com/OptomaUK"
         },{
             "src": "./images/social/facebook/usa.jpg",
             "heading": "Optoma USA",
             "title": "Optoma USA",
-            "href": ""
+            "href": "https://www.facebook.com/OptomaUSA/"
         },{
             "src": "./images/social/facebook/taiwan.jpg",
             "heading": "Optoma Taiwan",
             "title": "Optoma Taiwan",
-            "href": ""
+            "href": "https://www.facebook.com/optoma/"
         },{
             "src": "./images/social/facebook/asia.jpg",
             "heading": "Optoma Asia",
             "title": "Optoma Asia",
-            "href": ""
+            "href": "https://www.facebook.com/OptomaAsia/"
         },{
             "src": "./images/social/facebook/korea.jpg",
             "heading": "Optoma Korea",
             "title": "Optoma Korea",
-            "href": ""
+            "href": "https://www.facebook.com/OptomaKR/"
         },{
             "src": "./images/social/facebook/hongkong.jpg",
             "heading": "Optoma Hong Kong",
             "title": "Optoma Hong Kong",
-            "href": ""
+            "href": "https://www.facebook.com/OptomaHongKong/"
         },{
             "src": "./images/social/facebook/emea.jpg",
             "heading": "Optoma EMEA",
             "title": "Optoma EMEA",
-            "href": ""
+            "href": "https://www.facebook.com/OptomaEMEA"
         }]
     },{
         "id": "youtube",
@@ -67,17 +67,17 @@
             "src": "./images/social/youtube/apac.jpg",
             "heading": "Optoma APAC",
             "title": "Optoma APAC",
-            "href": ""
+            "href": "https://www.youtube.com/user/OptomaAsia"
         },{
             "src": "./images/social/youtube/emea.jpg",
             "heading": "Optoma EMEA",
             "title": "Optoma EMEA",
-            "href": ""
+            "href": "https://www.youtube.com/user/OptomaEMEA"
         },{
             "src": "./images/social/youtube/usa.jpg",
             "heading": "Optoma USA",
             "title": "Optoma USA",
-            "href": ""
+            "href": "https://www.youtube.com/user/optomausa"
         }]
     },{
         "id": "twitter",
@@ -97,17 +97,17 @@
             "src": "./images/social/twitter/emea.jpg",
             "heading": "Optoma EMEA",
             "title": "Optoma EMEA",
-            "href": ""
+            "href": "https://twitter.com/OptomaUK"
         },{
             "src": "./images/social/twitter/uk.jpg",
             "heading": "Optoma UK",
             "title": "Optoma UK",
-            "href": ""
+            "href": "https://twitter.com/OptomaUK"
         },{
             "src": "./images/social/twitter/usa.jpg",
             "heading": "Optoma USA",
             "title": "Optoma USA",
-            "href": ""
+            "href": "https://twitter.com/OptomaUSA"
         }]
     },{
         "id": "instagram",
@@ -127,7 +127,7 @@
             "src": "./images/social/instagram/uk.jpg",
             "heading": "Optoma UK",
             "title": "Optoma UK",
-            "href": ""
+            "href": "https://www.instagram.com/optomauk/"
         }]
     },{
         "id": "linkedin",
@@ -147,12 +147,12 @@
             "src": "./images/social/linkedin/emea.jpg",
             "heading": "Optoma EMEA",
             "title": "Optoma EMEA",
-            "href": ""
+            "href": "https://www.linkedin.com/company/optom"
         },{
             "src": "./images/social/linkedin/usa.jpg",
             "heading": "Optoma USA",
             "title": "Optoma USA",
-            "href": ""
+            "href": "https://www.linkedin.com/company/optoma-technology/"
         }]
     },{
         "id": "pinterest",
@@ -172,7 +172,7 @@
             "src": "./images/social/pinterest/usa.jpg",
             "heading": "Optoma USA",
             "title": "Optoma USA",
-            "href": ""
+            "href": "https://www.pinterest.com/optomaUSA/"
         }]
     },{
         "id": "weibo",

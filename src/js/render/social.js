@@ -2,7 +2,8 @@ import m from 'mithril'
 import $ from 'jquery/src/jquery'
 
 export default function(data) {
-    const element = document.querySelector('#social-link')
+    
+        const element = document.querySelector('#social-link')
         if(data.msg =="false" ) return; 
         if(element == undefined ) return;
         const hash = window.location.hash
@@ -23,7 +24,7 @@ export default function(data) {
                             },[ 
                                 m('figure',{
                                     id: `${item.id}`,
-                                    class: (active)?'active':'',
+                                    class: `${(active)?'active':''}`,
                                     'data-index': index
                                 },[
                                     m('a',{
@@ -99,4 +100,7 @@ export default function(data) {
             
         ])
         $('.social-main_pagination-panels').css('transform',`translateX(-${$(hash).attr('data-index')*100}%)`)
+        if(hash === '#facebook' || $('#facebook').hasClass('active')) {
+            $('.social-main-container-tab-pagination').addClass('facebook')
+        }
 }

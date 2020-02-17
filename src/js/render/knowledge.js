@@ -77,6 +77,14 @@ export default function(data) {
             })
         )
     }
+    $('.popup-main').prepend('<button id="all"><span>All</span></button>')
+    $('#all').on('click',()=>{
+        $('#popup').removeClass('popup-show');
+        $('#popup').addClass('popup-hide');
+        Status.knowledge.keyword = 'All'
+        $('#keyword').html('All')
+        renderKnowledge(element1,data)
+    })
     
     
 }

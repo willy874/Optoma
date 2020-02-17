@@ -5,18 +5,6 @@
         "alt": "Optoma Design",
         "heading": "Optoma Design",
         "description": "Users first, design follows, technology supports."
-    },{
-        "type": "image",
-        "src": "./images/design/design-banner.jpg",
-        "alt": "Optoma Design",
-        "heading": "Optoma Design",
-        "description": "Users first, design follows, technology supports."
-    },{
-        "type": "youtobe",
-        "src": "https://www.youtube.com/watch?v=Rr4WH3qRpd8",
-        "alt": "OptomaAsia",
-        "heading": "OptomaAsia",
-        "description": "Users first, design follows, technology supports."
     }],
     "list":[{
         "keyword": ["design"],

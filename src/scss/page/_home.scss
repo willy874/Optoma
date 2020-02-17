@@ -157,7 +157,7 @@
     }
     &#{-sec3}{
         background-color: #333a44;
-        @include py(3.5rem);
+        @include py(3rem);
         &#{-container}{
             max-width: 100rem;
             margin: auto;
@@ -171,7 +171,7 @@
                 @include display-3;
                 font-weight: bolder;
                 margin-bottom: 0.5rem;
-                padding-top: 1.125rem;
+                padding-top: 1rem;
             }
             &#{-button}{
                 @include btn-outline(#fdfcfc,#333a44);
@@ -286,7 +286,7 @@
     }
     &#{-sec5}{
         background-color: #707882;
-        @include py(5rem);
+        @include py(4rem);
         &#{-container}{
             text-align: center;
             @include container;

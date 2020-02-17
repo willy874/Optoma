@@ -115,4 +115,9 @@ $(document.body).on('click', function (e) {
         $('#popup').removeClass('popup-show');
         $('#popup').addClass('popup-hide');
     }
+
+
+    if ($this.hasClass('gotop-button')){
+        $('html,body').stop().animate({scrollTop: 0});
+    }
 })

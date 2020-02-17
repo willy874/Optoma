@@ -1,58 +1,28 @@
 {
     "banner":[{
         "type": "image",
-        "src": "./images/banner/main-page_home.jpg",
-        "alt": "Home",
-        "heading": "Home",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+        "src": "./images/application/Application_01.jpg",
+        "alt": "",
+        "heading": "",
+        "description": ""
     },{
         "type": "image",
-        "src": "./images/banner/main-page_House of Worship.jpg",
-        "alt": "House of Worship",
-        "heading": "House of Worship",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+        "src": "./images/application/Application_02.jpg",
+        "alt": "",
+        "heading": "",
+        "description": ""
     },{
         "type": "image",
-        "src": "./images/banner/main-page_Medical.jpg",
-        "alt": "Medical",
-        "heading": "Medical",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+        "src": "./images/application/Application_03.jpg",
+        "alt": "",
+        "heading": "",
+        "description": ""
     },{
         "type": "image",
-        "src": "./images/banner/main-page_Museums.jpg",
-        "alt": "Museums",
-        "heading": "Museums",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
-    },{
-        "type": "image",
-        "src": "./images/banner/main-page_Portable.jpg",
-        "alt": "Portable",
-        "heading": "Portable",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
-    },{
-        "type": "image",
-        "src": "./images/banner/main-page_Public Sector.jpg",
-        "alt": "Sector",
-        "heading": "Sector",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
-    },{
-        "type": "image",
-        "src": "./images/banner/main-page_Retail.jpg",
-        "alt": "Retail",
-        "heading": "Retail",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
-    },{
-        "type": "image",
-        "src": "./images/banner/main-page_Simulation.jpg",
-        "alt": "Simulation",
-        "heading": "Simulation",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
-    },{
-        "type": "youtobe",
-        "src": "https://www.youtube.com/watch?v=Rr4WH3qRpd8",
-        "alt": "OptomaAsia",
-        "heading": "OptomaAsia",
-        "description": "Delivering comprehensive bing image solutions that enhance communication and reinforce collaboration."
+        "src": "./images/application/Application_04.jpg",
+        "alt": "",
+        "heading": "",
+        "description": ""
     }],
     "navbar":[{
         "heading": "Home",

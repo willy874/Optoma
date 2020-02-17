@@ -21,7 +21,7 @@
                 left: 0;
                 right: 0;
                 bottom: -0.125rem;
-                background-color: rgba(0, 0, 0, 0.6);
+                background-color: rgba(0, 0, 0, 0);
             }
         }
         .silck-item-heading{
@@ -475,5 +475,52 @@ $applications-silck-navbar-height: 3rem;
             transform: translate(-0.3rem,0.35rem) rotate(-65deg);
             left: 50%;
         }
+    }
+}
+
+//********************************************************************************************
+
+.gotop{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    
+    button{
+        background-color: #c2bfcb;
+        width: 2rem;
+        height: 2rem;
+        z-index: 900;
+        box-shadow: none;
+        opacity: 0.75;
+        border-radius: 0.5rem;
+        border: 0;
+
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            top: 50%;
+            border-radius: 0.25rem;
+            width: 0.625rem;
+            height: 0.125rem;
+            opacity: 1;
+            transform: translate(0.5rem,-0.125rem) rotate(45deg);
+            right: 50%;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            top: 50%;
+            border-radius: 0.25rem;
+            width: 0.625rem;
+            height: 0.125rem;
+            opacity: 1;
+            transform: translate(0.125rem, -0.125rem)rotate(-45deg);
+            right: 50%;
+        }  
+        &:hover {
+            opacity: 1;
+        }   
     }
 }
