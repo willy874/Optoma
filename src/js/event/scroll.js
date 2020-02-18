@@ -62,10 +62,12 @@ $(window).scroll(function(){
 
     if ($('.home-sec2').isInViewport() && window.scrollY < 1400){
         const bgsize =  160 - (window.scrollY / 10)
+        if(bgsize < 50) return
         $('.home-sec2').css('background-size', `${bgsize}%`)
     }
     if ($('.home-sec2').isInViewport() && window.scrollY < 1000){
         const bgsize =  130 - (window.scrollY / 10)
+        if(bgsize < 50) return
         $('.home-sec2').css('background-size', `${bgsize}%`)
     }
     

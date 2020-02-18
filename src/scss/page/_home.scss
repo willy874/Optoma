@@ -1,14 +1,16 @@
-.home{
-    &#{-sec1}{
+.home {
+    &#{-sec1} {
         height: 100vh;
         position: relative;
         background-color: #000;
+
         @include media-max($sm) {
             height: 800px;
         }
-        &#{-bg}{
+
+        &#{-bg} {
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
             right: 0;
             bottom: 0;
@@ -17,7 +19,8 @@
             z-index: 3;
             opacity: 1;
         }
-        &#{-bgUpper}{
+
+        &#{-bgUpper} {
             position: absolute;
             top: 0;
             left: 0;
@@ -26,11 +29,12 @@
             background-position: 47% center;
             background-size: cover;
             z-index: 4;
-            animation: star-sky-1 4s linear infinite;//
+            animation: star-sky-1 4s linear infinite; //
         }
-        &#{-bgLower}{
+
+        &#{-bgLower} {
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
             right: 0;
             bottom: 0;
@@ -39,7 +43,8 @@
             z-index: 5;
             animation: star-sky-2 4s linear infinite;
         }
-        &#{-container}{
+
+        &#{-container} {
             @include container;
             position: relative;
             z-index: 5;
@@ -48,39 +53,44 @@
             height: 100%;
 
 
-            &#{-display}{
+            &#{-display} {
                 max-width: 1140px;
                 margin: 0 auto;
                 width: 100%;
                 @include px(3.75rem);
+
                 @include media-max($lg) {
                     text-align: center;
                 }
 
-                h2{
+                h2 {
                     @include display-2;
                     font-weight: bolder;
                     color: #fdfcfc;
                     line-height: 1.2;
-                    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
+                    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.8);
                 }
-                h3{
+
+                h3 {
                     @include display-4;
                     color: #fdfcfc;
                     margin-bottom: 0.5rem;
-                    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
+                    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.8);
                 }
-                button{
-                     @include stretched-link;
-                     @include btn-outline(#fdfcfc,#000);
-                     @include button;
-                     margin-top: 0.5rem;
-                     margin-bottom: 9rem;
+
+
+                button {
+                    @include stretched-link;
+                    @include btn-outline(#fdfcfc, #000);
+                    @include button;
+                    margin-top: 0.5rem;
+                    margin-bottom: 9rem;
                 }
             }
         }
     }
-    &#{-sec2}{
+
+    &#{-sec2} {
         background-color: #000;
         background-position: right center;
         background-repeat: no-repeat;
@@ -88,119 +98,172 @@
         height: 100vh;
         position: relative;
         overflow: hidden;
+
         @include media-max($lg) {
-            height: 85vh;
+            height: 105vh;
             display: flex;
             flex-direction: column;
         }
-        &#{-bg}{
+
+        @include media-max($md) {
+            height: 95vh;
+        }
+
+        @include media-max($sm) {
+            height: 85vh;
+        }
+
+        &#{-bg} {
             @include media-max($lg) {
                 background-size: cover;
                 background-position: 85% center;
                 flex-grow: 1;
             }
         }
-        &#{-container}{
+
+        &#{-container} {
             @include container;
+
             @include media-min($lg) {
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
             }
+
             @include media-max($lg) {
                 background-color: #000;
                 max-width: 100%;
                 @include py(4rem);
             }
 
-            &#{-display}{
+            &#{-display} {
                 max-width: 1140px;
                 margin: 0 auto;
                 width: 100%;
                 @include px(3.75rem);
+
                 @include media-max($lg) {
                     text-align: center;
                 }
 
-                h2{
+                h2 {
                     @include display-3;
                     font-weight: bolder;
                     color: #b68b69;
                     padding-top: 0.5rem;
                     margin-bottom: 0.5rem;
+
                     @include media-max($lg) {
                         margin-bottom: 0.5rem;
                     }
                 }
-                h3{
+
+                h3 {
                     @include display-5;
                     color: #b68b69;
                     line-height: 1.2;
                     margin-bottom: 1rem;
+
                     @include media-max($lg) {
                         margin-bottom: 0.5rem;
                     }
-                    
+
                 }
-                button{
-                    @include btn-outline(#b68b69,#fdfcfc);
-                    @include button;
-                    margin-top: 0.5rem;
-                    margin-bottom: 1.5rem;
-                    @include media-max($lg) {
-                        margin-bottom: 0.5rem;
+
+                &#{-button} {
+                    width: 10rem;
+
+                    button {
+                        width: 100%;
+                        @include btn-outline(#b68b69, #fdfcfc);
+                        @include button;
+                        margin-top: 0.5rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    img {
+                        width: 100%;
                     }
                 }
             }
         }
     }
-    &#{-sec3}{
+
+    &#{-sec3} {
         background-color: #333a44;
         @include py(3rem);
-        &#{-container}{
+
+        &#{-container} {
             max-width: 100rem;
             margin: auto;
             width: 100%;
+            @include container;
+
             @include media-max($lg) {
-                @include px(4.5rem);
+                @include px(1rem);
             }
+
             text-align: center;
-            h2{
+
+            h2 {
                 color: #fdfcfc;
                 @include display-3;
                 font-weight: bolder;
                 margin-bottom: 0.5rem;
                 padding-top: 1rem;
             }
-            &#{-button}{
-                @include btn-outline(#fdfcfc,#333a44);
+
+            &#{-button} {
+                @include btn-outline(#fdfcfc, #333a44);
                 border-radius: 0.25rem;
                 @include button;
                 margin-top: 1rem;
                 margin-bottom: 2rem;
-                
+
             }
-            h3{
+
+            h3 {
                 @include py(1.5rem);
-                a{
+
+                a {
                     color: #fdfcfc;
                     font-size: 1.5rem;
                 }
             }
         }
     }
-    &#{-sec4}{
+
+    &#{-sec4} {
         height: 100vh;
         background-color: #101010;
         position: relative;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        @include media-max($lg) {height: 90vh; background-size: 200%; background-position: 70% bottom;}
-        @include media-max($md) {height: 80vh; background-size: 180%; background-position: 60% bottom;}
-        @include media-max($sm) {height: 65vh; background-size: 240%; }
-        @include media-max($xs) {height: 50vh; background-size: 200%; }
+
+        @include media-max($lg) {
+            height: 90vh;
+            background-size: 200%;
+            background-position: 70% bottom;
+        }
+
+        @include media-max($md) {
+            height: 80vh;
+            background-size: 180%;
+            background-position: 60% bottom;
+        }
+
+        @include media-max($sm) {
+            height: 65vh;
+            background-size: 240%;
+        }
+
+        @include media-max($xs) {
+            height: 50vh;
+            background-size: 200%;
+        }
+
         // &#{-bgUpper}{
         //     position: absolute;
         //     top: 0;
@@ -244,87 +307,105 @@
         //     @include media-max($sm) {background-size: 300%;}
         //     @include media-max($xs) {background-size: 400%; background-position:  55% 75%;}
         // }
-        &#{-container}{
+        &#{-container} {
             @include container;
-                display: flex;
-                align-items: center;
-                height: 100%;
-                @include media-max($lg) {
-                    align-items: flex-start;
-                }
-                
-            &#{-display}{
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            @include media-max($lg) {
+                align-items: flex-start;
+            }
+
+            &#{-display} {
                 max-width: 1140px;
                 margin: 0 auto;
                 width: 100%;
                 margin-top: 3rem;
                 margin-bottom: 12rem;
                 @include px(3.75rem);
+
                 @include media-max($lg) {
                     text-align: center;
                 }
-                h2{
+
+                h2 {
                     @include display-3;
                     font-weight: bolder;
                     color: #fdfcfc;
                     line-height: 1.2;
                     margin-bottom: 0.75rem;
                 }
-                h3{
+
+                h3 {
                     @include display-5;
                     color: #fdfcfc;
                     margin-top: 0.5rem;
                     margin-bottom: 1rem;
                     line-height: 1.2;
                 }
-                button{
-                    @include btn-outline(#fdfcfc,#101010);
+
+                button {
+                    @include btn-outline(#fdfcfc, #101010);
                     @include button;
                 }
             }
         }
     }
-    &#{-sec5}{
+
+    &#{-sec5} {
         background-color: #707882;
         @include py(4rem);
-        &#{-container}{
+
+        &#{-container} {
             text-align: center;
             @include container;
-            h2{
+
+            h2 {
                 color: #fdfcfc;
                 @include display-3;
                 font-weight: bolder;
                 line-height: 1.2;
                 margin-bottom: 0.5rem;
+
                 @include media-max($md) {
                     margin-bottom: 0.25rem;
                 }
             }
-            h3{
+
+            h3 {
                 color: #fdfcfc;
                 @include display-5;
                 margin-bottom: 1rem;
             }
-            button{
-                @include btn-outline(#fdfcfc,#707882);
+
+            button {
+                @include btn-outline(#fdfcfc, #707882);
                 @include button;
             }
-            &#{-row}{
+
+            &#{-row} {
                 @include row;
                 @include my(2rem);
+
                 @include media-max($md) {
                     @include mx(0);
                     @include px(1rem);
                 }
-                &#{-col}{
+
+                &#{-col} {
                     @include col(100%);
+
                     @include media-min($lg) {
                         @include col(33.333%);
                     }
+
                     @include py(0.5rem);
-                    figure{
+
+                    figure {
                         width: 100%;
-                        img{
+
+                        img {
                             width: 100%;
                         }
                     }
@@ -332,42 +413,47 @@
             }
         }
     }
-    &#{-sec6}{
+
+    &#{-sec6} {
         background-size: cover;
         background-position: center;
         height: 65vh;
 
-        &#{-container}{
+        &#{-container} {
             @include container;
-                display: flex;
-                align-items: center;
-                height: 100%;
-            &#{-display}{
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            &#{-display} {
                 max-width: 1140px;
                 margin: 0 auto;
                 width: 100%;
                 @include px(3.75rem);
+
                 @include media-max($lg) {
                     text-align: center;
                 }
 
-                h2{
+                h2 {
                     @include display-3;
                     font-weight: bolder;
                     color: #fdfcfc;
                     margin-bottom: 0.5rem;
                     line-height: 1.2;
-                    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0,0,0,0.8);
+                    text-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.8);
                 }
-                h3{
+
+                h3 {
                     @include display-5;
                     color: #fdfcfc;
                     margin-top: 0.5rem;
                     margin-bottom: 0.75rem;
-                    text-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.8);
+                    text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.8);
                 }
-                button{
-                    @include btn-outline(#fdfcfc,#707882);
+
+                button {
+                    @include btn-outline(#fdfcfc, #707882);
                     @include button;
                     margin-top: 0.5rem;
                 }
@@ -376,21 +462,24 @@
     }
 }
 
-#silck-applications{
+#silck-applications {
 
 
-    figure{
+    figure {
         width: 100%;
         text-align: center;
         @include px(0.5rem);
-        img{
+
+        img {
             width: 100%;
         }
     }
-    .slick-arrow{
+
+    .slick-arrow {
         @include media-max($lg) {
             display: none !important;
         }
+
         top: 50%;
         background-color: #4c525b;
         width: 2.875rem;
@@ -398,7 +487,8 @@
         z-index: 900;
         border-radius: 0.25rem;
         box-shadow: none;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             background-color: #fff;
@@ -408,7 +498,8 @@
             height: 0.125rem;
             opacity: 1;
         }
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             background-color: #fff;
@@ -418,94 +509,109 @@
             height: 0.125rem;
             opacity: 1;
         }
+
         &:hover {
             opacity: 0.75;
         }
     }
-    
-    .slick-prev{
+
+    .slick-prev {
         left: -3.5rem;
-        transform: translate(0,-100%);
-        &::after{
-            transform: translate(0.325rem,0.15rem) rotate(65deg);
+        transform: translate(0, -100%);
+
+        &::after {
+            transform: translate(0.325rem, 0.15rem) rotate(65deg);
             right: 50%;
         }
-        &::before{
+
+        &::before {
             transform: translate(0.325rem, -0.25rem)rotate(-65deg);
             right: 50%;
         }
-        
+
     }
-    .slick-next{
+
+    .slick-next {
         right: -3.5rem;
-        transform: translate(0,-100%);
-        &::after{
-            transform: translate(-0.3rem,-0.35rem) rotate(65deg);
+        transform: translate(0, -100%);
+
+        &::after {
+            transform: translate(-0.3rem, -0.35rem) rotate(65deg);
             left: 50%;
         }
-        &::before{
-            transform: translate(-0.3rem,0.35rem) rotate(-65deg);
+
+        &::before {
+            transform: translate(-0.3rem, 0.35rem) rotate(-65deg);
             left: 50%;
         }
     }
 
-    .slick-dots{
-        bottom: -2.5rem;;
-        li{
+    .slick-dots {
+        bottom: -2.5rem;
+        ;
+
+        li {
             width: 1rem;
             height: 1rem;
             position: relative;
             margin: 0;
 
-            button{
+            button {
                 width: 1rem;
                 height: 1rem;
             }
-            
-            >button:before{
+
+            >button:before {
                 content: '';
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
                 width: 0.5rem;
                 height: 0.5rem;
                 border-radius: 50%;
                 background-color: #5d5854;
                 opacity: 1;
             }
-            &:hover{
-                button::before{
+
+            &:hover {
+                button::before {
                     background-color: #fff;
                 }
             }
-            &.slick-active>button::before{
+
+            &.slick-active>button::before {
                 background-color: #fff;
             }
-    
+
         }
     }
 }
 
-@keyframes star-sky-1{
-    0%{
+@keyframes star-sky-1 {
+    0% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-@keyframes star-sky-2{
-    0%{
+
+@keyframes star-sky-2 {
+    0% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }

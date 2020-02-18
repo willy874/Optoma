@@ -5,24 +5,6 @@
         "alt": "Our Brand",
         "heading": "Our Brand",
         "description": ""
-    }, {
-        "type": "image",
-        "src": "./images/ourBrand/ourBrand-banner.png",
-        "alt": "Our Brand",
-        "heading": "Our Brand",
-        "description": ""
-    }, {
-        "type": "image",
-        "src": "./images/ourBrand/ourBrand-banner.png",
-        "alt": "Our Brand",
-        "heading": "Our Brand",
-        "description": ""
-    }, {
-        "type": "youtobe",
-        "src": "https://www.youtube.com/watch?v=Rr4WH3qRpd8",
-        "alt": "Our Brand",
-        "heading": "Our Brand",
-        "description": ""
     }],
     "awards": [{
         "src": "./images/ourBrand/ourBrand-sec3-img1.png",

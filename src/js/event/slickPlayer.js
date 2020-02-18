@@ -1,6 +1,5 @@
 import $ from 'jquery/src/jquery'
 import uuid from 'uuid'
-
 const banner = '.silck-banner'
 const video = $('.silck-item-video-iframe')
 
@@ -29,6 +28,7 @@ window.onYTAPIReady = () => {
     }
 }
 
+
 $(banner).on('afterChange', function (event, slick, index) {
     const e = {
         event: event,
@@ -47,9 +47,9 @@ $(banner).on('afterChange', function (event, slick, index) {
         }
     }
     if (playVideoBoolen) {
-        setTimeout(() => {
+        window.timer = setTimeout(() => {
             $(banner).slick('slickNext')
-        }, 5000);
+        }, 5000)
     }
 })
 $(banner).on('beforeChange', function (event, slick, index) {
@@ -66,6 +66,9 @@ $(banner).on('beforeChange', function (event, slick, index) {
                 video[i].player.stopVideo()
             }
         }
+    }
+    if(window.timer){
+        clearTimeout(window.timer)
     }
 })
 

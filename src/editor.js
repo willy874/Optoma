@@ -1,6 +1,3 @@
-import $ from 'jquery/src/jquery'
-
-
 import './js/render'
 import './js/event/onload'
 import './js/event/click'

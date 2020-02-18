@@ -76,7 +76,16 @@ export default function (data) {
 
             }]
         })
-        $('#silck-about').slick('slickGoTo', data.milestones.length-4)
+        if ($(window).width() > 1200) {
+            $('#silck-about').slick('slickGoTo', data.milestones.length-4)
+        }else if($(window).width() > 992){
+            $('#silck-about').slick('slickGoTo', data.milestones.length-3)
+        }else if($(window).width() > 576){
+            $('#silck-about').slick('slickGoTo', data.milestones.length-2)
+        }else{
+            $('#silck-about').slick('slickGoTo', data.milestones.length-1)
+        }
+        
     }
     const element2 = document.querySelector('#silck-year')
     const year = {

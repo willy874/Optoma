@@ -3,6 +3,9 @@ import RouteModel from './route'
 import JsonData from './jsonData'
 
 class Model{
+    constructor(){
+ 
+    }
     status(){
         return StatusModel
     }

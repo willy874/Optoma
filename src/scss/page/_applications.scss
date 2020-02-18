@@ -1,3 +1,13 @@
+.applications-carousel{
+    height: 48rem;
+    @include media-max($xxl){height: 42rem;}
+    @include media-max($xl) {height: 36rem;}
+    @include media-max($lg) {height: 30rem;}
+    @include media-max($md) {height: 24rem;}
+    @include media-max($sm) {height: 20rem;}
+    @include media-max($xs) {height: 14rem;}
+    @include media-max($xxs){height: 12rem;}
+}
 #banner-applications{
     margin-bottom: 0;
     .silck-item{
