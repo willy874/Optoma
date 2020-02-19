@@ -60,14 +60,15 @@ $(window).scroll(function(){
     }
 
 
-    if ($('.home-sec2').isInViewport() && window.scrollY < 1400){
-        const bgsize =  160 - (window.scrollY / 10)
-        if(bgsize < 50) return
+    if ($('.home-sec2').isInViewport() && window.scrollY < 1400 && $(window).width() > 1600){
+        const bgsize =  145 - (window.scrollY / 10)
+        if(bgsize < 65) return
         $('.home-sec2').css('background-size', `${bgsize}%`)
     }
-    if ($('.home-sec2').isInViewport() && window.scrollY < 1000){
-        const bgsize =  130 - (window.scrollY / 10)
-        if(bgsize < 50) return
+
+    if ($('.home-sec2').isInViewport() && window.scrollY < 1200 && $(window).width() < 1600){
+        const bgsize =  140 - (window.scrollY / 10)
+        if(bgsize < 60) return
         $('.home-sec2').css('background-size', `${bgsize}%`)
     }
     

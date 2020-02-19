@@ -442,7 +442,6 @@ $size-xs: 0.6;
             top: 50%;
             left: 50%;
             transform: translate(-50%,100%);
-            font-weight: bolder;
         }
         &:hover{
             button{
@@ -546,7 +545,7 @@ $size-xs: 0.6;
                 figcaption{
                     margin: 0.5rem 0;
                     padding: 0 1.5rem;
-                    height: 1.2rem * 3;
+                    height: 1.2rem * 4;
                     overflow: hidden;
                     z-index: 950;
     

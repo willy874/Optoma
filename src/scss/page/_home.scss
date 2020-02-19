@@ -95,10 +95,12 @@
         background-position: right center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 85vh;
         position: relative;
         overflow: hidden;
-
+        @include media-max($xl) {
+            height: 50vh;
+        }
         @include media-max($lg) {
             height: 105vh;
             display: flex;
@@ -235,7 +237,7 @@
     }
 
     &#{-sec4} {
-        height: 100vh;
+        height: 85vh;
         background-color: #101010;
         position: relative;
         background-size: cover;
@@ -322,7 +324,7 @@
                 margin: 0 auto;
                 width: 100%;
                 margin-top: 3rem;
-                margin-bottom: 12rem;
+                margin-bottom: 3rem;
                 @include px(3.75rem);
 
                 @include media-max($lg) {
