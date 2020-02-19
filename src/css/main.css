@@ -2414,6 +2414,12 @@ footer {
   overflow: hidden;
 }
 
+@media (max-width: 1600px) {
+  .home-sec2 {
+    height: 65vh;
+  }
+}
+
 @media (max-width: 1200px) {
   .home-sec2 {
     height: 50vh;

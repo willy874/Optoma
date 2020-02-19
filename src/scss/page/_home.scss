@@ -98,6 +98,9 @@
         height: 85vh;
         position: relative;
         overflow: hidden;
+        @include media-max($xxl) {
+            height: 65vh;
+        }
         @include media-max($xl) {
             height: 50vh;
         }

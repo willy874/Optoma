@@ -59,16 +59,22 @@ $(window).scroll(function(){
         },1500)
     }
 
+    console.log(window.scrollY)
 
-    if ($('.home-sec2').isInViewport() && window.scrollY < 1400 && $(window).width() > 1600){
-        const bgsize =  145 - (window.scrollY / 10)
-        if(bgsize < 65) return
+    if ($('.home-sec2').isInViewport() && window.scrollY < 800 && $(window).width() > 1600){
+        
+        const bgsize =  150 - (window.scrollY / 10)
         $('.home-sec2').css('background-size', `${bgsize}%`)
     }
 
-    if ($('.home-sec2').isInViewport() && window.scrollY < 1200 && $(window).width() < 1600){
-        const bgsize =  140 - (window.scrollY / 10)
-        if(bgsize < 60) return
+    // if ($('.home-sec2').isInViewport() && window.scrollY < 700 && $(window).width() < 1600 && $(window).width() > 1200){
+    //     const bgsize =  135 - (window.scrollY / 10)
+    //     $('.home-sec2').css('background-size', `${bgsize}%`)
+    // }
+
+    if ($('.home-sec2').isInViewport() && window.scrollY < 600 && $(window).width() < 1600){
+
+        const bgsize =  120 - (window.scrollY / 10)
         $('.home-sec2').css('background-size', `${bgsize}%`)
     }
     

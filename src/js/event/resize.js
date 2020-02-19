@@ -2,7 +2,7 @@ import * as Models from '../model'
 
 
 $(window).resize(function(){
-
+    
     //dropdown 關閉
     $('.header_navbar-ul-li-link').attr('data-switch', 'false')
     $('.header_navbar-ul-dropdown').removeClass('active')
