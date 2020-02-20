@@ -357,8 +357,9 @@
                         figure {
                             box-shadow : 1px 1px 2px 1px rgba(100,100,100,.2);
                             transition: all 0.2s;
-                            display: flex;
-                            flex-direction: column;
+                            overflow: hidden;
+                            // display: flex;
+                            // flex-direction: column;
                             height: 100%;
                             width: 100%;
 
@@ -380,7 +381,6 @@
                                 }
                             }
                             img {
-                                flex-shrink: 0;
                                 width: 100%;
                                 background-size: cover;
                                 //height: 21rem;
@@ -403,7 +403,7 @@
 
                             p {
                                 text-align: left;
-                                flex-grow: 1;
+                                //flex-grow: 1;
                                 display: flex;
                                 align-items: flex-start;
                                 justify-content: center;

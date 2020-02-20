@@ -1,6 +1,6 @@
 <script type="text/javascript">
 
-    <?php //若不回傳JSON要補空字串 ?>;
+    <?php //若不回傳JSON要補空字串 ?>
     window.jsonData = {};
     window.jsonData.node = <?php include 'data/node.json'; ?>;
     window.jsonData.home = <?php include 'data/home.json'?>;

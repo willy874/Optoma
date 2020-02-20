@@ -49,76 +49,12 @@
             padding-bottom: 1.5rem; 
         }
     }
-    // @include media-min($xl) {
-    //     .innovation-sec2_video-row-col-figure {
-    //         height: 460px;
-    //         h4{
-    //             position: relative;
-    //             top: -75px;
-    //         }
-    //         p{
-    //             position: relative;
-    //             top: -60px;
-    //         }
-    //     }
-    // }
-    // @include media-max($xl){
-    //     .innovation-sec2_video-row-col-figure {
-    //         height: 500px;
-    //         h4{
-    //             position: relative;
-    //             top: -90px;
-    //         }
-    //         p{
-    //             position: relative;
-    //             top: -50px;
-    //         }
-    //     }
-    // }
-    // @include media-max($xl){
-    //     .innovation-sec2_video-row-col-figure {
-    //         height: 500px;
-    //         h4{
-    //             position: relative;
-    //             top: -10px;
-    //         }
-    //         p{
-    //             position: relative;
-    //            top: -10px;
-    //         }
-    //     }
-    // }
-    // @include media-max($lg){
-    //     .innovation-sec2_video-row-col-figure {
-    //         height: 420px;
-    //         h4{
-    //             position: relative;
-    //             top: -100px;
-    //         }
-    //         p{
-    //             position: relative;
-    //             top: -100px;
-    //         }
-    //     }
-    // }
-    // @include media-max($md){
-    //     .innovation-sec2_video-row-col-figure {
-    //         height: 360px;
-    //         h4{
-    //             position: relative;
-    //             top: -170px;
-    //         }
-    //         p{
-    //             position: relative;
-    //             top: -160px;
-    //         }
-    //     }
-    // }
-    // @include media-max($md){
-    //     .innovation-sec2_video-row-col-figure {
-    //         height: auto;
-    //     }
-    // }
+    .about-sec3-graphics{
+        display: block;
+    }
+    .about-sec3-graphics{
+        display: -webkit-box !important;
+    }
 }
 
 // Target IE Edge
