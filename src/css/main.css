@@ -2639,6 +2639,12 @@ footer {
   width: 10rem;
 }
 
+@media (max-width: 992px) {
+  .home-sec2-container-display-button {
+    margin: auto;
+  }
+}
+
 .home-sec2-container-display-button button {
   width: 100%;
   background-color: transparent;

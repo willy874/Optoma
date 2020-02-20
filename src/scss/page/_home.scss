@@ -178,7 +178,9 @@
 
                 &#{-button} {
                     width: 10rem;
-
+                    @include media-max($lg) {
+                        margin: auto;
+                    }
                     button {
                         width: 100%;
                         @include btn-outline(#b68b69, #fdfcfc);

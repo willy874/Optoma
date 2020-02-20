@@ -1,5 +1,6 @@
 import * as Models from '../model'
-
+import isInViewAnimate from './isInViewAnimate'
+import scrollZoom from './scrollZoom'
 
 $(window).resize(function(){
     
@@ -22,4 +23,8 @@ $(window).resize(function(){
         $('.applications-container-btn').children('a').attr('data-switch', 'false')
         $('.applications-container-btn').children('a').children('.plus').removeClass('active')
     }
+
+    isInViewAnimate()
+    scrollZoom()
+
 })

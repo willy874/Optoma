@@ -4,7 +4,7 @@ import JsonData from './jsonData'
 
 class Model{
     constructor(){
- 
+        
     }
     status(){
         return StatusModel

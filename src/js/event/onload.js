@@ -1,5 +1,7 @@
 import * as Models from '../model'
 import $ from 'jquery/src/jquery'
+import isInViewAnimate from './isInViewAnimate'
+import scrollZoom from './scrollZoom'
 
 $(document).ready(function () {
     const hash = window.location.hash
@@ -28,4 +30,9 @@ $(document).ready(function () {
 
 
     }
+
+    
+    isInViewAnimate()
+    scrollZoom()
+
 })
