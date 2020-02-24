@@ -1907,6 +1907,7 @@ main {
 
 footer {
   background-color: #000;
+  z-index: 1008;
 }
 
 .footer-container {
@@ -8037,33 +8038,90 @@ footer {
 
 .gotop {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 3rem;
+  z-index: 1006;
+}
+
+@media (min-width: 768px) {
+  .gotop {
+    right: auto;
+    left: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gotop {
+    right: 1rem;
+    left: auto;
+  }
+}
+
+.gotop.top button {
+  display: none;
+}
+
+.gotop.bottom button {
+  display: none;
 }
 
 .gotop button {
-  background-color: #c2bfcb;
-  width: 2rem;
+  background-color: #212530;
+  width: 2.5rem;
   height: 2rem;
   z-index: 900;
   -webkit-box-shadow: none;
           box-shadow: none;
-  opacity: 0.75;
-  border-radius: 0.5rem;
+  opacity: 0.4;
+  border-radius: 0.125em;
   border: 0;
+}
+
+@media (min-width: 768px) {
+  .gotop button {
+    -webkit-transform: translateX(324px);
+            transform: translateX(324px);
+  }
+}
+
+@media (min-width: 992px) {
+  .gotop button {
+    -webkit-transform: translateX(436px);
+            transform: translateX(436px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .gotop button {
+    -webkit-transform: translateX(540px);
+            transform: translateX(540px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .gotop button {
+    -webkit-transform: translateX(740px);
+            transform: translateX(740px);
+  }
+}
+
+@media (max-width: 768px) {
+  .gotop button {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .gotop button::after {
   content: '';
   position: absolute;
   background-color: #fff;
-  top: 50%;
+  top: 43%;
   border-radius: 0.25rem;
   width: 0.625rem;
   height: 0.125rem;
   opacity: 1;
-  -webkit-transform: translate(0.5rem, -0.125rem) rotate(45deg);
-          transform: translate(0.5rem, -0.125rem) rotate(45deg);
+  -webkit-transform: translate(0.5rem, -0.125rem) rotate(30deg);
+          transform: translate(0.5rem, -0.125rem) rotate(30deg);
   right: 50%;
 }
 
@@ -8071,18 +8129,18 @@ footer {
   content: '';
   position: absolute;
   background-color: #fff;
-  top: 50%;
+  top: 43%;
   border-radius: 0.25rem;
   width: 0.625rem;
   height: 0.125rem;
   opacity: 1;
-  -webkit-transform: translate(0.125rem, -0.125rem) rotate(-45deg);
-          transform: translate(0.125rem, -0.125rem) rotate(-45deg);
+  -webkit-transform: translate(0.125rem, -0.125rem) rotate(-30deg);
+          transform: translate(0.125rem, -0.125rem) rotate(-30deg);
   right: 50%;
 }
 
 .gotop button:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .knowledge-sec1 {

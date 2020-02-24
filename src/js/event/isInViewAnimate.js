@@ -47,13 +47,13 @@ export default  function (){
             number: 159,
         },2500)
         $('#centers-worldwide').animateNumber({
-            number: 204,
+            number: 208,
         },2500)
         $('#brandworldwide').animateNumber({
             number: 1,
         },500)
         $('#home-segment').animateNumber({
-            number: 3,
+            number: 2,
         },1500)
     }
 }
