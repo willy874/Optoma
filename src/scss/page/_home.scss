@@ -111,11 +111,11 @@
         }
 
         @include media-max($md) {
-            height: 95vh;
+            height: 50rem;
         }
 
         @include media-max($sm) {
-            height: 85vh;
+            height: 46rem;
         }
 
         &#{-bg} {
@@ -168,10 +168,15 @@
                     @include display-5;
                     color: #b68b69;
                     line-height: 1.2;
+                    max-width: 25rem;
                     margin-bottom: 1rem;
 
                     @include media-max($lg) {
-                        margin-bottom: 0.5rem;
+                        margin: {
+                            bottom: 0.5rem;
+                            left: auto;
+                            right: auto;
+                        }
                     }
 
                 }
@@ -262,12 +267,12 @@
         }
 
         @include media-max($sm) {
-            height: 65vh;
+            height: 40rem;
             background-size: 240%;
         }
 
         @include media-max($xs) {
-            height: 50vh;
+            height: 35rem;
             background-size: 200%;
         }
 

@@ -47,13 +47,15 @@ $size-xs: 0.6;
     //******************************************************************************************************
     &#{-sec2}{
         background-color: #92a9c9;
-        height: 50rem;
+        height: 40rem;
         overflow: hidden;
+        
         @include media-max($xl) {
             height: 40rem;
         }
         @include media-max($lg) {
             height: auto;
+            @include py(2.5rem);
         }
         &#{-container}{
             @include container;
@@ -75,7 +77,7 @@ $size-xs: 0.6;
                         @include media-max($lg) {
                             @include col(100%);
                         }
-                        padding-right: 3rem;
+                        padding-right: 2.5rem;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -91,7 +93,7 @@ $size-xs: 0.6;
                             h3{
                                 @include display-3;
                                 color: #fefefe;
-                                margin-top: 3rem;
+                                margin-top: 2.5rem;
                                 margin-bottom: 0.5rem;
                                 font-weight: bolder;
                             }
@@ -99,7 +101,7 @@ $size-xs: 0.6;
                                 font-size: 1.5rem;
                                 line-height: 1.2;
                                 color: #fefefe;
-                                margin-bottom: 3rem;
+                                margin-bottom: 2.5rem;
                             }
                         }
                         
@@ -116,7 +118,7 @@ $size-xs: 0.6;
                             background-position: center;
                             @include media-max($lg) {
                                 height: 12rem;
-                                @include my(3rem);
+                                @include my(2.5rem);
                             }
                         }
                     }
@@ -128,9 +130,9 @@ $size-xs: 0.6;
     //******************************************************************************************************
     &#{-sec3}{
         @include py(1.5rem);
-        padding-top: 5rem;
+        padding-top: 6rem;
         @include media-max($lg) {
-            padding-top: 1rem;
+            padding-top: 3.5rem;
         }
         background-color: #e5e3ea;
         overflow: hidden;
@@ -545,7 +547,7 @@ $size-xs: 0.6;
                 figcaption{
                     margin: 0.5rem 0;
                     padding: 0 1.5rem;
-                    height: 1.2rem * 4;
+                    height: 1.2rem * 5;
                     overflow: hidden;
                     z-index: 950;
     

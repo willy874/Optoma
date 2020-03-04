@@ -4,6 +4,7 @@ import {Route} from '../model'
 $(document.body).on('click', function (e) {
 
     const $this = $(e.target)
+
     if ($this.attr('data-toggle') == 'dropdown') {
         if ($this.attr('data-switch') == 'false') {
             $this.attr('data-switch', 'true')

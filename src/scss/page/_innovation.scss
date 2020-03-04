@@ -206,8 +206,7 @@
     }
 
     .slick-dots {
-        bottom: 1rem;
-        ;
+        bottom: 4rem;
 
         li {
             width: 1rem;
@@ -250,6 +249,9 @@
 .innovation {
     &#{-sec2} {
         @include py(3.5rem);
+        @include media-max($xl) {
+            padding-top: 0.5rem;
+        }
 
         &#{-container} {
             @include container;
@@ -267,6 +269,9 @@
                 text-align: center;
                 color: #2F353D;
                 margin-bottom: 3rem;
+                @include media-max($xl) {
+                    margin-bottom:  0.5rem;
+                }
             }
 
             //&#{-video}{}
@@ -278,6 +283,7 @@
                 flex-wrap: wrap;
                 @include media-max($xl) {
                     @include px(0.25rem);
+                    @include my(2rem);
                     justify-content: center;
                 }
                 
@@ -399,6 +405,7 @@
                                 color: #2F353D;
                                 font-weight: bolder;
                                 @include my(0.375rem);
+                                text-align: center;
                             }
 
                             p {
