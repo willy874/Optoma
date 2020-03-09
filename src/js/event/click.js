@@ -24,18 +24,22 @@ $(document.body).on('click', function (e) {
             $this.attr('data-switch', 'true')
             $($this.attr('data-target')).addClass('active')
             $this.addClass('active')
+            $(document.body).addClass('active')
         }
         else{
              $('.header_navbar-btn').attr('data-switch', 'false')
              $('#navbar-menu').removeClass('active')
              $('.header_navbar-btn').removeClass('active')
+             $(document.body).removeClass('active')
         }   
-    }else if($this.attr('data-toggle') == 'dropdown'){
     }else{
-        $('.header_navbar-btn').attr('data-switch', 'false')
-        $('#navbar-menu').removeClass('active')
-        $('.header_navbar-btn').removeClass('active')
+        // $('.header_navbar-btn').attr('data-switch', 'false')
+        // $('#navbar-menu').removeClass('active')
+        // $('.header_navbar-btn').removeClass('active')
+        // $(document.body).removeClass('active')
     }
+
+    
 
     //applications menuSlick
     if($this.attr('data-scroll') == 'true'){

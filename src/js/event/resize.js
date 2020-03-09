@@ -11,7 +11,7 @@ $(window).resize(function(){
     $('.header_navbar-btn').attr('data-switch', 'false')
     $('#navbar-menu').removeClass('active')
     $('.header_navbar-btn').removeClass('active')
-    
+    $(document.body).removeClass('active')
 
     // if ($('.applications-container-sec').isInViewport() && $(window).width() >= 768 ){
     //     $('.applications-container-sec').stop(false, false).slideDown(10)

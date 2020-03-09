@@ -1524,13 +1524,32 @@ header
 .header_dropdown-ul-li
 .header_dropdown-ul-li-link
 */
-header {
+body {
   background-color: black;
+}
+
+body header {
+  background-color: #030303;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  height: 3rem;
+  overflow: hidden;
   z-index: 1010;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body.active {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body.active header {
+  background-color: rgba(3, 3, 3, 0.9);
+  overflow: auto;
+  height: 100%;
 }
 
 main {
@@ -1702,7 +1721,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(3, 3, 3, 0.9);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -1716,7 +1734,9 @@ main {
 
 @media (max-width: 1200px) {
   .header_navbar-ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1725,20 +1745,9 @@ main {
         -ms-flex-align: start;
             align-items: start;
     width: 100%;
-    position: absolute;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    top: 3rem;
-    left: 0;
-    right: 0;
-    border-bottom: solid 0.0625rem #fff;
   }
-}
-
-.header_navbar-ul.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .header_navbar-ul-li {
@@ -1812,8 +1821,9 @@ main {
 
 @media (max-width: 1200px) {
   .header_navbar-ul-dropdown {
+    margin: 0;
     width: 100%;
-    padding-left: 0.75rem;
+    padding-left: 1.5rem;
   }
 }
 

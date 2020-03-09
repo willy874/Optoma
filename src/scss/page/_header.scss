@@ -12,15 +12,40 @@ header
 .header_dropdown-ul-li
 .header_dropdown-ul-li-link
 */
-
-header{
+body{
     background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1010;
+    header{
+        background-color: rgba(3,3,3,1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3rem;
+
+        overflow: hidden;
+        z-index: 1010;
+        transition: all 0.4s;
+        .header_navbar-ul{
+            
+        }
+    }
+
+    &.active{
+        overflow: hidden;
+        height: 100vh;
+
+        header{
+            background-color: rgba(3,3,3,0.9);
+            overflow: auto;
+            height: 100%;
+
+            .header_navbar-ul{
+
+            }
+        }
+    }
 }
+
 main{
     padding-top: 3rem;
 }
@@ -125,25 +150,16 @@ main{
         &#{-ul} {
             display: flex;
             align-items: center;
-            background-color: rgba(3,3,3,0.9);
             transition: all 0.4s;
             @include media-min($xl) {
                 @include mx(auto)
             }
             @include media-max($xl){
-                display: none;
+                display: flex;
                 flex-direction: column;
                 align-items: start;
                 width: 100%;
-                position: absolute;
                 @include py(0.5rem);
-                top: 3rem;
-                left: 0;
-                right: 0;
-                border-bottom: solid 0.0625rem #fff;
-            }
-            &.active{
-                display: flex;
             }
             
             &#{-li} {
@@ -198,8 +214,9 @@ main{
                 margin-right: 1.25rem;
 
                 @include media-max($xl) {
+                    margin: 0;
                     width: 100%;
-                    padding-left: 0.75rem;
+                    padding-left: 1.5rem;
                 }
                 .header_dropdown-ul{
                     max-height: 25rem;
