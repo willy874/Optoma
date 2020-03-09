@@ -255,24 +255,24 @@
         background-repeat: no-repeat;
 
         @include media-max($lg) {
-            height: 90vh;
+            height: 50rem;
             background-size: 200%;
             background-position: 70% bottom;
         }
 
         @include media-max($md) {
-            height: 80vh;
+            height: 36rem;
             background-size: 180%;
             background-position: 60% bottom;
         }
 
         @include media-max($sm) {
-            height: 40rem;
+            height: 38rem;
             background-size: 240%;
         }
 
         @include media-max($xs) {
-            height: 35rem;
+            height: 30rem;
             background-size: 200%;
         }
 

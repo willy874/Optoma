@@ -2863,7 +2863,7 @@ footer {
 
 @media (max-width: 992px) {
   .home-sec4 {
-    height: 90vh;
+    height: 50rem;
     background-size: 200%;
     background-position: 70% bottom;
   }
@@ -2871,7 +2871,7 @@ footer {
 
 @media (max-width: 768px) {
   .home-sec4 {
-    height: 80vh;
+    height: 36rem;
     background-size: 180%;
     background-position: 60% bottom;
   }
@@ -2879,14 +2879,14 @@ footer {
 
 @media (max-width: 576px) {
   .home-sec4 {
-    height: 40rem;
+    height: 38rem;
     background-size: 240%;
   }
 }
 
 @media (max-width: 400px) {
   .home-sec4 {
-    height: 35rem;
+    height: 30rem;
     background-size: 200%;
   }
 }
@@ -4093,8 +4093,8 @@ footer {
 
 .ourbraud-sec2 {
   background-color: #e5e3ea;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .ourbraud-sec2-container {
@@ -4132,7 +4132,7 @@ footer {
 
 .ourbraud-sec2-container h2 {
   font-weight: bolder;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   color: #2F353D;
 }
 
@@ -6148,6 +6148,7 @@ footer {
 .about-sec3-text h4 {
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
+  font-weight: bolder;
 }
 
 .about-sec3-text p {
@@ -6256,13 +6257,13 @@ footer {
 
 .about-sec4-container-display {
   text-align: center;
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .about-sec4-container-display h2 {
   color: #2F353D;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-weight: bolder;
 }
 
@@ -6311,7 +6312,7 @@ footer {
 .about-sec4-container-display p {
   color: #2F353D;
   font-size: 0.9375rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .about-sec4-container-display p:nth-of-type(1) {
@@ -6343,8 +6344,8 @@ footer {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 5rem;
-  padding-bottom: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 576px) {
@@ -6371,21 +6372,9 @@ footer {
   }
 }
 
-@media (max-width: 992px) {
-  .about-sec5-container {
-    padding-bottom: 6rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .about-sec5-container {
-    padding-bottom: 4rem;
-  }
-}
-
 .about-sec5-container-display {
-  padding-top: 1rem;
-  padding-bottom: 7.5rem;
+  padding-top: 0rem;
+  padding-bottom: 3rem;
   max-width: 1140px;
   margin: 0 auto;
   width: 100%;
@@ -6406,7 +6395,7 @@ footer {
 
 .about-sec5-container-display h2 {
   color: #fcfcfb;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-weight: bolder;
 }
 
@@ -6568,8 +6557,8 @@ footer {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 576px) {
@@ -6597,7 +6586,7 @@ footer {
 }
 
 .about-sec6-container-display {
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   margin: 0 auto;
   width: 100%;
   text-align: center;
@@ -6605,7 +6594,7 @@ footer {
 
 .about-sec6-container-display h2 {
   color: #2F353D;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-weight: bolder;
 }
 
@@ -7741,8 +7730,8 @@ footer {
 
 .applications-container-sec-heading h3 {
   color: #2F353D;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   font-weight: bolder;
 }
 
@@ -7791,7 +7780,7 @@ footer {
 .applications-container-sec-heading p {
   font-size: 1rem;
   color: #2F353D;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 4rem auto;
   max-width: 50rem;
 }
 

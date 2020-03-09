@@ -186,14 +186,14 @@
 .ourbraud{
     &#{-sec2}{
         background-color: #e5e3ea;
-        @include py(5rem);
+        @include py(3rem);
         &#{-container}{
             @include container;
             text-align: center;
             h2{
                 @include display-3;
                 font-weight: bolder;
-                margin-bottom: 1.5rem;
+                margin-bottom: 3rem;
                 color: #2F353D;
             }
             p{
