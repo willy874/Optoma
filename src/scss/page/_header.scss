@@ -13,18 +13,19 @@ header
 .header_dropdown-ul-li-link
 */
 body{
-    background-color: black;
+    
     header{
         background-color: rgba(3,3,3,1);
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        height: 3rem;
-
-        overflow: hidden;
+        height: 3.25rem;
         z-index: 1010;
         transition: all 0.4s;
+        @include media-max($xl) {
+            overflow: hidden;
+        }
         .header_navbar-ul{
             
         }
@@ -33,6 +34,7 @@ body{
     &.active{
         overflow: hidden;
         height: 100vh;
+        background-color: black;
 
         header{
             background-color: rgba(3,3,3,0.9);
