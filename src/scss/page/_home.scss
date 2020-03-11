@@ -185,17 +185,42 @@
                     width: 10rem;
                     @include media-max($lg) {
                         margin: auto;
+                        width: 100%;
                     }
                     button {
                         width: 100%;
-                        @include btn-outline(#b68b69, #fdfcfc);
-                        @include button;
                         margin-top: 0.5rem;
                         margin-bottom: 1.5rem;
+                        @include media-max($lg) {
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 10rem;
+                        }
+                        @include btn-outline(#b68b69, #fdfcfc);
+                        @include button;
                     }
-
-                    img {
-                        width: 100%;
+                    &#{-logo}{
+                        display: flex;
+                        
+                        @include mx(-0.25rem);
+                        @include media-max($lg) {
+                            width: 100%;
+                            margin: auto;
+                            text-align: center;
+                            justify-content: center;
+                        }
+                        @include media-max($sm) {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        img {
+                            height: 5.5rem;
+                            @include mx(0.25rem);
+                            @include media-max($sm) {
+                                display: none
+                            }
+                            
+                        }
                     }
                 }
             }
