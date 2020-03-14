@@ -58,9 +58,10 @@
                 margin: 0 auto;
                 width: 100%;
                 @include px(3.75rem);
-
                 @include media-max($lg) {
                     text-align: center;
+                    position: relative;
+                    top: -8rem;
                 }
 
                 h2 {
@@ -199,28 +200,28 @@
                         @include btn-outline(#b68b69, #fdfcfc);
                         @include button;
                     }
-                    &#{-logo}{
-                        display: flex;
-                        
-                        @include mx(-0.25rem);
-                        @include media-max($lg) {
-                            width: 100%;
-                            margin: auto;
-                            text-align: center;
-                            justify-content: center;
-                        }
+                }
+                &#{-logo}{
+                    display: flex;
+                    @include mx(-0.25rem);
+                    @include media-max($lg) {
+                        width: 100%;
+                        margin: auto;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    @include media-max($sm) {
+                        align-items: center;
+                    }
+                    img {
+                        height: 4rem;
+                        @include mx(0.25rem);
                         @include media-max($sm) {
-                            flex-direction: column;
-                            align-items: center;
+                            height: auto;
+                            flex-basis: 33%;
+                            max-width: 33%;
                         }
-                        img {
-                            height: 5.5rem;
-                            @include mx(0.25rem);
-                            @include media-max($sm) {
-                                display: none
-                            }
-                            
-                        }
+                        
                     }
                 }
             }
@@ -236,10 +237,7 @@
             margin: auto;
             width: 100%;
             @include container;
-
-            @include media-max($lg) {
-                @include px(1rem);
-            }
+            @include px(2rem);
 
             text-align: center;
 
@@ -553,7 +551,7 @@
     }
 
     .slick-prev {
-        left: -3.5rem;
+        left: -3rem;
         transform: translate(0, -100%);
 
         &::after {
@@ -569,7 +567,7 @@
     }
 
     .slick-next {
-        right: -3.5rem;
+        right: -3rem;
         transform: translate(0, -100%);
 
         &::after {

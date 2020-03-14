@@ -12,7 +12,7 @@ $(window).resize(function(){
     $('#navbar-menu').removeClass('active')
     $('.header_navbar-btn').removeClass('active')
     $(document.body).removeClass('active')
-
+    $('header').stop().animate({scrollTop:0});
     // if ($('.applications-container-sec').isInViewport() && $(window).width() >= 768 ){
     //     $('.applications-container-sec').stop(false, false).slideDown(10)
     //     $('.applications-container-btn').children('a').attr('data-switch', 'false')

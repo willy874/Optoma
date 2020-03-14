@@ -25,12 +25,14 @@ $(document.body).on('click', function (e) {
             $($this.attr('data-target')).addClass('active')
             $this.addClass('active')
             $(document.body).addClass('active')
+            $('header').stop().animate({scrollTop:0});
         }
         else{
              $('.header_navbar-btn').attr('data-switch', 'false')
              $('#navbar-menu').removeClass('active')
              $('.header_navbar-btn').removeClass('active')
              $(document.body).removeClass('active')
+             $('header').stop().animate({scrollTop:0});
         }   
     }else{
         // $('.header_navbar-btn').attr('data-switch', 'false')
@@ -67,7 +69,7 @@ $(document.body).on('click', function (e) {
         e.preventDefault()
         const targetTop = $($this.attr('data-target')).position().top - 50;
         $('html,body').stop().animate({scrollTop:targetTop});
-
+        
         if ($('.applications-container-sec').isInViewport() && $(window).width() < 768 ){
 
             $('.applications-container-sec').stop(false, false).slideUp()
@@ -80,8 +82,16 @@ $(document.body).on('click', function (e) {
             })
             $($this.attr('data-target')).prev().children('a').attr('data-switch', 'true')
             $($this.attr('data-target')).prev().children('a').children('.plus').addClass('active')
-
+            
         }
+
+        //navbar closs
+        $('.header_navbar-btn').attr('data-switch', 'false')
+        $('#navbar-menu').removeClass('active')
+        $('.header_navbar-btn').removeClass('active')
+        $('header').stop().animate({scrollTop:0});
+        $(document.body).removeClass('active') 
+
         window.history.pushState('','','?page=applications')          
     }
         

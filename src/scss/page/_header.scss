@@ -13,7 +13,10 @@ header
 .header_dropdown-ul-li-link
 */
 body{
-    
+    main{
+        padding-top: 3rem;
+    }
+
     header{
         background-color: rgba(3,3,3,1);
         position: fixed;
@@ -34,23 +37,19 @@ body{
     &.active{
         overflow: hidden;
         height: 100vh;
-        background-color: black;
 
         header{
             background-color: rgba(3,3,3,0.9);
             overflow: auto;
             height: 100%;
-
-            .header_navbar-ul{
-
-            }
+        }
+        main{
+            padding-top: 0;
         }
     }
 }
 
-main{
-    padding-top: 3rem;
-}
+
 .header {
     &#{-container} {
         @include container;

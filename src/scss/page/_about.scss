@@ -118,7 +118,7 @@ $size-xs: 0.6;
                             background-position: center;
                             @include media-max($lg) {
                                 height: 12rem;
-                                @include my(2.5rem);
+                                @include my(3rem);
                             }
                         }
                     }
@@ -129,11 +129,8 @@ $size-xs: 0.6;
     }
     //******************************************************************************************************
     &#{-sec3}{
-        @include py(1.5rem);
-        padding-top: 6rem;
-        @include media-max($lg) {
-            padding-top: 3.5rem;
-        }
+        padding-top: 0.5rem;
+        padding-bottom: 2.25rem;
         background-color: #e5e3ea;
         overflow: hidden;
         &#{-text}{
@@ -141,7 +138,7 @@ $size-xs: 0.6;
             width: 90%;
             margin: auto;
             text-align: center;
-            @include py(1.5rem);
+            @include py(2rem);
             &.animate{
                 &:nth-of-type(2){
                     animation: about-sec3-text1 4s ease;

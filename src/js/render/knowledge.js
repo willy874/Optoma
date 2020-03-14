@@ -43,8 +43,8 @@ const renderKnowledge = (element, dataJson) =>{
 
     $('[data-fancybox]').fancybox({
         youtube : {
-            controls : 0,
-            showinfo : 0
+            controls : 1,
+            showinfo : 1
         },
         vimeo : {
             color : 'f00'

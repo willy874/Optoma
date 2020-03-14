@@ -55,10 +55,11 @@
 
 
 .about-sec3-graphics {
+    position: relative;
+    top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
     @include media-min($lg) {
         margin-top: 0;
     }
