@@ -102,8 +102,16 @@ export default function (data) {
                 return m('div', {
                     class: 'silck-item',
                     onclick: (e) => {
-                        if (index >= array.length-3) {
-                            $('#silck-about').slick('slickGoTo', array.length-4)
+                        let last = 0
+                        if ($(window).width() > 1200) {
+                            last = 3
+                        }else if($(window).width() > 992){
+                            last = 2
+                        }else if($(window).width() > 576){
+                            last = 1
+                        }
+                        if (index >= array.length-last) {
+                            $('#silck-about').slick('slickGoTo', array.length-last-1)
                         }else{
                             $('#silck-about').slick('slickGoTo', index)
                         }

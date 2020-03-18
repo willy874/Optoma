@@ -55,6 +55,11 @@
     .about-sec3-graphics{
         display: -webkit-box !important;
     }
+    @include media-max($sm) {
+        .popup-body{
+            width: 100%;
+        }
+    }
 }
 
 // Target IE Edge

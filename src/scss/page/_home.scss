@@ -20,7 +20,7 @@
             opacity: 1;
         }
 
-        &#{-bgUpper} {
+        &#{-star-1} {
             position: absolute;
             top: 0;
             left: 0;
@@ -32,7 +32,7 @@
             animation: star-sky-1 4s linear infinite; //
         }
 
-        &#{-bgLower} {
+        &#{-star-2} {
             position: absolute;
             top: 0;
             left: 0;

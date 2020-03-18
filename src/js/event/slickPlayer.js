@@ -15,15 +15,16 @@ window.onYTAPIReady = () => {
                     e.target.mute().playVideo()
                 },
                 'onStateChange': (e) => {
-                    const active = $(e.target.a).hasClass('active')
+                    const active = $(e.target.f).hasClass('active')
+                    console.log(e.data,active,e.target)
                     if (e.data === 1 && !active) {
                         e.target.stopVideo()
                     }
-                    if (e.data === 0 && active) {
+                    if (e.data === 0) {
                         $(banner).slick('slickNext')
                     }
                 },
-            }
+             }
         })
     }
 }
@@ -52,6 +53,7 @@ $(banner).on('afterChange', function (event, slick, index) {
         }, 5000)
     }
 })
+
 $(banner).on('beforeChange', function (event, slick, index) {
     const e = {
         event: event,
@@ -71,4 +73,3 @@ $(banner).on('beforeChange', function (event, slick, index) {
         clearTimeout(window.timer)
     }
 })
-

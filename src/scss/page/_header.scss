@@ -40,7 +40,6 @@ body{
 
         header{
             background-color: rgba(3,3,3,0.9);
-            overflow: auto;
             height: 100%;
         }
         main{
@@ -55,6 +54,7 @@ body{
         @include container;
         @include media-max($xl) {
             max-width: 100%;
+            @include px(0);
         }
         &#{-navbar} {
             display: flex;
@@ -70,6 +70,9 @@ body{
     }
     &#{_navbar} {
         &#{-logo} {
+            @include media-max($xl){
+                @include px($grid-gutters/2);
+            }
             >a{
                 display: block;
                 padding: 0.5rem 0.75rem;
@@ -161,6 +164,22 @@ body{
                 align-items: start;
                 width: 100%;
                 @include py(0.5rem);
+                position: absolute;
+                top: 3.25rem;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                overflow: auto;
+                &::-webkit-scrollbar{
+                    width: 0.75rem;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: #777;
+                }
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 1rem;
+                    background-color: #333;
+                }
             }
             
             &#{-li} {

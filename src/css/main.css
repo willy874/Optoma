@@ -1553,7 +1553,6 @@ body.active {
 
 body.active header {
   background-color: rgba(3, 3, 3, 0.9);
-  overflow: auto;
   height: 100%;
 }
 
@@ -1596,6 +1595,8 @@ body.active main {
 @media (max-width: 1200px) {
   .header-container {
     max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1621,6 +1622,13 @@ body.active main {
             align-items: start;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header_navbar-logo {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1752,6 +1760,22 @@ body.active main {
     width: 100%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    position: absolute;
+    top: 3.25rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+  }
+  .header_navbar-ul::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  .header_navbar-ul::-webkit-scrollbar-track {
+    background-color: #777;
+  }
+  .header_navbar-ul::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #333;
   }
 }
 
@@ -2184,7 +2208,7 @@ footer {
   opacity: 1;
 }
 
-.home-sec1-bgUpper {
+.home-sec1-star-1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2197,7 +2221,7 @@ footer {
           animation: star-sky-1 4s linear infinite;
 }
 
-.home-sec1-bgLower {
+.home-sec1-star-2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -6166,6 +6190,13 @@ footer {
   padding-bottom: 2.25rem;
   background-color: #e5e3ea;
   overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .about-sec3 {
+    padding-top: 2.25rem;
+    padding-bottom: 1.75rem;
+  }
 }
 
 .about-sec3-text {
@@ -10803,7 +10834,19 @@ footer {
 }
 
 .social-main-container-tab-pagination {
-  height: 460px;
+  height: 550px;
+}
+
+@media (min-width: 768px) {
+  .social-main-container-tab-pagination {
+    height: 680px;
+  }
+}
+
+@media (max-width: 400px) {
+  .social-main-container-tab-pagination {
+    height: 400px;
+  }
 }
 
 .social-main-container-tab-pagination.facebook {
@@ -11235,6 +11278,12 @@ footer {
   }
   .about-sec3-graphics {
     display: -webkit-box !important;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 576px), (-ms-high-contrast: none) and (max-width: 576px) {
+  .popup-body {
+    width: 100%;
   }
 }
 

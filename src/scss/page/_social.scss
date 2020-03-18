@@ -180,7 +180,14 @@
 
 
 .social-main-container-tab-pagination{
-    height: 460px;
+    height: 550px;
+    @include media-min($md){
+        height: 680px;
+    }
+    @include media-max($xs){
+        height: 400px;
+    }
+    
     &.facebook{
         height: auto;
     }
