@@ -180,9 +180,19 @@
 
 
 .social-main-container-tab-pagination{
-    height: 550px;
-    @include media-min($md){
+    height: 480px;
+
+    @include media-max($xxl){
+        height: 400px;
+    }
+    @include media-max($xl){
+        height: 320px;
+    }
+    @include media-max($lg){
         height: 680px;
+    }
+    @include media-max($md){
+        height: 580px;
     }
     @include media-max($xs){
         height: 400px;

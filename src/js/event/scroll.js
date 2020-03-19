@@ -8,7 +8,13 @@ import scrollZoom from './scrollZoom'
 
 $(window).scroll(function(){
 
+    if(window.scrollY < 400 && $('.gotop-button').isInViewport()){
+        $('.gotop-button').fadeOut()
+    }
+    if(window.scrollY > 400 && !($('.gotop-button').isInViewport())){
+        $('.gotop-button').fadeIn()
+    }
+
     isInViewAnimate()
     scrollZoom()
-
 })

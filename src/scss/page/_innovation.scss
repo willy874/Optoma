@@ -206,7 +206,7 @@
     }
 
     .slick-dots {
-        bottom: 4rem;
+        bottom: 3rem;
 
         li {
             width: 1rem;
@@ -338,7 +338,7 @@
 
             &#{-row} {
                 @include row;
-                @include mx(-1rem);
+                @include mx(-15px);
 
                 &#{-col} {
                     @include col(33%);

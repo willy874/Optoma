@@ -18,6 +18,10 @@
         &#{-container}{
             @include py(5rem);
             @include container;
+            @include media-max($lg) {
+                @include px(2rem);
+            }
+
             &#{-header}{
                 padding-bottom: 3rem;
                 h2{
@@ -41,7 +45,7 @@
             &#{-row}{
                 @include py(3rem);
                 @include row;
-                @include mx(-1rem);
+                @include mx(-15px);
                 &#{-col}{
                     @include col(25%);
                     @include media-max($lg) {
@@ -50,6 +54,9 @@
                     display: flex;
                     flex-wrap: wrap;
                     @include px(0.5rem);
+                    @include media-max($lg) {
+                        @include px(0.25rem);
+                    }
                     @include my(0.5rem);
                     &#{-figure}{
                         @include stretched-link;

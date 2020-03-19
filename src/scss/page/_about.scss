@@ -515,8 +515,17 @@ $size-xs: 0.6;
 
 #silck-about{
     margin-bottom: 10rem;
+    padding: 0 0.5rem;
+    
     .silck-item{
         padding: 0 1rem;
+        @include media-max($xl) {
+            padding: 0 0.75rem;
+        }
+        @include media-max($lg) {
+            padding: 0 0.5rem;
+        }
+
         .silck-item-dispay{
             position: relative;
             img{

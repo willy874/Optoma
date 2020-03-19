@@ -35,8 +35,8 @@ body{
     }
 
     &.active{
-        overflow: hidden;
-        height: 100vh;
+        // overflow: hidden;
+        // height: 100vh;
 
         header{
             background-color: rgba(3,3,3,0.9);
@@ -171,14 +171,7 @@ body{
                 bottom: 0;
                 overflow: auto;
                 &::-webkit-scrollbar{
-                    width: 0.75rem;
-                }
-                &::-webkit-scrollbar-track {
-                    background-color: #777;
-                }
-                &::-webkit-scrollbar-thumb {
-                    border-radius: 1rem;
-                    background-color: #333;
+                    width: 0;
                 }
             }
             

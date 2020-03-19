@@ -3,7 +3,11 @@ import $ from 'jquery/src/jquery'
 import isInViewAnimate from './isInViewAnimate'
 import scrollZoom from './scrollZoom'
 
-$(document).ready(function () {
+$(document).ready(()=> {
+    if(window.scrollY < 400){
+        $('.gotop-button').hide()
+    }
+    
     const hash = window.location.hash
     const search = window.location.search
 
@@ -32,6 +36,7 @@ $(document).ready(function () {
     }
 
     
+
     isInViewAnimate()
     scrollZoom()
 
