@@ -18,7 +18,7 @@ export default function(data) {
                         class: `social-main_navbar-row`
                     },[
                         data.social.map((item,index)=>{
-                            const active = (`${hash}` === `#${item.id}`)? true : (`${item.id}` === 'facebook' && (hash === undefined || hash === null || hash === ''))
+                            const active = (`${hash}` === `#${item.id}`)? true : ((`${item.id}` === 'facebook') && (hash === undefined || hash === null || hash === ''))
                             return m('div',{
                                 class: 'social-main_navbar-row-col'
                             },[ 
@@ -37,10 +37,16 @@ export default function(data) {
                                             //$('html,body').stop().animate({scrollTop: $('.social-main-container-tab-navbar').position().top});
                                             if($(`#${item.id}`).is(':visible')){ $(`#${item.id}`).trigger('click'); }
                                             $('.social-main_pagination-panels').css('transform',`translateX(-${$(`#${item.id}`).attr('data-index')*100}%)`)
+                                            
                                             if(item.id === 'facebook'){
                                                 $('.social-main-container-tab-pagination').addClass(item.id)
                                             }else if( $('.social-main-container-tab-pagination').hasClass('facebook')){
                                                 $('.social-main-container-tab-pagination').removeClass('facebook')
+                                            }
+                                            if(item.id === 'youtube'){
+                                                $('.social-main-container-tab-pagination').addClass(item.id)
+                                            }else if( $('.social-main-container-tab-pagination').hasClass('youtube')){
+                                                $('.social-main-container-tab-pagination').removeClass('youtube')
                                             }
                                         },
                                     },[

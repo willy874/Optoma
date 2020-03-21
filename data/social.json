@@ -78,6 +78,16 @@
             "heading": "Optoma USA",
             "title": "Optoma USA",
             "href": "https://www.youtube.com/user/optomausa"
+        },{
+            "src": "./images/social/youtube/corporate.jpg",
+            "heading": "Optoma Corporate",
+            "title": "Optoma Corporate",
+            "href": "https://www.youtube.com/channel/UCGR6d0kqlUiki6nnZB6BX0A/videos"
+        },{
+            "src": "./images/social/youtube/España.jpg",
+            "heading": "Optoma España",
+            "title": "Optoma España",
+            "href": "https://www.youtube.com/user/Optomaes"
         }]
     },{
         "id": "twitter",

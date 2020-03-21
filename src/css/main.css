@@ -1546,6 +1546,11 @@ body header {
   }
 }
 
+body.active {
+  overflow: hidden;
+  height: 100vh;
+}
+
 body.active header {
   background-color: rgba(3, 3, 3, 0.9);
   height: 100%;
@@ -1553,6 +1558,14 @@ body.active header {
 
 body.active main {
   padding-top: 0;
+}
+
+body.active .header_navbar-ul-dropdown {
+  padding-right: 1rem;
+}
+
+body.active .header_navbar-btn {
+  right: 2rem;
 }
 
 .header-container {
@@ -7067,8 +7080,7 @@ footer {
 #silck-about .silck-item .silck-item-dispay figure figcaption {
   margin: 0.5rem 0;
   padding: 0 1.5rem;
-  height: 6rem;
-  overflow: hidden;
+  height: 7.2rem;
   z-index: 950;
 }
 
@@ -10872,6 +10884,10 @@ footer {
   height: auto;
 }
 
+.social-main-container-tab-pagination.youtube {
+  height: auto;
+}
+
 .detail-banner {
   background-color: #000;
 }
@@ -11126,6 +11142,8 @@ footer {
   .detail-article-container-row-col {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
   }
 }
 

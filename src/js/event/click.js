@@ -113,6 +113,11 @@ $(document.body).on('click', function (e) {
         }else if( $('.social-main-container-tab-pagination').hasClass('facebook')){
             $('.social-main-container-tab-pagination').removeClass('facebook')
         }
+        if(target === 'facebook'){
+            $('.social-main-container-tab-pagination').addClass('youtube')
+        }else if( $('.social-main-container-tab-pagination').hasClass('youtube')){
+            $('.social-main-container-tab-pagination').removeClass('youtube')
+        }
 
     }
 

@@ -13,6 +13,7 @@ header
 .header_dropdown-ul-li-link
 */
 body{
+
     main{
         padding-top: 3rem;
     }
@@ -29,14 +30,12 @@ body{
         @include media-max($xl) {
             overflow: hidden;
         }
-        .header_navbar-ul{
-            
-        }
     }
 
     &.active{
-        // overflow: hidden;
-        // height: 100vh;
+        overflow: hidden;
+        height: 100vh;
+        
 
         header{
             background-color: rgba(3,3,3,0.9);
@@ -44,6 +43,12 @@ body{
         }
         main{
             padding-top: 0;
+        }
+        .header_navbar-ul-dropdown {
+            padding-right: 1rem;
+        }
+        .header_navbar-btn {
+            right: 2rem;
         }
     }
 }

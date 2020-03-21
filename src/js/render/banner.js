@@ -58,7 +58,7 @@ export default function (data,element){
             slidesToShow: 1,
             slidesToScroll: 1,
         })
-        setTimeout(() => {
+        window.timer = setTimeout(() => {
             $(element).slick('slickNext')
         }, 5000);
     }
