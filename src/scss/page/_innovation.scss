@@ -342,19 +342,21 @@
 
                 &#{-col} {
                     @include col(33%);
+                    @include px(0.25rem);
+                    @include my(0.25rem);
 
                     @include media-max($xl) {
                         @include col(50%);
+                        @include px(0.25rem);
                     }
                     @include media-max($sm) {
                         @include col(100%);
+                        @include px(0.25rem);
                     }
 
                     display: flex;
                     flex-wrap: wrap;
-                    @include px(0.5rem);
-                    @include my(0.5rem);
-
+                    
                     &#{-figure} {
                         @include stretched-link;
                         padding: 0.5rem;

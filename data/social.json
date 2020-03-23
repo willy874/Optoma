@@ -138,6 +138,11 @@
             "heading": "Optoma UK",
             "title": "Optoma UK",
             "href": "https://www.instagram.com/optomauk/"
+        },{
+            "src": "./images/social/instagram/emea.jpg",
+            "heading": "Optoma EMEA",
+            "title": "Optoma EMEA",
+            "href": "https://www.instagram.com/optoma_emea/"
         }]
     },{
         "id": "linkedin",
@@ -157,7 +162,7 @@
             "src": "./images/social/linkedin/emea.jpg",
             "heading": "Optoma EMEA",
             "title": "Optoma EMEA",
-            "href": "https://www.linkedin.com/company/optom"
+            "href": "https://www.linkedin.com/company/optoma"
         },{
             "src": "./images/social/linkedin/usa.jpg",
             "heading": "Optoma USA",
@@ -202,7 +207,7 @@
             "src": "./images/social/weibo/cn.jpg",
             "heading": "Optoma CN",
             "title": "Optoma CN",
-            "href": ""
+            "href": "https://www.weibo.com/p/1006061827358831/home?from=page_100606&mod=TAB&is_all=1#place"
         }]
     },{
         "id": "wechat",
@@ -239,10 +244,10 @@
             }
         },
         "link": [{
-            "src": "./images/social/wechat/cn.jpg",
+            "src": "./images/social/tiktok/cn.jpg",
             "heading": "Optoma CN",
             "title": "Optoma CN",
-            "href": ""
+            "href": "http://i.youku.com/i/UMTQ3MTAyNjk4NA==/playlists?spm=a2hzp.8244740.0.0"
         }]
     },{
         "id": "tiktok",
@@ -260,9 +265,9 @@
         },
         "link": [{
             "src": "./images/social/tiktok/cn.jpg",
-            "heading": "Optoma CN",
-            "title": "Optoma CN",
-            "href": ""
+            "heading": "Optoma CN 抖音號：2197292141",
+            "title": "Optoma CN 抖音號：2197292141",
+            "href": "https://www.douyin.com/"
         }]
     }]
 }

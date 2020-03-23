@@ -31,24 +31,10 @@ body{
             overflow: hidden;
         }
     }
-
+    
     &.active{
-        overflow: hidden;
-        height: 100vh;
-        
-
         header{
-            background-color: rgba(3,3,3,0.9);
             height: 100%;
-        }
-        main{
-            padding-top: 0;
-        }
-        .header_navbar-ul-dropdown {
-            padding-right: 1rem;
-        }
-        .header_navbar-btn {
-            right: 2rem;
         }
     }
 }
@@ -185,6 +171,9 @@ body{
                 @include media-max($xl) {
                     width: 100%;
                 }
+                @include media-max($xl) {
+                    padding-left: 3rem;
+                }
                 &#{-link} {
                     @include py(1rem);
                     @include media-max($xl) {
@@ -230,11 +219,10 @@ body{
                 position: relative;
                 margin-left: 0.75rem;
                 margin-right: 1.25rem;
-
                 @include media-max($xl) {
                     margin: 0;
                     width: 100%;
-                    padding-left: 1.5rem;
+                    padding-left: 3rem;
                 }
                 .header_dropdown-ul{
                     max-height: 25rem;
@@ -310,7 +298,6 @@ body{
             background-color: #4c4c4c;
             position: absolute;
         }
-        
         &#{-li} {
             &#{-link} {
                 white-space: nowrap;

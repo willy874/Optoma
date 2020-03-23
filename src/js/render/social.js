@@ -7,6 +7,7 @@ export default function(data) {
         if(data.msg =="false" ) return; 
         if(element == undefined ) return;
         const hash = window.location.hash
+
         m.render(element,[
             m('div',{
                 class: 'social-main-container-tab'
@@ -66,7 +67,7 @@ export default function(data) {
                     ])
                 ]),
                 m('div',{
-                    class: 'social-main-container-tab-pagination'
+                    class: `social-main-container-tab-pagination`
                 },[
                     m('div',{
                         class: 'social-main_pagination-panels',
@@ -106,7 +107,7 @@ export default function(data) {
             
         ])
         $('.social-main_pagination-panels').css('transform',`translateX(-${$(hash).attr('data-index')*100}%)`)
-        if(hash === '#facebook' || $('#facebook').hasClass('active')) {
-            $('.social-main-container-tab-pagination').addClass('facebook')
-        }
+        if($('#facebook').hasClass('active') || hash === '#facebook'){$('.social-main-container-tab-pagination').addClass('facebook')}
+        if($('#youtube').hasClass('active') || hash === '#youtube'){$('.social-main-container-tab-pagination').addClass('youtube')}
+
 }

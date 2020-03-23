@@ -1546,26 +1546,8 @@ body header {
   }
 }
 
-body.active {
-  overflow: hidden;
-  height: 100vh;
-}
-
 body.active header {
-  background-color: rgba(3, 3, 3, 0.9);
   height: 100%;
-}
-
-body.active main {
-  padding-top: 0;
-}
-
-body.active .header_navbar-ul-dropdown {
-  padding-right: 1rem;
-}
-
-body.active .header_navbar-btn {
-  right: 2rem;
 }
 
 .header-container {
@@ -1791,6 +1773,12 @@ body.active .header_navbar-btn {
   }
 }
 
+@media (max-width: 1200px) {
+  .header_navbar-ul-li {
+    padding-left: 3rem;
+  }
+}
+
 .header_navbar-ul-li-link {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1853,7 +1841,7 @@ body.active .header_navbar-btn {
   .header_navbar-ul-dropdown {
     margin: 0;
     width: 100%;
-    padding-left: 1.5rem;
+    padding-left: 3rem;
   }
 }
 
@@ -7064,7 +7052,7 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 3rem 0;
+  padding: 3rem 0 0 0;
 }
 
 #silck-about .silck-item .silck-item-dispay figure .year {
@@ -10225,15 +10213,15 @@ footer {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -10248,6 +10236,8 @@ footer {
             flex-grow: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 }
 
@@ -10263,6 +10253,8 @@ footer {
             flex-grow: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 }
 
