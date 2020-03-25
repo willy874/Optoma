@@ -34,6 +34,7 @@ export default  function (){
     }
     if ($('.about-sec3-graphics').isInViewport() && !hasRender.coreValues){
         hasRender.coreValues = true
+        $('.about-sec3-graphics').addClass('animate')
         $('#core-values').addClass('animate')
         $('#innovation').addClass('animate')
         $('#reliability').addClass('animate')

@@ -89,7 +89,9 @@ export default function(data) {
                                                 m('a',{
                                                     href: link.href,
                                                     title: link.title
-                                                },link.heading)
+                                                },[
+                                                    m.trust(link.heading)
+                                                ])
                                             ]),
                                             m('img',{
                                                 src: link.src,

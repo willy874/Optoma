@@ -63,11 +63,17 @@
     @include media-min($lg) {
         margin-top: 0;
     }
+    opacity: 0;
+    &.animate{
+        opacity: 1;
+    }
     
     &#{-center}{        
         width: 35rem;
         height: 35rem;
         position: relative;
+        
+    
         
         &#{-heading}{
             max-width: 19rem;

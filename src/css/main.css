@@ -4995,12 +4995,17 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: 0;
 }
 
 @media (min-width: 992px) {
   .about-sec3-graphics {
     margin-top: 0;
   }
+}
+
+.about-sec3-graphics.animate {
+  opacity: 1;
 }
 
 .about-sec3-graphics-center {
@@ -6808,6 +6813,7 @@ footer {
   max-width: 100rem;
   margin: auto;
   width: 100%;
+  overflow: hidden;
 }
 
 .about-sec7-container-display {

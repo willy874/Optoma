@@ -377,6 +377,7 @@ $size-xs: 0.6;
             max-width: 100rem;
             margin: auto;
             width: 100%;
+            overflow: hidden;
             
             &#{-display}{
                 padding-bottom: 1.5rem;
