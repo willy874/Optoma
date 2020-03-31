@@ -1,70 +1,49 @@
-const {
-    src,
-    dest,
-    series,
-    watch
-} = require('gulp')
-const sourcemaps = require('gulp-sourcemaps')
-const sass = require('gulp-sass')
-const autoprefixer = require('gulp-autoprefixer')
-const rename = require('gulp-rename')
-const concat = require('gulp-concat')
-const minifyCSS = require('gulp-minify-css')
-const rimraf = require("rimraf")
+﻿var gulp = require('gulp'),
+    rimraf = require("rimraf"),
+    cssmin = require("gulp-cssmin"),
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
+    autoprefixer = require('gulp-autoprefixer'),
+    rename = require('gulp-rename');
 
-const paths = {
-    webroot: "./dist/",
-    asset: "./scss/"
-}; //路徑變數
+var paths = {
+    webroot: "./dist/"
+};
 
-paths.concatCssDest = paths.webroot + "/main.min.css";
+paths.css = paths.webroot + "css/*.css";
+// paths.minCss = paths.webroot + "css/*.min.css";
+// paths.concatCssDest = paths.webroot + "css/main.min.css";
 
-function clean(cb) {
-    rimraf(paths.concatCssDest, cb);
-}
-const url = ['src/main.scss']
 
-function production() {
-    return src(url)
+gulp.task("clean:css", function (cb) {
+    rimraf(paths.css, cb);
+});
+gulp.task('css:main', function () {
+    return gulp
+        .src(['src/scss/main.scss'])
         .pipe(sass({
-            includePaths: ['./node_modules']
-        }).on('error', sass.logError))
-        .pipe(autoprefixer({
-            overrideBrowserslist: ['last 2 versions'],
-            cascade: false
+            includePaths: ['node_modules']
         }))
-        .pipe(minifyCSS({
-            keepBreaks: true,
-        }))
-        .pipe(concat('main.min.css'))
-        .pipe(dest(paths.webroot + 'css'));
-}
-
-function build() {
-    return src(url)
         .pipe(sourcemaps.init())
-        .pipe(sass({
-            includePaths: ['./node_modules']
-        }).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 1 versions'],
+            browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(sourcemaps.write())
-        .pipe(concat('main.css'))
-        .pipe(dest(paths.webroot + 'css'))
-}
+        .pipe(rename('main.css'))
+        .pipe(gulp.dest(paths.webroot + 'css'))
+        .resume();
+});
+gulp.task("css:main.min", function () {
+    return gulp.src([paths.webroot + "css/main.css"])
+        .pipe(cssmin())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('dist/css/'));
+});
 
-exports.build = series(
-    clean,
-    build
-);
-
-exports.production = series(
-    clean,
-    production
-); 
-
-exports.watch = function () {
-    watch('src/*.scss', series(clean, build, production));
-}
+gulp.task("build", ['clean:css','css:main']);
+gulp.task("bundle", ['css:main.min']);
+gulp.task("watch", function () {
+    gulp.watch('src/scss/main.scss', ['clean:css','css:main'])
+})

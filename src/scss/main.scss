@@ -1,0 +1,24 @@
+@import 'variable';
+//@import 'fonts';
+@import 'mixins';
+@import 'component';
+@import 'reset';
+@import 'fancyapps/index';
+@import 'slick-carousel/slick';
+@import 'slick-carousel/slick-theme';
+
+@import 'page/header';
+@import 'page/footer';
+@import 'page/home';
+@import 'page/ourBraud';
+@import 'animate/about';
+@import 'page/about';
+
+@import 'page/applications';
+@import 'page/knowledge';
+@import 'page/design';
+@import 'page/innovation';
+@import 'page/social';
+@import 'page/detail';
+@import 'browserReplacement';
+
