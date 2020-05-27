@@ -7,5 +7,4 @@
   <li>Mithril.js: 執行資料渲染</li>
   <li>CSS: 採BEM命名，使用SCSS全手刻</li>
   <li>API: YoutubeAPI</li>
-  <li>: YoutubeAPI</li>
 </ol>
